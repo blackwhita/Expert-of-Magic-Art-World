@@ -1,0 +1,1596 @@
+{
+	id: "0000000000000AF3"
+	group: "5A8B89F87F77CF4C"
+	order_index: 1
+	filename: "astral_sorcery_wip"
+	title: "星辉魔法"
+	icon: "astralsorcery:hand_telescope"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "星辉魔法"
+			icon: "astralsorcery:tome"
+			x: 7.0d
+			y: -10.5d
+			shape: "gear"
+			description: [
+				"古代文明的遗迹点缀着这片土地，尽管它们几乎没有提供什么线索，留下来的村民用“Hrms”分享者它们的传说，尽管它们因为恐惧时刻躲避着这些建筑。"
+				""
+				"掠夺者，尽管它们可能很凶猛，但似乎也存在着这种迷信....有什么秘密在等着我们去发现？"
+				""
+				"~MuteTiefling"
+			]
+			optional: true
+			id: "0000000000000AF4"
+			tasks: [{
+				id: "68C3AD7DEDCF8C8B"
+				type: "item"
+				item: "astralsorcery:aquamarine"
+				count: 4L
+			}]
+			rewards: [{
+				id: "00B5497F8AA28D93"
+				type: "item"
+				title: "大理石"
+				item: "astralsorcery:marble_raw"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			x: 7.0d
+			y: -9.0d
+			subtitle: "黑夜中的灯塔"
+			description: [
+				"“由明亮的白色大理石雕刻而成的古代遗迹点缀着这片土地。尽管村民不愿意靠近它们，但这些遗迹看起来大多数都是无害的，而我对它们的探索还发现了一些无法解释的奇异现象。"
+				""
+				"其中最重要的就是放置在最大遗迹内的浮动水晶。"
+				""
+				"我在放置一个工作台准备开始研究后，一道灿烂的白色光束从浮动水晶上发射出来并投射到工作台上，完全改变了工作台的结构，我非常好奇。”"
+				"_________________________________________________"
+				""
+				"在寒冷的生物群系中找到一座大型的古代遗迹，并找到进去的路。小心，不要惊动里面的浮动水晶，因为需要它来获得一些物品。"
+				""
+				"该浮动水晶必须暴露在天空中才能发挥作用，它能够自动连接到原版的工作台，除此之外还能通过连接器手动将浮动水晶内的白色光速连接到任意位置。"
+				""
+				"浮动水晶所在的古代遗迹可能会离家比较远，但是在星辉魔法前期，这些浮浮动水晶所提供的作用是非常重要的。目前，可以通过新生魔艺模组提供的折越卷轴来减少每次跑路所需要的时间。"
+			]
+			dependencies: ["0000000000000AF4"]
+			min_width: 300
+			id: "0000000000000B6E"
+			tasks: [{
+				id: "0000000000000B77"
+				type: "item"
+				item: "astralsorcery:altar_discovery"
+			}]
+			rewards: [
+				{
+					id: "0000000000000BDB"
+					type: "item"
+					title: "折跃卷轴"
+					item: "ars_nouveau:warp_scroll"
+					count: 16
+				}
+				{
+					id: "0000000000000C5E"
+					type: "command"
+					title: "拾荒者快乐包"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			icon: "astralsorcery:ritual_pedestal"
+			x: 2.5d
+			y: -4.0d
+			subtitle: "我与月亮一起升起"
+			description: [
+				"“将共鸣水晶石放入仪式基座中，发出了令人满意的叮当声，微妙的嗡嗡声在地面上产生了共鸣。"
+				""
+				"毛球不见踪影，我不能说我怪她，即使在我所看到的一切之后，这个祭坛让我感到脊背发凉。夜晚来临，我感觉到力量在减弱。\""
+				"________________________________"
+				""
+				"仪式基座是一个强大的多方块结构，能够在大范围内产生指定效果。例如：当放入晶金座的共鸣水晶石时，附近的石头都会随机的转化成矿石，而圣芒座的共鸣水晶石则会让敌对生物无法在范围内的区域生成，即使亮度很暗也是如此。"
+				""
+				"通过二次共鸣可以将仪式内的共鸣水晶石调整到指定的星座，它们可以被二次增强，关于此过程的更多信息以及每个星座在仪式祭坛内的效果请查看《星芒宝典》。"
+				""
+				"注意：在你的“building_gadgets_patterns”文件内提供了大量的多方块结构蓝图，可以去使用复制粘贴小帮手或者蓝图加农炮来完成建造。"
+			]
+			dependencies: ["0000000000000B8E"]
+			id: "0000000000000B70"
+			tasks: [
+				{
+					id: "0000000000000B90"
+					type: "item"
+					item: "astralsorcery:ritual_pedestal"
+				}
+				{
+					id: "0000000000000B91"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 12L
+				}
+				{
+					id: "0000000000000B92"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+				}
+				{
+					id: "0000000000000B93"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 24L
+				}
+				{
+					id: "0000000000000B94"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 20L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C4D"
+				type: "command"
+				title: "史诗星辉魔法战利品箱"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:well"
+			x: 4.0d
+			y: -9.5d
+			subtitle: "让这句话沉淀下来"
+			description: [
+				"“也许那个老隐士终究不是个疯子，遗迹中的一些物品让我制作了一口井，当在附近放置水晶石或者海蓝宝石时，它似乎会产生共鸣。"
+				""
+				"将这两种东西放入井内，它们的表面居然会凝结出闪亮的液体并被收集在井底。"
+				""
+				"当然，这不是隐士所追求的茶吗？”"
+				"________________________________"
+				""
+				"手持海蓝宝石右键聚星缸，海蓝宝石可以在河底或者浅海处被发现，然后就能开始收集星能液了。"
+				"海蓝宝石最终会被消耗，但在消失之前应该能够产生适量的星能液。"
+				""
+				"使用连接器将古代神殿内的浮动水晶连接到聚星缸可加速这一过程。"
+				""
+				"星能液可以手持桶右键聚星缸收集，也能通过液体管道在聚星缸底部收集。"
+			]
+			dependencies: ["0000000000000BA3"]
+			id: "0000000000000B72"
+			tasks: [
+				{
+					id: "0000000000000B86"
+					type: "item"
+					item: "astralsorcery:well"
+				}
+				{
+					id: "0000000000000BDF"
+					type: "item"
+					item: "astralsorcery:aquamarine"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000BE0"
+					type: "item"
+					title: "海蓝宝石砂岩"
+					item: "astralsorcery:aquamarine_sand_ore"
+					count: 8
+				}
+				{
+					id: "0000000000000C60"
+					type: "command"
+					title: "拾荒者快乐包"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -7.5d
+			subtitle: "上有所好，下必甚焉"
+			description: [
+				"“附近村庄的渔民对他们的行业相当精通，整天都在海上捕鱼。当我设法在他们家里见到他们时，他们会详细地讲述他们用来安全地驾驭船只的各种星座。"
+				""
+				"我以为它们是虚构的发明，但现在有了这些文件在手，我看到它们的悠久传统正是始于它们现在所害怕的东西。”"
+				"________________________________"
+				""
+				"星图可以在世界各地的大理石废墟或者古代遗迹中被找到，最终有16张，尽可能的多找一些，然后就能开始游玩了。"
+			]
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000B74"
+			tasks: [{
+				id: "0000000000000B87"
+				type: "item"
+				item: {
+					id: "astralsorcery:constellation_paper"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C51"
+				type: "command"
+				title: "稀有星辉魔法战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:altar_attunement"
+			x: 7.0d
+			y: -6.0d
+			description: [
+				"星辉合成台的升级版本，请务必使用星辉魔法模组提供的大理石去放置多方块结构。"
+				""
+				"星辉祭坛也能合成星辉合成台内的物品。"
+				""
+				"注意：在你的“building_gadgets_patterns”文件内提供了大量的多方块结构蓝图，可以去使用复制粘贴小帮手或者蓝图加农炮来完成建造。"
+			]
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000B79"
+			tasks: [
+				{
+					id: "0000000000000B7A"
+					type: "item"
+					item: "astralsorcery:altar_attunement"
+				}
+				{
+					id: "0000000000000C2F"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 8L
+				}
+				{
+					id: "0000000000000C30"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 8L
+				}
+				{
+					id: "0000000000000C31"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 24L
+				}
+				{
+					id: "0000000000000C32"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 28L
+				}
+				{
+					id: "0000000000000C33"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 21L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C42"
+				type: "command"
+				title: "稀有星辉魔法战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:altar_constellation"
+			x: 7.0d
+			y: -4.5d
+			description: [
+				"星辉祭坛的升级版本，许多在星辉祭坛的合成表也能在天辉祭坛上合成。"
+				""
+				"注意：在你的“building_gadgets_patterns”文件内提供了大量的多方块结构蓝图，可以去使用复制粘贴小帮手或者蓝图加农炮来完成建造。"
+			]
+			dependencies: ["0000000000000B79"]
+			id: "0000000000000B7B"
+			tasks: [
+				{
+					id: "0000000000000B7C"
+					type: "item"
+					item: "astralsorcery:altar_constellation"
+				}
+				{
+					id: "0000000000000C34"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 4L
+				}
+				{
+					id: "0000000000000C35"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 4L
+				}
+				{
+					id: "0000000000000C36"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 49L
+				}
+				{
+					id: "0000000000000C37"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 12L
+				}
+				{
+					id: "0000000000000C38"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 8L
+				}
+				{
+					id: "0000000000000C39"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 40L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C43"
+				type: "command"
+				title: "史诗星辉魔法战利品箱"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:altar_radiance"
+			x: 7.0d
+			y: -3.0d
+			description: [
+				"天辉祭坛的最终版本，在五彩祭坛中，为合成提供了一个新的机制，即指定星座的共鸣水晶石，有写物品每次合成都需要在五彩祭坛内放置指定星座的共鸣水晶石才能开始合成。"
+				""
+				"注意：请在五彩祭坛附近放置一些星辉转继器，每次参与合成的额外物品需要放置在星辉转继器中，每次合成时五彩祭坛都会将物品投影到星辉转继器中，请按投影的顺序放置物品。"
+				""
+				"注意：在你的“building_gadgets_patterns”文件内提供了大量的多方块结构蓝图，可以去使用复制粘贴小帮手或者蓝图加农炮来完成建造。"
+			]
+			dependencies: ["0000000000000B7B"]
+			id: "0000000000000B7D"
+			tasks: [
+				{
+					id: "0000000000000B7E"
+					type: "item"
+					item: "astralsorcery:altar_radiance"
+				}
+				{
+					id: "0000000000000C3A"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 8L
+				}
+				{
+					id: "0000000000000C3B"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 4L
+				}
+				{
+					id: "0000000000000C3C"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 68L
+				}
+				{
+					id: "0000000000000C3D"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 12L
+				}
+				{
+					id: "0000000000000C3E"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 49L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C44"
+				type: "command"
+				title: "传说星辉魔法战利品箱"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:spectral_relay"
+			x: 9.0d
+			y: -7.5d
+			description: [
+				"“在苦于自己无法在基底附近寻找到一个星能场，但我决定自己动手了。"
+				""
+				"将大理石雕刻成古代遗迹中发现的形状，我就能去制作一个能够聚集星光的转继器来为我收集更多的星能，并将收集到的星能传输到祭坛上。”"
+				"________________________________"
+				""
+				"在祭坛的两侧放置一个这样的多方块结构，能在前期获得一个能增加星能获取的设备，在理想情况下它们不能离得太近，因为这会影响它们互相的工作效率。"
+				""
+				"注意：在你的“building_gadgets_patterns”文件内提供了大量的多方块结构蓝图，可以去使用复制粘贴小帮手或者蓝图加农炮来完成建造。"
+			]
+			dependencies: ["0000000000000B9F"]
+			id: "0000000000000B7F"
+			tasks: [
+				{
+					id: "0000000000000B80"
+					type: "item"
+					item: "astralsorcery:spectral_relay"
+				}
+				{
+					id: "0000000000000B81"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+				}
+				{
+					id: "0000000000000B82"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 4L
+				}
+				{
+					id: "0000000000000B83"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C46"
+				type: "command"
+				title: "稀有星辉魔法战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "观察星座"
+			x: 5.5d
+			y: -6.0d
+			subtitle: "天天做梦"
+			description: [
+				"“看来我已经被一只村里的猫收养了，虽然它很可爱，但它的关注使我在只有一个手持望远镜的情况下观察星星变得相当困难。"
+				""
+				"我将不得不找到一种方法来支撑它。”"
+				"________________________________"
+				""
+				"望远镜是用来发现星座和绘制星座的第一个工具。"
+				""
+				"检查一下你迄今为止发现的星图，看看你是否能在夜晚中发现它们，它们通常会因其大型的缓慢闪烁星星而引人注目。"
+				""
+				"一旦发现了一个星座，按住潜行键就可以开始寻找到星座然后绘制星座的每个点，成功绘制后，该星座就会被学习。"
+				""
+				"并非每个星座在一个晚上都会出现，所以建议在每个晚上都细心地观察天空。"
+			]
+			dependencies: ["0000000000000B74"]
+			id: "0000000000000B88"
+			tasks: [{
+				id: "0000000000000B89"
+				type: "item"
+				item: "astralsorcery:hand_telescope"
+			}]
+			rewards: [
+				{
+					id: "0000000000000C22"
+					type: "command"
+					title: "毛球"
+					icon: "aquaculture:fish_bones"
+					command: "/tamedsummon minecraft:cat @p ~ ~ ~"
+					player_command: false
+				}
+				{
+					id: "0000000000000C23"
+					type: "item"
+					title: "生鳕鱼"
+					item: "minecraft:cod"
+					count: 16
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -5.0d
+			subtitle: "永远顺着河流漂流"
+			description: [
+				"“这块无可救药的毛皮在建造这架望远镜的过程中打碎了我的两块镜片，我想现在是向鱼贩子购买更多鲑鱼的好时机......”"
+				"________________________________"
+				""
+				"天文望远镜极大地缩短了寻找星座的时间，星座仍然是需要学习的，但改进后的光学系统让夜晚的图像更清晰了。"
+			]
+			dependencies: ["0000000000000B79"]
+			id: "0000000000000B8A"
+			tasks: [{
+				id: "0000000000000B8B"
+				type: "item"
+				item: "astralsorcery:telescope"
+			}]
+			rewards: [{
+				id: "0000000000000C4B"
+				type: "command"
+				title: "稀有星辉魔法战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.0d
+			subtitle: "徘徊在金色的光辉中"
+			description: [
+				"“毛球已经喜欢上了我安装在天文台上的小暖炉，以便在寒冷的夜晚保护它。她在我身边打着呼噜，蜷缩着过夜。"
+				""
+				"一些年长的渔民能够告诉我这些，尽管他们自己已经很久没有看到它们了。我很感谢他们的陪伴，因为我在夜空中寻找微弱星光的痕迹。”"
+				"________________________________"
+				""
+				"有了这个天文台，就有可能在夜空中找到最后几个微弱星能的星座。"
+			]
+			dependencies: ["0000000000000B7D"]
+			id: "0000000000000B8C"
+			tasks: [{
+				id: "0000000000000B8D"
+				type: "item"
+				item: "astralsorcery:observatory"
+			}]
+			rewards: [{
+				id: "0000000000000C4A"
+				type: "command"
+				title: "传说星辉魔法战利品箱"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.5d
+			description: [
+				"“我确信她已经死了。当我转身时，我看到她漂浮在那里，一个软绵绵的绒毛球挂在空中，好像被她的脖子夹着。一口气，两次。然后她的眼睛睁开了，我可以看到整个夜晚的天空。"
+				""
+				"想象一下我的欣慰吧。但她似乎在某种程度上改变了，共鸣与生命体的互动方式与水晶石相同吗？"
+				""
+				"我想除了加入她之外，我没有什么其他的尝试。”"
+				"________________________________"
+				""
+				"共鸣祭坛与你都能一起共鸣到某个星座，一手拿着星图，一手拿着星辉转继器，在炭黑大理石的特定位置上会有光点，只需要将星辉转继器放置到这些有光点的地方就能将共鸣祭坛设定为指定的星座。"
+				""
+				"一旦站到共鸣祭坛上，等待片刻星座就与你产生共鸣，一个全新的天赋树会呈现在你的面前，天赋树是需要经验才能选择，经验是通过去做该星座指定的经验获取方式获得。"
+				""
+				"即使是遥远的星座，也是需要共鸣。"
+				""
+				"注意：在你的“building_gadgets_patterns”文件内提供了大量的多方块结构蓝图，可以去使用复制粘贴小帮手或者蓝图加农炮来完成建造。"
+			]
+			dependencies: ["0000000000000B8A"]
+			min_width: 300
+			id: "0000000000000B8E"
+			tasks: [{
+				id: "0000000000000B8F"
+				type: "item"
+				item: "astralsorcery:attunement_altar"
+			}]
+			rewards: [{
+				id: "0000000000000C4C"
+				type: "command"
+				title: "史诗星辉魔法战利品箱"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "辉光粉与暗夜粉"
+			x: 8.5d
+			y: -9.5d
+			subtitle: "让尘埃落下来吧"
+			description: [
+				"“到了晚上，我梦到了一群恐怖的生物在黑色迷雾出现，我得时刻注意一下，在没有做好足够的抵御措施之前还是不要随意投掷这种黑色的火药吧。”"
+				"________________________________"
+				""
+				"辉光粉和暗夜粉除了被用于制作成其他物品，它们本身也有个不错的用途，辉光粉在被放置到地上时会照亮附近的空间，而暗夜粉则会让附近的空间陷入黑暗，大量的敌对生物会从黑暗中生成。"
+				""
+				"你已经被警告了。"
+			]
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000B95"
+			tasks: [
+				{
+					id: "0000000000000B96"
+					type: "item"
+					item: "astralsorcery:nocturnal_powder"
+				}
+				{
+					id: "0000000000000B97"
+					type: "item"
+					item: "astralsorcery:illumination_powder"
+				}
+			]
+			rewards: [{
+				id: "0000000000000C2E"
+				type: "item"
+				title: "洞穴照明器"
+				item: "astralsorcery:illuminator"
+			}]
+		}
+		{
+			title: "天体增幅水晶"
+			icon: {
+				id: "astralsorcery:celestial_collector_crystal"
+				Count: 1b
+				tag: {
+					astralsorcery: {
+						constellation: "astralsorcery:bootes"
+						crystalProperties: {
+							attributes: [
+								{
+									property: "astralsorcery:size"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:purity"
+									pLevel: 2
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:shape"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:collector.rate"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:constellation.bootes"
+									pLevel: 2
+									discovered: 1b
+								}
+							]
+						}
+					}
+				}
+			}
+			x: 1.0d
+			y: -4.5d
+			description: [
+				"“利用我早期的研究，我发现与转继器大概的原理，我相信利用这些原理我也能一样用去增强聚能水晶的星能。然而，聚能水晶似乎只能在这种多方块结构中生效。"
+				""
+				"也许的星能液的反射镜？”"
+				"________________________________"
+				""
+				"制作一个适合共鸣聚能水晶的多方块结构可以非常强大的增加聚能水晶的星能。然而，需要注意的是，在星辉祭坛中注入太多的星能会让聚能水晶破裂。"
+				""
+				"某些星座的共鸣似乎更容易受到此类因素影响。"
+				""
+				"注意：在你的“building_gadgets_patterns”文件内提供了大量的多方块结构蓝图，可以去使用复制粘贴小帮手或者蓝图加农炮来完成建造。"
+			]
+			dependencies: [
+				"0000000000000B70"
+				"0000000000000BCD"
+			]
+			id: "0000000000000B98"
+			tasks: [
+				{
+					id: "0000000000000B99"
+					type: "item"
+					title: "任意聚能水晶"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astralsorcery:crystals/collector"
+						}
+					}
+				}
+				{
+					id: "0000000000000B9A"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+				}
+				{
+					id: "0000000000000B9B"
+					type: "item"
+					item: "astralsorcery:marble_engraved"
+					count: 5L
+				}
+				{
+					id: "0000000000000B9C"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 9L
+				}
+				{
+					id: "0000000000000B9D"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 5L
+				}
+				{
+					id: "0000000000000B9E"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 12L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C52"
+				type: "command"
+				title: "传说星辉魔法战利品箱"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: -8.5d
+			description: [
+				"“众所周知，村庄的长老们有时会高举一个奇怪的饰品，并在空中旋转，有时有用但有时又没用，他们只会在一个吉利的场合内才会带出来，例如：寻找一个合适的地来种植庄稼。"
+				""
+				"当然，我对磁力很熟悉，但是这些设备与我知道的那些常规设备有所不同。"
+				""
+				"我只知道在场合内静距离观察过，我的记忆很清晰，我相信我可能会复制它们，并深入观察它们是被什么引导的。”"
+				"_________________________________________________"
+				""
+				"当手持汇星共振器时，它们能定位星能集中的区域，这个区域是放置星辉祭坛的最佳位置，因为它们一直能源源不断地为星辉祭坛提供大量的星能。"
+				""
+				"将祭坛建在高空，也能在一定程度上提高星能的收集效率。"
+				""
+				"不要担心，如果实在找不到星能场，也可以去高空自己建立一个星辉祭坛场地，夜晚时也会有星能进入星辉祭坛中，"
+			]
+			dependencies: ["0000000000000B6E"]
+			min_width: 300
+			id: "0000000000000B9F"
+			tasks: [{
+				id: "0000000000000BA0"
+				type: "item"
+				item: {
+					id: "astralsorcery:resonator"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							upgrades: [0]
+							selected_upgrade: 0
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C45"
+				type: "command"
+				title: "稀有星辉魔法战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.5d
+			y: -9.0d
+			subtitle: "不安于现状"
+			description: [
+				"“当我在深处寻找材料时，我偶然发现这些白色晶体，当地的村民对它们毫无兴趣，我用它们来作为交易，为我赢得了村民的几句“Hrms”和一扇摔在我脸上的门。"
+				""
+				"有一个聪明的老隐士确实提出从我这里买下它，好像在嘀咕着要用它来泡茶，使他的这身老骨头恢复活力......”"
+				"________________________________"
+				""
+				"水晶石能在基岩层附近发现，每次只会生成一小团簇，但必须要用镐子才能开采。"
+				""
+				"在夜间徘徊时，手持共振星杖可以发现水晶石从地底散发的白色光束，可以按照这个位置去寻找水晶石所在的位置。"
+			]
+			dependencies: ["0000000000000B6E"]
+			id: "0000000000000BA3"
+			tasks: [
+				{
+					id: "0000000000000BA4"
+					type: "item"
+					item: {
+						id: "astralsorcery:rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "543F8C616957EB53"
+					type: "item"
+					item: "astralsorcery:wand"
+				}
+			]
+			rewards: [{
+				id: "0000000000000C5F"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.0d
+			y: -10.5d
+			description: [
+				"“一夜之间发生了一件奇怪的事，我无法解释。我将一些水晶石和木棍散落在一起，醒来后我注意到它们居然组成了一把镐子的形状。"
+				""
+				"只需要使用共振魔杖轻轻地一碰，它们就会组成一把具有更高耐久和更高效率的工具。”"
+				"________________________________"
+				""
+				"在制作水晶工具时，水晶石的尺寸、纯度、可塑性影响着工具最终的耐久值和效率等属性，需要格外的注意。"
+			]
+			dependencies: ["0000000000000BA3"]
+			id: "0000000000000BA5"
+			tasks: [{
+				id: "0000000000000BA6"
+				type: "item"
+				item: {
+					id: "astralsorcery:crystal_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C54"
+				type: "command"
+				title: "史诗星辉魔法战利品箱"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "astralsorcery:infuser"
+			x: 8.5d
+			y: -3.5d
+			description: [
+				"“终于，我相信我已经发现了那个隐士所嘀咕的东西。最近发现的一本小册子中的一个条目提到了一个过程，如果用星能进行灌注，会使物体发生巨大的变化。"
+				""
+				"我将不得不在另一杯茶中思索这一发现。”"
+				"________________________________"
+				""
+				"手持需注入的物品右键星能注入器，然后手持共振星杖再次右键星能注入器即可开始制作，星能注入器的每次合成都有小概率会消耗星能液。"
+				""
+				"注意：在你的“building_gadgets_patterns”文件内提供了大量的多方块结构蓝图，可以去使用复制粘贴小帮手或者蓝图加农炮来完成建造。"
+			]
+			dependencies: ["0000000000000B7B"]
+			id: "0000000000000BA7"
+			tasks: [
+				{
+					id: "0000000000000BA8"
+					type: "item"
+					item: "astralsorcery:infuser"
+				}
+				{
+					id: "0000000000000BA9"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+				{
+					id: "0000000000000BAA"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 8L
+				}
+				{
+					id: "0000000000000BAB"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 4L
+				}
+				{
+					id: "0000000000000BAC"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 20L
+				}
+				{
+					id: "0000000000000BAD"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "0000000000000C48"
+				type: "command"
+				title: "史诗星辉魔法战利品箱"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: -8.5d
+			subtitle: "分裂的毛发"
+			description: [
+				"“干得漂亮！我发现我不止一次发现自己在观察这种新型金属时迷失了方向。经初步证明，它对工具来说几乎是无用的，因为太软了。"
+				"奇怪的是，当与水晶石接触时，它们似乎不费吹灰之力就能分裂。"
+				""
+				"或许我应该为此类目的设计一个工具。”"
+				"________________________________"
+				""
+				"水晶分裂是在世界中进行的，只需要将水晶石丢到地上，然后使用星辉锭切削工具左键它们。水晶就会分裂，但有时水晶石的部分属性也会降低。"
+				""
+				"同样的过程可以被用来将星辉锭转化为星尘。"
+			]
+			dependencies: ["0000000000000BB3"]
+			id: "0000000000000BAE"
+			tasks: [{
+				id: "0000000000000BAF"
+				type: "item"
+				item: {
+					id: "astralsorcery:chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000BB0"
+				type: "item"
+				title: "耐久 III"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -9.5d
+			description: [
+				"“不不不，这不是茶，这是肯定的。而我怀疑自己相信了隐士的言语，我谨慎地抿了一口，我的嘴已经麻木了几个小时。"
+				""
+				"我在这种感觉中感到震惊，我设法将剩余的液体倒入我真正的茶中，将其冻结成固体，并撒入我的坩埚中，现在坩埚底部已经出现了一些沙子。”"
+				"________________________________"
+				""
+				"当星能液被放置到世界中时，流动的星能液与水能产生冰，与熔岩能产生沙子，在产生沙子的同时会有小概率产生海蓝宝石砂岩。"
+				""
+				"可以制作一个小型的刷沙机来获得沙子和海蓝宝石砂岩。这个机器或许在未来会被证明是不错的，事实证明，冰在其他的地方也有不错的用途。"
+			]
+			dependencies: ["0000000000000B72"]
+			id: "0000000000000BB1"
+			tasks: [{
+				id: "0000000000000BB2"
+				type: "item"
+				item: "astralsorcery:liquid_starlight_bucket"
+			}]
+			rewards: [{
+				id: "0000000000000C56"
+				type: "command"
+				title: "稀有星辉魔法战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: -8.5d
+			description: [
+				"“在我的工作台发生意外事件后，我开始在浮动水晶附近放置其他的方块，起初似乎没有任何反应。"
+				""
+				"相反，我发现我似乎可以用类似的材料将光束从浮动水晶中引出来，但可以肯定的是，这是一种奇怪的感觉，就像通过针眼拉丝一样。"
+				""
+				"光束很容易去跟随一根粗糙的魔杖，光束似乎被束缚在一个位置上时就能持续保持稳定，在光速的末端放置不同的方块似乎也能起到令人惊吓的效果。”"
+				"________________________________"
+				""
+				"这种“星能转化”的能力远远超过了制造星辉矿所需要的能力，可以被用来探索各种不可能。"
+				""
+				"矿石可以通过切石机转化为原版的铁矿。"
+			]
+			dependencies: ["0000000000000BA3"]
+			id: "0000000000000BB3"
+			tasks: [{
+				id: "0000000000000BB4"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
+			}]
+			rewards: [{
+				id: "0000000000000C55"
+				type: "command"
+				title: "稀有星辉魔法战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.0d
+			description: [
+				"将装满星能液的纳星圣杯放在星能注入器附近，可以防止在制作过程中星能液源头的消失，而是直接消耗圣杯内的星能液并且会减少部分星能液的消耗量。"
+				""
+				"圣杯的底部可以接入液体管道。"
+			]
+			dependencies: ["0000000000000B7D"]
+			id: "0000000000000BB5"
+			tasks: [{
+				id: "0000000000000BB6"
+				type: "item"
+				item: "astralsorcery:chalice"
+			}]
+			rewards: [{
+				id: "0000000000000C49"
+				type: "command"
+				title: "传说星辉魔法战利品箱"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "仪式锚"
+			x: 1.5d
+			y: -3.0d
+			description: [
+				"“毛球对仪式的不信任使他们的工作变得有些困难。幸运的是，我似乎可以用一个特别准备的锚毫不费力地移动这种效果。"
+				""
+				"它们散发出令人愉快的光芒，非常适合阅读，她已经习惯于在我学习时蜷缩在它附近。”"
+				"________________________________"
+				""
+				"仪式锚便于将仪式的效果转移到一个本来不适合仪式的地方，它们可以被放置在地下或其他看不见的地方。"
+				""
+				"使用连接器将仪式上方的锚点与所需位置的锚点绑定。"
+			]
+			dependencies: ["0000000000000B70"]
+			id: "0000000000000BB7"
+			tasks: [{
+				id: "0000000000000BB8"
+				type: "item"
+				item: "astralsorcery:ritual_link"
+				count: 2L
+			}]
+			rewards: [{
+				id: "0000000000000C53"
+				type: "command"
+				title: "史诗星辉魔法战利品箱"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.5d
+			subtitle: "史无前例的清晰度"
+			description: [
+				"“一段时间以来，我一直很苦恼，为什么我经常发现村民会在家里挂一些彩色的玻璃碎片，橙色的则挂到壁炉旁，绿色放到农田旁，粉色放到床旁。"
+				""
+				"村民在制作这些五颜六色的展示品时非常的谨慎，但被问到这个问题时，他们只是用幸运的吉祥物来回答。"
+				""
+				"受到这些展示品的启发，我试图用最纯净的水晶制作类似的镜片，以前的光束只能投射比较短的距离，而我发现制作的透镜能够延长这些光束的投射距离。”"
+				"________________________________"
+				""
+				"当制作水晶透镜时，水晶石的纯度会影响透镜的穿透性，而尺寸则会影响每次制作透镜的数量。"
+			]
+			dependencies: ["0000000000000BD1"]
+			id: "0000000000000BBD"
+			tasks: [{
+				id: "0000000000000BBE"
+				type: "item"
+				item: {
+					id: "astralsorcery:lens"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C59"
+				type: "command"
+				title: "史诗星辉魔法战利品箱"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "彩色透镜"
+			x: -0.5d
+			y: -5.5d
+			description: [
+				"通过水晶透镜聚集的光束可以通过使用彩色透镜来使光束获得某些特殊功能，只需要手持彩色透镜对着水晶透镜或者水晶棱镜右键即可安装上。"
+				""
+				"注意，在通过另一个透镜时，方面的偏移将丢失。"
+				""
+				"燃烧透镜是原版熔炉的标准替代品，可以熔炼任何接触到光速的物品，同时也会使生物着火。"
+				""
+				"同样的，伤害透镜可被用于制作刷怪塔，但并不会掉落只有玩家击杀才会掉落的掉落物。"
+				""
+				"再生透镜可被用于治疗实体，与其他那些会消耗生命值的模组搭配会有更好效果。"
+				""
+				"生长透镜可以非常迅速地催熟任务作物，而抗拒透镜可以推开掉落物和生物，工作流程类似于原版的水流和水电梯。"
+				""
+				"其他的一些透镜由你自己去探索，以便发现这些透镜可以为你做些什么。"
+			]
+			dependencies: ["0000000000000BBD"]
+			min_width: 250
+			id: "0000000000000BC7"
+			tasks: [{
+				id: "0000000000000BC8"
+				type: "item"
+				title: "任意彩色透镜"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "astralsorcery:colored_lens"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C5B"
+				type: "command"
+				title: "稀有星辉魔法战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "聚能水晶"
+			x: 1.5d
+			y: -5.5d
+			description: [
+				"“现在是时候不再去古代遗迹中使用浮动水晶了，尽管浮动水晶非常有用，但对我来说种种因素导致我不得不去制作其他更有用的水晶，但是对于浮动水晶的研究一直在进行中。”"
+				"________________________________"
+				""
+				"注意：在JEI中并没有显示制作聚能水晶的合成表，关于如何制作请查看《星芒宝典》。"
+				""
+				"在制作这些聚能水晶时请务必使用最好的水晶石，使用属性不佳的水晶石会让你的这些辛苦付出白白浪费。"
+			]
+			dependencies: ["0000000000000BBD"]
+			id: "0000000000000BCD"
+			tasks: [{
+				id: "0000000000000BCE"
+				type: "item"
+				title: "聚能水晶"
+				item: {
+					id: "astralsorcery:celestial_collector_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellation: "astralsorcery:pelotrio"
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:collector.rate"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:constellation.pelotrio"
+										pLevel: 2
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C5A"
+				type: "command"
+				title: "史诗星辉魔法战利品箱"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			title: "天体水晶"
+			x: 0.0d
+			y: -8.0d
+			subtitle: "虚空的召唤"
+			description: [
+				"含有杂质的水晶时样板：42"
+				""
+				"“粉末状的星型金属已成功地与生长中的水晶石结合，为水晶石注入了更高属性。"
+				"经初步检查，它似乎已经渗出了晶体状的杂质，但居然能让水晶石更加坚固。”"
+				"________________________________"
+				""
+				"天辉水晶石的获取是要通过将水晶石和形成一起放入星能液中，等待片刻后星能液会被水晶石吸收并与星尘组成一团天体水晶簇。"
+				""
+				"如果天体水晶簇生长在星辉矿上，天体水晶簇的生长过程会被加快，但这个过程会将星辉矿内的星能吸走然后变成原版的铁矿，但是可以通过吸收星能的办法重新转化为星辉矿。"
+			]
+			dependencies: ["0000000000000BD1"]
+			id: "0000000000000BCF"
+			tasks: [{
+				id: "0000000000000BE1"
+				type: "item"
+				item: {
+					id: "astralsorcery:celestial_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C58"
+				type: "command"
+				title: "传说星辉魔法战利品箱"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "水晶簇"
+			icon: {
+				id: "astralsorcery:celestial_crystal_cluster"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+					Damage: 4
+				}
+			}
+			x: 1.0d
+			y: -9.0d
+			description: [
+				"水晶石的分裂行为常被用于制作成其他类型的水晶，即将部分属性短暂分开并重新组合。"
+				""
+				"分裂是需要通过星辉锭切削工具进行的，如前面所述，可能会导致部分属性更低。为了减少属性降低幅度，可以先尝试将水晶石浸泡在星能液中，可以增加属性上限。"
+				""
+				"在使用星辉锭切削工具之前，给工具附魔“时运”和“耐久”或许对切削工具很有用。"
+				""
+				"一旦分离出所需要的属性，就可以将水晶石丢入星能液中，让星能液完全地融入到水晶石中。"
+				""
+				"但这过程也不是必定成功的，水晶石上保存的属性越多越有可能失败。"
+				""
+				"因此，如果想制作出“完美”的水晶石，就需要源源不断地耐心，将最好的属性留给那些最能从中受益的东西，例如：某些多方块结构或者水晶工具。"
+				""
+				"最后，将任何觉得属性不好的水晶石都能与星尘重新生存新的水晶簇，由此方法产生的水晶石都能重新获得一套随机的新属性。"
+			]
+			dependencies: [
+				"0000000000000BB1"
+				"0000000000000BAE"
+			]
+			min_width: 300
+			id: "0000000000000BD1"
+			tasks: [{
+				id: "0000000000000BD2"
+				type: "checkmark"
+				title: "水晶石的分裂和组合"
+			}]
+			rewards: [{
+				id: "0000000000000C57"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "天辉星门"
+			icon: {
+				id: "astralsorcery:celestial_gateway"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+			x: 4.0d
+			y: -6.0d
+			subtitle: "不愉快地像喝醉了一样"
+			description: [
+				"“最近，这个毛球自作主张地试图喂我，它一定认为我完全不懂得照顾自己。"
+				""
+				"然而，今天当她送给我一只死蟾蜍时，确实让人有些吃惊，几天的路程都没有这种物种，她很敏捷，但没有那么快。"
+				""
+				"我自告奋勇地在几天内密切关注着她，果然，在不吃几顿饭的情况下，她走到附近的一个基座上，消失了。"
+				""
+				"跟着她穿过大门，发现了她的蟾蜍的来源......一个充斥着蟾蜍的沼泽。”"
+				"________________________________"
+				""
+				"建立两个或者多个这样的多方块结构，可以跨纬度跨距离地传送。"
+				""
+				"注意：在你的“building_gadgets_patterns”文件内提供了大量的多方块结构蓝图，可以去使用复制粘贴小帮手或者蓝图加农炮来完成建造。"
+			]
+			dependencies: ["0000000000000B8A"]
+			id: "0000000000000BD3"
+			tasks: [
+				{
+					id: "0000000000000BD4"
+					type: "item"
+					item: {
+						id: "astralsorcery:celestial_gateway"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "0000000000000C1D"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 20L
+				}
+				{
+					id: "0000000000000C1E"
+					type: "item"
+					item: "astralsorcery:marble_engraved"
+					count: 4L
+				}
+				{
+					id: "0000000000000C1F"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 4L
+				}
+				{
+					id: "0000000000000C20"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 25L
+				}
+			]
+			rewards: [
+				{
+					id: "0000000000000C21"
+					type: "item"
+					title: "天辉星门"
+					item: {
+						id: "astralsorcery:celestial_gateway"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "0000000000000C5D"
+					type: "command"
+					title: "拾荒者快乐包"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: -5.5d
+			description: [
+				"“束缚在每个星座上的力量似乎与传统的魔法有着密切的联系，这让我想知道上述魔法的真正力量来源在哪里，在天堂的某个地方？"
+				""
+				"尽管如此，我在精心准备的玻璃板上进行的蚀刻实验已开始取得成果。与村民们喜欢的迷人的桌子相比，这些玻璃板给人以某种控制结果的感觉。”"
+				"________________________________"
+				""
+				"直接在群星映射台中队装备进行附魔可以增加装备的附魔，能提高伤害，增强护甲或者其他类型效果。"
+				""
+				"在《星芒宝典》中记录了每个星座所能提供的附魔，强烈建议多次实验。"
+			]
+			dependencies: ["0000000000000B7B"]
+			id: "0000000000000BD5"
+			tasks: [{
+				id: "0000000000000BD6"
+				type: "item"
+				item: "astralsorcery:refraction_table"
+			}]
+			rewards: [
+				{
+					id: "0000000000000C2D"
+					type: "item"
+					title: "注星玻璃"
+					item: {
+						id: "astralsorcery:infused_glass"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000C47"
+					type: "command"
+					title: "史诗星辉魔法战利品箱"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -6.5d
+			description: [
+				"像水晶透镜一样，水晶棱镜可以扩大光束的范围，同时还允许光束分散到多个区块中，这对于某些要求特别有用，例如：农田。"
+				""
+				"水晶棱镜也能通过使用彩色透镜进行更改，例如：使用具有催熟功能的透镜可以同时催熟多个作物。"
+			]
+			dependencies: ["0000000000000BBD"]
+			id: "0000000000000BD9"
+			tasks: [{
+				id: "0000000000000BDA"
+				type: "item"
+				item: {
+					id: "astralsorcery:prism"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C5C"
+				type: "command"
+				title: "史诗星辉魔法战利品箱"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			description: [
+				"“我匆匆忙忙地跟着毛球进入附身祭坛，让非攻座的刺眼光芒集中在我身上，我觉得这很......令人不安。不过，毛球似乎已经适应了这里，并以当地的老鼠为食。"
+				""
+				"也许有别星座的天赋更适合我....但是我发现只需要在夜晚等待星座出现，我就能与该星座产生共鸣。”"
+				"________________________________"
+				""
+				"选的不好？想重新选择个星座？"
+				""
+				"使用更替之星会重置与该星座的经验和等级。"
+				""
+				"只需要手持更替之星，然后长按鼠标右键，等待片刻就生效了。"
+			]
+			dependencies: ["0000000000000B8E"]
+			id: "0000000000000C24"
+			tasks: [{
+				id: "0000000000000C25"
+				type: "item"
+				item: "astralsorcery:shifting_star"
+			}]
+			rewards: [{
+				id: "0000000000000C4F"
+				type: "command"
+				title: "史诗星辉魔法战利品箱"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			description: [
+				"“我的研究使我达到了制作一个漂亮的小饰品的地步，从所有的迹象来看，它应该通过将星能聚焦到传统的魔法中来增强它们。"
+				""
+				"然而，这个过程似乎很微妙。我相信，在我工作的时候，用一些音乐来分散毛球的注意力是很谨慎的。”"
+				"________________________________"
+				""
+				"每一个璀璨棱镜都会随机选择一些附魔，直接装备到饰品栏可增强装备或者工具上的该附魔。如果觉得附魔不是自己想要的，可以使用璀璨棱镜再次合成，就能再次随机获得一些附魔。"
+				""
+				"你知道吗？猫咪喜欢果酱。来吧，让毛球享受一下她的果酱吧!"
+			]
+			dependencies: ["0000000000000C24"]
+			id: "0000000000000C26"
+			tasks: [{
+				id: "0000000000000C27"
+				type: "item"
+				item: {
+					id: "astralsorcery:enchantment_amulet"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0000000000000C2B"
+					type: "item"
+					title: "唱片机"
+					item: "minecraft:jukebox"
+				}
+				{
+					id: "0000000000000C2C"
+					type: "item"
+					title: "音乐唱片"
+					item: "minecraft:music_disc_pigstep"
+				}
+				{
+					id: "0000000000000C50"
+					type: "command"
+					title: "传说星辉魔法战利品箱"
+					icon: "kubejs:legendary_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "灿芒之星"
+			x: 5.0d
+			y: -2.0d
+			description: [
+				"灿芒之星的用途与更替之星类似，但是灿芒之星由于与星座已经产生共鸣，所以会保留目前获得的经验和等级。"
+				""
+				"使用灿芒之星后会重置选择的天赋，等级和经验会被保留。然而，你的星座共鸣会与该灿芒之星一样。"
+			]
+			dependencies: ["0000000000000C24"]
+			id: "0000000000000C28"
+			tasks: [{
+				id: "0000000000000C2A"
+				type: "item"
+				title: "任意灿芒之星"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "astralsorcery:stars/irradiant"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C4E"
+				type: "command"
+				title: "传说星辉魔法战利品箱"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary"
+				player_command: false
+			}]
+		}
+	]
+}
