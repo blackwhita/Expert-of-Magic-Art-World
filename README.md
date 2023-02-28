@@ -27,5 +27,5 @@ XNET，极其简短的自动化，用一根导线就能完成其他mod十几根�
 有bug可以往issues发布
 
 ## 图片
-![image](https://user-images.githubusercontent.com/74761160/221765973-778b9438-c187-4a01-8b70-8a4d383cdaec.png)
+![20230301002946](https://user-images.githubusercontent.com/55902963/221928479-5edd28c4-5f50-41ec-ba82-fc693bdaef57.png)
 
