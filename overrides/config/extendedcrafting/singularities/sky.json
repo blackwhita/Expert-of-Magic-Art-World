@@ -1,0 +1,10 @@
+{
+    "name": "Sky",
+    "colors": [
+      "87CEEB",
+      "00BFFF"
+    ],
+    "ingredient": {
+      "tag": "forge:ingots/sky"
+    }
+  }

@@ -1,0 +1,10 @@
+{
+    "name": "Lesser Soul",
+    "colors": [
+      "EE82EE",
+      "EE82EE"
+    ],
+    "ingredient": {
+      "item": "eidolon:lesser_soul_gem"
+    }
+  }

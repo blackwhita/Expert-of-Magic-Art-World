@@ -1,0 +1,10 @@
+{
+    "name": "Arcane Gold",
+    "colors": [
+      "F4A460",
+      "CD853F"
+    ],
+    "ingredient": {
+      "item": "eidolon:arcane_gold_ingot"
+    }
+  }

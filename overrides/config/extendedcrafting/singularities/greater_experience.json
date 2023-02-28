@@ -1,0 +1,10 @@
+{
+    "name": "Greater Experience",
+    "colors": [
+      "7FFF00",
+      "7FFF00"
+    ],
+    "ingredient": {
+      "item": "ars_nouveau:greater_experience_gem"
+    }
+  }
