@@ -1,0 +1,30 @@
+{
+  "flower": "all",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 800,
+  "traits":["can_swim"],
+  "baseLayerTexture": "mod/mekanism/refobsidian_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#4F4267",
+    "modelType": "ORE"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "mekanism:ingot_refined_obsidian"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "mekanism:ingot_refined_obsidian",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

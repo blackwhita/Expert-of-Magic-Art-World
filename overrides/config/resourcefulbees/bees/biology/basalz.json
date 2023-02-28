@@ -1,0 +1,30 @@
+{
+  "flower": "tag:cobblestone",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 700,
+  "traits":["can_swim"],
+  "baseLayerTexture": "biology/basalz_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#383C42",
+    "modelType": "MUSHROOM"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "thermal:basalz_rod"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "thermal:basalz_rod",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

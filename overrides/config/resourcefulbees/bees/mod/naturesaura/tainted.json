@@ -1,0 +1,20 @@
+{
+    "flower": "tag:minecraft:flowers",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "mod/naturesaura/tainted",
+    "ColorData": {
+        "honeycombColor": "#cc6d3d"
+    },
+    "MutationData": {"hasMutation": false},
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "naturesaura:tainted_gold",
+        "mainOutputWeight": 0.5
+      },
+    "SpawnData": {"canSpawnInWorld": false},
+    "BreedData": {"isBreedable": false},
+    "TraitData": {"hasTraits": true}
+}
