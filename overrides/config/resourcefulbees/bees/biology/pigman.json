@@ -1,0 +1,30 @@
+{
+  "flower": "minecraft:gold_block",
+  "maxTimeInHive": 1000,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "pigman/pigman_bee",
+  "traits": ["nether", "pigman", "can_swim"],
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#885956"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:gold_nugget"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false,
+    "lightLevel": "NIGHT"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "minecraft:gold_nugget",
+    "feedAmount": 9
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

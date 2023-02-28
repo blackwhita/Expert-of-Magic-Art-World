@@ -1,0 +1,43 @@
+{
+    "type": "minecraft:overworld",
+    "generator": {
+        "biome_source": {
+            "type": "ftbstructures:island_grid",
+            "regionRadius": 4,
+            "islandBiome": "minecraft:deep_warm_ocean",
+            "biomes": [
+                {
+                    "biome": "minecraft:warm_ocean",
+                    "distance": 100
+                },
+                {
+                    "biome": "minecraft:lukewarm_ocean",
+                    "distance": 400
+                },
+                {
+                    "biome": "minecraft:deep_lukewarm_ocean",
+                    "distance": 700
+                },
+                {
+                    "biome": "minecraft:deep_ocean",
+                    "distance": 1000
+                },
+                {
+                    "biome": "minecraft:ocean",
+                    "distance": 1300
+                },
+                {
+                    "biome": "minecraft:cold_ocean",
+                    "distance": 1600
+                },
+                {
+                    "biome": "minecraft:deep_cold_ocean",
+                    "distance": 1900
+                }
+            ]
+        },
+        "seed": 0,
+        "settings": "minecraft:overworld",
+        "type": "minecraft:noise"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "flower": "minecraft:lectern",
+    "creator": "NizBot",
+    "lore": "A geeky bee, prone to pedantry.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 6000,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "special/spelling",
+    "ColorData": {
+        "honeycombColor": "#905e43",
+        "modelType": "VILLAGER"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:book",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "minecraft:paper",
+        "secondaryOutputWeight": 0.8,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "minecraft:experience_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:bookshelf",
+        "feedAmount": 4,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

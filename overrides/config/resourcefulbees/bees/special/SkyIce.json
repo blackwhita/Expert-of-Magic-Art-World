@@ -1,0 +1,40 @@
+{
+  "flower": "bloodmagic:life_essence_block",
+  "loreColor": "#AA0000",
+  "maxTimeInHive": 6000,
+  "hasHoneycomb": true,
+  "traits": ["can_swim","nether"],
+  "baseLayerTexture": "mod/blood_magic/skyice",
+  "ColorData": {
+    "modelType": "QUEEN"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "bloodmagic:life_essence_bucket",
+    "mainOutputWeight": 0.02
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:overworld",
+    "biomeBlacklist": "tag:forest",
+    "spawnWeight": 1,
+    "minGroupSize": 2,
+    "maxGroupSize": 4
+  },
+  "BreedData": {
+    "isBreedable": false
+  },
+  "CombatData": {
+    "isPassive": true,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 500000
+
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

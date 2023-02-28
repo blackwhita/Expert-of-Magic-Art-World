@@ -1,0 +1,18 @@
+{
+    "item.occultism.ritual_dummy.craft_thermal.machine_frame":"craft_thermal.machine_frame",
+    "item.occultism.ritual_dummy.craft_botania.runic_altar":"craft_botania.runic_altar",
+    "item.occultism.ritual_dummy.craft_botania.brewery":"craft_botania.brewery",
+    "item.occultism.ritual_dummy.craft_botania.apothecary_default":"craft_botania.apothecary_default",
+    "item.occultism.ritual_dummy.craft_botania.mana_spreader":"craft_botania.mana_spreader",
+    "item.occultism.ritual_dummy.craft_botania.mana_pool":"craft_botania.mana_pool",
+    "item.occultism.ritual_dummy.craft_industrialforegoing.dissolution_chamber":"craft_industrialforegoing.dissolution_chamber",
+    "item.occultism.ritual_dummy.craft_bloodmagic.incensealtar":"craft_bloodmagic.incensealtar",
+    "item.occultism.ritual_dummy.craft_bloodmagic.altar":"craft_bloodmagic.altar",
+    "item.occultism.ritual_dummy.craft_bloodmagic.sacrificialdagger":"craft_bloodmagic.sacrificialdagger",
+    "item.occultism.ritual_dummy.craft_industrialforegoing.fluid_laser_base":"craft_industrialforegoing.fluid_laser_base",
+    "item.occultism.ritual_dummy.craft_industrialforegoing.ore_laser_base":"craft_industrialforegoing.ore_laser_base",
+    "item.occultism.ritual_dummy.craft_botania.alfheim_portal":"craft_botania.alfheim_portal",
+    "item.occultism.ritual_dummy.craft_mekanism.ultimate_control_circuit":"craft_mekanism.ultimate_control_circuit",
+    "item.occultism.ritual_dummy.craft_astralsorcery.altar_discovery":"craft_astralsorcery.altar_discovery",
+    "item.occultism.ritual_dummy.craft_astralsorcery.attunement_altar":"craft_astralsorcery.attunement_altar"
+}

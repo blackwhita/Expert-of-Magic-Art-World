@@ -1,0 +1,10 @@
+{
+    "name": "Si",
+    "colors": [
+      "8B008B",
+      "8B008B"
+    ],
+    "ingredient": {
+      "item": "woot:si_ingot"
+    }
+  }

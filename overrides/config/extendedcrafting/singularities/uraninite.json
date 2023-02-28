@@ -1,0 +1,10 @@
+{
+  "name": "Uraninite",
+  "colors": [
+    "00730a",
+    "00fc1a"
+  ],
+  "ingredient": {
+    "tag": "forge:ingots/uraninite"
+  }
+}

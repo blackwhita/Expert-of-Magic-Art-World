@@ -1,0 +1,31 @@
+{
+  "flower": "all",
+  "baseLayerTexture":"block/andesite_bee",
+  "hasHoneycomb": true,
+  "traits":["can_swim"],
+  "maxTimeInHive": 600,
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#8A8A8E"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:andesite"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "cobblestone",
+    "parent2": "diorite",
+    "feedItem": "minecraft:andesite",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

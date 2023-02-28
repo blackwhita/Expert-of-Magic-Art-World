@@ -1,0 +1,16 @@
+{
+  "advancements.recyclingisalwaysgood.descr": "制作一个回收站",
+  "effect.irradiated": "辐射",
+  "advancements.whats_t_rhis.title": "这个是什么",
+  "advancements.replication_advancement.title": "复制",
+  "gamerule.everythingCanBeReplicated": "任何东西都可以在复制器中复制",
+  "gamerule.everythingCanBeReplicated.description": "任何东西都可以在复制器中复制",
+  "advancements.too_much_matter.descr": "制作一个物质分析器",
+  "advancements.replication_advancement.descr": "制作一个复制器",
+  "advancements.astrange_partof_matter.title": "A §o奇怪的物质部分",
+  "advancements.whats_t_rhis.descr": "制作一个扫描仪",
+  "itemGroup.tabmekanism_matter": "通用机械:物质附加",
+  "advancements.astrange_partof_matter.descr": "放置一个批量制造器",
+  "advancements.recyclingisalwaysgood.title": "回收总是好的!",
+  "advancements.too_much_matter.title": "物质太多"
+}

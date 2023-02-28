@@ -1,0 +1,67 @@
+{
+    "scale": 0.1,
+    "effects": {
+        "mood_sound": {
+            "sound": "minecraft:ambient.cave",
+            "tick_delay": 6000,
+            "block_search_extent": 8,
+            "offset": 2.0
+        },
+        "sky_color": 8103167,
+        "fog_color": 12638463,
+        "water_color": 4566514,
+        "water_fog_color": 267827
+    },
+    "surface_builder": "minecraft:ocean_sand",
+    "carvers": {
+        "liquid": ["minecraft:underwater_canyon", "minecraft:underwater_cave"]
+    },
+    "features": [
+        [],
+        [],
+        [],
+        ["minecraft:monster_room"],
+        [],
+        [],
+        [
+            "minecraft:ore_dirt",
+            "minecraft:ore_gravel",
+            "minecraft:ore_granite",
+            "minecraft:ore_diorite",
+            "minecraft:ore_andesite",
+            "minecraft:disk_sand",
+            "minecraft:disk_clay",
+            "minecraft:disk_gravel"
+        ],
+        [],
+        [
+            "minecraft:trees_water",
+            "minecraft:flower_default",
+            "minecraft:patch_grass_badlands",
+            "minecraft:brown_mushroom_normal",
+            "minecraft:red_mushroom_normal",
+            "minecraft:patch_sugar_cane",
+            "minecraft:patch_pumpkin",
+            "minecraft:spring_water",
+            "minecraft:seagrass_warm",
+            "minecraft:kelp_warm"
+        ],
+        ["minecraft:freeze_top_layer"]
+    ],
+    "starts": [],
+    "spawners": {
+        "monster": [],
+        "creature": [],
+        "ambient": [],
+        "water_creature": [],
+        "water_ambient": [],
+        "misc": []
+    },
+    "spawn_costs": {},
+    "player_spawn_friendly": false,
+    "precipitation": "rain",
+    "temperature": 0.5,
+    "downfall": 0.5,
+    "category": "ocean",
+    "depth": -1.0
+}

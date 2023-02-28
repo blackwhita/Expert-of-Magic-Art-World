@@ -1,0 +1,32 @@
+{
+    "controllerId": "blast_starlight",
+    "name": "Blast_starlight",
+    "textureOverride": "astralsorcery:block/marble_raw",
+    "ports": [
+      {
+        "type": "masterfulmachinery:items",
+        "name": "Item",
+        "id": "item",
+        "data": {
+          "rows": 3,
+          "columns": 3
+        }
+      },
+      {
+        "type": "masterfulmachinery:fluids",
+        "name": "Fluid",
+        "id": "fluid",
+        "data": {
+          "capacity": 10000
+        }
+      },
+      {
+        "type": "masterfulmachinery:astral_starlight",
+        "name": "Starlight",
+        "id": "starlight",
+        "data": {
+          "capacity": 10000
+        }
+      }
+    ]
+  }

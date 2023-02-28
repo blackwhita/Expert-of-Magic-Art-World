@@ -1,0 +1,29 @@
+{
+  "flower": "all",
+  "baseLayerTexture":"block/gravel_bee",
+  "hasHoneycomb": true,
+  "traits":["can_swim"],
+  "maxTimeInHive": 600,
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#89817E"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:gravel"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "minecraft:gravel",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

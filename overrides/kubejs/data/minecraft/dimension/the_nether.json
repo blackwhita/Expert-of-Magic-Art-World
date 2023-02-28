@@ -1,0 +1,39 @@
+{
+    "type": "minecraft:the_nether",
+    "generator": {
+        "type": "kubejs:flat",
+        "settings": {
+            "structures": {
+                "structures": {
+                    "minecraft:fortress": {
+                        "spacing": 20,
+                        "separation": 6,
+                        "salt": 10387312
+                    },
+                    "minecraft:bastion_remnant": {
+                        "spacing": 32,
+                        "separation": 8,
+                        "salt": 10387312
+                    },
+                    "ftbstructures:nether": {
+                        "spacing": 6,
+                        "separation": 2,
+                        "salt": 495849
+                    }
+                }
+            },
+            "features": true,
+            "layers": [
+                {
+                    "block": "minecraft:bedrock",
+                    "height": 1
+                },
+                {
+                    "block": "minecraft:lava",
+                    "height": 50
+                }
+            ],
+            "biome": "minecraft:nether_wastes"
+        }
+    }
+}
