@@ -1,0 +1,29 @@
+{
+  "flower": "all",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 700,
+  "traits":["can_swim"],
+  "baseLayerTexture": "mineral/silicon_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#655D60"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "emendatusenigmatica:silicon_gem"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "emendatusenigmatica:silicon_gem",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

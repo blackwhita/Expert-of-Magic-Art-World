@@ -1,0 +1,42 @@
+{
+    "flower": "minecraft:acacia_log",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "Using Industrial processing, dissolve 2 blocks Iron Honey,\n2 Blocks Iron Honeycombs,\n2 Pink Slime ingots.\nPour into a Bee Jar and insert an Advanced Machine Frame.\nSolidify in Pink Slime.",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "mod/industrialforegoing/industrious",
+    "ColorData": {
+        "honeycombColor": "#ce7dce"
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "industrialforegoing:latex",
+        "mainOutputWeight": 0.2,
+        "mainOutputCount": 250,
+        "hasFluidOutput": true,
+
+        "secondaryOutput": "industrialforegoing:pink_slime",
+        "secondaryOutputWeight": 0.05,
+        "secondaryOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:plastic",
+        "feedAmount": 1
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

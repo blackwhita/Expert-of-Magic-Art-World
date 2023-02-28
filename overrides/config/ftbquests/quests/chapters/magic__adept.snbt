@@ -1,0 +1,257 @@
+{
+	id: "1E033FC07DE39E5E"
+	group: "34B7FB260B6AEB81"
+	order_index: 6
+	filename: "magic__adept"
+	title: "魔法-逐渐适应"
+	icon: "botania:runic_altar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "4EF6114189E1C863"
+			tasks: [{
+				id: "062BFBA4645AAE50"
+				type: "item"
+				item: "eidolon:pewter_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["4EF6114189E1C863"]
+			id: "1D064FDA846ED444"
+			tasks: [{
+				id: "7D9A04BF85673CE0"
+				type: "item"
+				item: "eidolon:worktable"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["1D064FDA846ED444"]
+			id: "012DD40DE2090A6A"
+			tasks: [{
+				id: "2F31F78195829B07"
+				type: "item"
+				item: "eidolon:brazier"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["1D064FDA846ED444"]
+			id: "7D7BB84D62F9749F"
+			tasks: [{
+				id: "52A03EBC5ED4A5A4"
+				type: "item"
+				item: "eidolon:crucible"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			id: "783C9D83B851A34F"
+			tasks: [{
+				id: "1B29FFFD66020934"
+				type: "item"
+				item: "emendatusenigmatica:arcane_gem"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.5d
+			dependencies: ["7D7BB84D62F9749F"]
+			id: "1AE3394B9641CCC7"
+			tasks: [{
+				id: "68C22C15A880260B"
+				type: "item"
+				item: "eidolon:arcane_gold_ingot"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["783C9D83B851A34F"]
+			id: "75C74D1C8CD2508B"
+			tasks: [
+				{
+					id: "7E63BBA0A73DCD11"
+					type: "item"
+					item: "ars_nouveau:enchanting_apparatus"
+				}
+				{
+					id: "54383104245C72F4"
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+					count: 8L
+				}
+				{
+					id: "2DBD9AEFEA70A348"
+					type: "item"
+					item: "ars_nouveau:arcane_core"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["75C74D1C8CD2508B"]
+			id: "425488B1FE02EF14"
+			tasks: [{
+				id: "750EB9FD7949516B"
+				type: "item"
+				item: "ars_nouveau:ritual"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			dependencies: ["783C9D83B851A34F"]
+			id: "57ABBFEFCFAEABF5"
+			tasks: [{
+				id: "194A36DEA8FA3338"
+				type: "item"
+				item: "ars_nouveau:mana_jar"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["012DD40DE2090A6A"]
+			id: "1965B1CC679D4FB9"
+			tasks: [{
+				id: "7A4BA2D9B70014A3"
+				type: "item"
+				item: "eidolon:soul_shard"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			dependencies: ["012DD40DE2090A6A"]
+			id: "77759161BBCF4C86"
+			tasks: [{
+				id: "520BF86F6B20B828"
+				type: "item"
+				item: {
+					id: "eidolon:sapping_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			dependencies: ["012DD40DE2090A6A"]
+			id: "6EA7DC91765AD37E"
+			tasks: [{
+				id: "5B76AFF262F99C3D"
+				type: "item"
+				item: "eidolon:lesser_soul_gem"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			dependencies: ["1965B1CC679D4FB9"]
+			id: "21EDA39DD223F157"
+			tasks: [{
+				id: "772041341D886FAE"
+				type: "item"
+				item: "eidolon:shadow_gem"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 7.0d
+			description: ["点燃它，召唤火焰"]
+			id: "21047667F6E16932"
+			tasks: [{
+				id: "5FC86CAE9344BC36"
+				type: "item"
+				item: "occultism:datura"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 7.0d
+			dependencies: ["21047667F6E16932"]
+			id: "0B622C2D50C83967"
+			tasks: [{
+				id: "391122AA97B6A4B3"
+				type: "item"
+				item: "occultism:chalk_white_impure"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 8.5d
+			shape: "square"
+			dependencies: ["386D5D10A13CBBDA"]
+			id: "79FDF7C7CCDBB128"
+			tasks: [{
+				id: "04C9AF8214CB3E0E"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 7.0d
+			shape: "square"
+			dependencies: [
+				"6EA7DC91765AD37E"
+				"386D5D10A13CBBDA"
+			]
+			id: "532410B449BE8D28"
+			tasks: [{
+				id: "749C048BEC2A01DC"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 7.0d
+			dependencies: [
+				"425488B1FE02EF14"
+				"0B622C2D50C83967"
+			]
+			id: "386D5D10A13CBBDA"
+			tasks: [{
+				id: "716226DDB3CAE94C"
+				type: "item"
+				item: "occultism:golden_sacrificial_bowl"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 4.5d
+			dependencies: ["425488B1FE02EF14"]
+			id: "26C94D6BB07D13E6"
+			tasks: [{
+				id: "36EBEDEBBA3448FC"
+				type: "item"
+				item: "occultism:chalk_gold_impure"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			dependencies: ["77759161BBCF4C86"]
+			id: "5F935BFF7C2D8D07"
+			tasks: [{
+				id: "712446D8DBBED339"
+				type: "item"
+				item: "bloodmagic:daggerofsacrifice"
+			}]
+		}
+	]
+}

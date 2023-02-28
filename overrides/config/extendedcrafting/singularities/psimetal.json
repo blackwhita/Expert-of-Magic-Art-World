@@ -1,0 +1,10 @@
+{
+    "name": "Psimetal",
+    "colors": [
+      "7B68EE",
+      "7B68EE"
+    ],
+    "ingredient": {
+      "tag": "forge:ingots/psimetal"
+    }
+  }

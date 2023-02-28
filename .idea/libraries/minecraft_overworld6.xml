@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="minecraft_overworld6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/overrides/local/ftbchunks/data/52460c51-f5f1-4930-b525-efc44d19196f/minecraft_overworld/0EA60-0EA60.zip!/" />
+      <root url="jar://$PROJECT_DIR$/overrides/local/ftbchunks/data/52460c51-f5f1-4930-b525-efc44d19196f/minecraft_overworld/0EA5F-0EA5F.zip!/" />
+      <root url="jar://$PROJECT_DIR$/overrides/local/ftbchunks/data/52460c51-f5f1-4930-b525-efc44d19196f/minecraft_overworld/0EA5F-0EA60.zip!/" />
+      <root url="jar://$PROJECT_DIR$/overrides/local/ftbchunks/data/52460c51-f5f1-4930-b525-efc44d19196f/minecraft_overworld/0EA60-0EA5F.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

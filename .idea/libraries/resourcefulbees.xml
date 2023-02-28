@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="resourcefulbees">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/overrides/config/resourcefulbees/resourcefulbees.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

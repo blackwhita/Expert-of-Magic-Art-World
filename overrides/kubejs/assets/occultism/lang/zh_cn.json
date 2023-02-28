@@ -1,0 +1,18 @@
+{
+    "item.occultism.ritual_dummy.craft_thermal.machine_frame":"仪式:合成机器框架",
+    "item.occultism.ritual_dummy.craft_botania.runic_altar":"仪式:合成符文祭坛",
+    "item.occultism.ritual_dummy.craft_botania.brewery":"仪式:合成植物酿造台",
+    "item.occultism.ritual_dummy.craft_botania.apothecary_default":"仪式:合成花药台",
+    "item.occultism.ritual_dummy.craft_botania.mana_spreader":"仪式:合成魔力发射器",
+    "item.occultism.ritual_dummy.craft_botania.mana_pool":"仪式:合成魔力池",
+    "item.occultism.ritual_dummy.craft_industrialforegoing.dissolution_chamber":"仪式:合成化学溶解室",
+    "item.occultism.ritual_dummy.craft_bloodmagic.incensealtar":"仪式:合成熏香祭坛",
+    "item.occultism.ritual_dummy.craft_bloodmagic.altar":"仪式:合成血祭坛",
+    "item.occultism.ritual_dummy.craft_bloodmagic.sacrificialdagger":"仪式:合成牺牲匕首",
+    "item.occultism.ritual_dummy.craft_industrialforegoing.fluid_laser_base":"仪式:合成流体镭射钻基座",
+    "item.occultism.ritual_dummy.craft_industrialforegoing.ore_laser_base":"仪式:合成镭射钻基座",
+    "item.occultism.ritual_dummy.craft_botania.alfheim_portal":"仪式:合成精灵门核心",
+    "item.occultism.ritual_dummy.craft_mekanism.ultimate_control_circuit":"仪式:合成终极控制电路",
+    "item.occultism.ritual_dummy.craft_astralsorcery.altar_discovery":"仪式:合成星辉合成台",
+    "item.occultism.ritual_dummy.craft_astralsorcery.attunement_altar":"仪式:合成共鸣祭坛"
+}

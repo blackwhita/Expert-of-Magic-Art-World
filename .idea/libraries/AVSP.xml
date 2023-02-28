@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AVSP">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/overrides/kubejs/server_scripts/AVSP/AVSP.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

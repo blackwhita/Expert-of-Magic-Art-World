@@ -1,0 +1,29 @@
+{
+  "flower": "thermal:crude_oil",
+  "baseLayerTexture":"mineral/bituminoussand_bee",
+  "hasHoneycomb": true,
+  "traits":["can_swim"],
+  "maxTimeInHive": 700,
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#1E1B1A"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "thermal:oil_sand"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "thermal:bitumen",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "flower": "minecraft:water",
+  "baseLayerTexture":"items/fish_bee",
+  "hasHoneycomb": true,
+  "traits":["can_swim"],
+  "maxTimeInHive": 600,
+  "ColorData": {
+      "honeycombColor":"#FF6A00",
+      "isBeeColored": false,
+      "modelType": "ORE"
+  },
+  "MutationData": {
+      "hasMutation": false
+  },
+  "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:salmon"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "minecraft:salmon",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

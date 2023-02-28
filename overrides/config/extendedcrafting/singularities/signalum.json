@@ -1,0 +1,10 @@
+{
+    "name": "Signalum",
+    "colors": [
+      "FFA500",
+      "FFA500"
+    ],
+    "ingredient": {
+      "tag": "forge:ingots/signalum"
+    }
+  }

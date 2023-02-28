@@ -1,0 +1,30 @@
+{
+  "flower": "all",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 700,
+  "traits":["can_swim"],
+  "baseLayerTexture": "mineral/tin_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#7BA2A6",
+    "modelType": "ORE"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "emendatusenigmatica:tin_ingot"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "emendatusenigmatica:tin_ingot",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "flower": "all",
+  "baseLayerTexture":"block/marble_bee",
+  "hasHoneycomb": true,
+  "traits":["can_swim"],
+  "maxTimeInHive": 700,
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#E4E4E4"
+  },
+  "MutationData": {
+    "hasMutation": false
+},
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "astralsorcery:marble_raw"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "astralsorcery:marble_raw",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

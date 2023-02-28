@@ -1,0 +1,30 @@
+{
+  "flower": "minecraft:warped_roots",
+  "baseLayerTexture":"block/nether_bee",
+  "hasHoneycomb": true,
+  "traits":["can_swim", "nether"],
+  "maxTimeInHive": 700,
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#511515"
+  },
+  "MutationData": {
+    "hasMutation": false
+},
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:netherrack",
+    "secondaryOutput": "minecraft:soul_sand"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "minecraft:netherrack",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}
