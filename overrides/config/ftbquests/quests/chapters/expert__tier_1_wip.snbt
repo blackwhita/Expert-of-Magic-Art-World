@@ -232,6 +232,12 @@
 				type: "item"
 				item: "immersiveengineering:heavy_engineering"
 			}]
+			rewards: [{
+				id: "4DE2B6112FC2C3B5"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+				count: 32
+			}]
 		}
 		{
 			x: -2.5d

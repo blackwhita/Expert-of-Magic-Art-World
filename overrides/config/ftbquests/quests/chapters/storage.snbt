@@ -99,62 +99,6 @@
 			}]
 		}
 		{
-			icon: "mekanism:basic_bin"
-			x: 1.0d
-			y: -10.0d
-			subtitle: "我喜欢一个大的箱柜"
-			description: ["经常被忽略的箱柜非常适合储存数量庞大的物品，它们甚至能够在网络中直接控制它内部的物品。"]
-			dependencies: ["00000000000003FF"]
-			id: "0000000000000407"
-			tasks: [{
-				id: "3635395991201030"
-				type: "item"
-				title: "箱柜"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "mekanism:basic_bin"
-								Count: 1b
-							}
-							{
-								id: "mekanism:advanced_bin"
-								Count: 1b
-							}
-							{
-								id: "mekanism:elite_bin"
-								Count: 1b
-							}
-							{
-								id: "mekanism:ultimate_bin"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "0000000000000A5C"
-					type: "command"
-					title: "农夫快乐包"
-					icon: "kubejs:farmers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-					player_command: false
-				}
-				{
-					id: "0000000000000A6C"
-					type: "command"
-					title: "拾荒者快乐包"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
-				}
-			]
-		}
-		{
 			title: "黑洞存储"
 			x: -0.5d
 			y: -5.0d
@@ -201,31 +145,6 @@
 			}]
 			rewards: [{
 				id: "0000000000000A5E"
-				type: "command"
-				title: "农夫快乐包"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
-			}]
-		}
-		{
-			title: "在世界上放置物品"
-			icon: "botania:cosmetic_thinking_hand"
-			x: -3.5d
-			y: -5.0d
-			description: [
-				"想在一个方便的地方放置你的锻造锤吗？厌倦了为了一个齿轮模具翻箱倒柜吗？不如将它们放置在世界上吧！"
-				""
-				"Plonk模组允许你将任何物品放置到世界上，一个方块内最多只能放置4种物品，按P键能够放置，右键取回。"
-			]
-			dependencies: ["00000000000003FF"]
-			id: "000000000000040D"
-			tasks: [{
-				id: "000000000000040E"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "2D1E55B5A92B9F94"
 				type: "command"
 				title: "农夫快乐包"
 				icon: "kubejs:farmers_delight"
@@ -715,7 +634,7 @@
 		{
 			title: "流体"
 			icon: "minecraft:bucket"
-			x: -0.5d
+			x: 1.0d
 			y: -1.5d
 			shape: "gear"
 			subtitle: "你的桶还够吗？"
@@ -800,8 +719,8 @@
 		}
 		{
 			title: "流体储罐（气动工艺）"
-			x: -0.5d
-			y: 1.5d
+			x: 0.0d
+			y: 0.0d
 			description: [
 				"气动工艺的储罐可以设置自动输出（右键放置在世界中的储罐任意的侧面），也能够通过速度升级来提升输出速度。"
 				""
@@ -843,8 +762,8 @@
 		}
 		{
 			title: "流体单元"
-			x: -3.0d
-			y: 0.0d
+			x: -0.5d
+			y: -1.5d
 			description: [
 				"热力系列模组的流体单元可以配置也能够升级，它们的每一侧都能够设置为输入或者输出，会不会自动输出，输出的量也是都能调整的。"
 				""
@@ -877,30 +796,9 @@
 			}]
 		}
 		{
-			title: "液体储罐（机械动力）"
-			x: 1.0d
-			y: 1.0d
-			description: ["机械动力的储罐能够组成一个多方块储罐，关于储罐的更多信息请查看“机械动力”章节。"]
-			dependencies: ["568DC3ECDB943C47"]
-			id: "516772B582C9114A"
-			tasks: [{
-				id: "755A21A9FE7980B4"
-				type: "item"
-				item: "create:fluid_tank"
-			}]
-			rewards: [{
-				id: "72197B3870AE32F2"
-				type: "command"
-				title: "农夫快乐包"
-				icon: "kubejs:farmers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
-				player_command: false
-			}]
-		}
-		{
 			title: "末影蓄水槽"
-			x: -2.0d
-			y: -3.5d
+			x: 0.0d
+			y: -3.0d
 			description: [
 				"末影蓄水槽上面的三种颜色代表频道，当两个蓄水槽频道一样时能够跨纬度运输流体，频道的颜色可以由原版的16种颜色来自定义。"
 				""
@@ -930,27 +828,6 @@
 			]
 		}
 		{
-			title: "储罐（RF工具箱）"
-			x: 2.0d
-			y: 0.0d
-			description: ["你的储罐一直不小心进入那些可恶的液体？RG工具箱的储罐自带过滤功能，只需要在内部设置一个白名单，这个储罐就只能进入白名单上的液体。"]
-			dependencies: ["568DC3ECDB943C47"]
-			id: "484A9BB4A5423AF8"
-			tasks: [{
-				id: "3BF2366BB0C0E896"
-				type: "item"
-				item: "rftoolsutility:tank"
-			}]
-			rewards: [{
-				id: "798CE4333D002DC4"
-				type: "command"
-				title: "拾荒者快乐包"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
 			title: "储罐"
 			icon: {
 				id: "tanknull:tank_1"
@@ -959,8 +836,8 @@
 					fluidinv: { }
 				}
 			}
-			x: -0.5d
-			y: -3.5d
+			x: 2.0d
+			y: -3.0d
 			description: [
 				"该储罐存储的液体能够随身携带；它能够收集与放置液体、储存多种液体，甚至能够自动收集周围的液体。"
 				""
@@ -1042,41 +919,8 @@
 			}]
 		}
 		{
-			title: "动态储罐"
-			x: -3.5d
-			y: -1.5d
-			subtitle: "内部更大"
-			description: [
-				"通用机械的动态储罐是一个非常巨大的多方块结构，它能够储存大量的液体，可以安装多个访问端口；最小的结构是3x3x3，最大的为18x18x18，即使是最小的储罐，也能够储存432000（432桶）的液体。"
-				""
-				"建造时请注意不要把多方块结构建在区块边界，因为容易产生bug，但多方块一旦建造完成时，它能够产生红色的粒子效果来证明结构是完整的。"
-			]
-			dependencies: ["568DC3ECDB943C47"]
-			id: "7EB1E018DE90ADCA"
-			tasks: [
-				{
-					id: "6F108555E4895D92"
-					type: "item"
-					item: "mekanism:dynamic_valve"
-					count: 2L
-				}
-				{
-					id: "40EBC06D819585A2"
-					type: "item"
-					item: "mekanism:dynamic_tank"
-					count: 24L
-				}
-			]
-			rewards: [{
-				id: "24BBD9AE9A183012"
-				type: "item"
-				item: "mekanism:structural_glass"
-				count: 8
-			}]
-		}
-		{
-			x: -2.0d
-			y: 1.0d
+			x: 2.0d
+			y: 0.0d
 			description: [
 				"贮液器的工作原理类似于桶，但它能够容纳更多桶的液体,使用V键（默认）能够切换模式，也能够自动为其他液体容器填充液体；按shift右键时可以切换为“充能模式”。"
 				""

@@ -11,8 +11,8 @@
 		{
 			title: "无限的力量"
 			icon: "kubejs:novaextended-extremecircuit-layer0"
-			x: 0.5d
-			y: 2.5d
+			x: 1.5d
+			y: 2.0d
 			subtitle: "无限的宇宙力量！"
 			description: [
 				"终极输导元件可以存储高达1.600.000.000.000 FE，俗称1.6TFE"
@@ -93,8 +93,8 @@
 		}
 		{
 			title: "无穷无尽的熔岩"
-			x: -3.0d
-			y: 0.0d
+			x: -1.5d
+			y: -2.0d
 			description: [
 				"用熔岩填满一个至尊储液罐。"
 				""
@@ -220,8 +220,8 @@
 					}
 				}
 			}
-			x: -3.0d
-			y: 1.0d
+			x: -2.5d
+			y: 0.0d
 			description: [
 				"用水填满一个至尊储液罐。"
 				""
@@ -347,8 +347,8 @@
 					}
 				}
 			}
-			x: -3.0d
-			y: -1.0d
+			x: 1.5d
+			y: -2.0d
 			description: [
 				"用石油填满一个至尊储液罐。"
 				""
@@ -576,51 +576,9 @@
 			}]
 		}
 		{
-			title: "动物"
-			x: 3.0d
-			y: 1.0d
-			subtitle: "宠物和吻"
-			description: [
-				"驯服所有需要驯服的动物！"
-				""
-				"（你可以通过查看“畜牧业”选项卡中的“动物学”来跟踪你的进度）"
-			]
-			dependencies: ["1C6E46EA96373E74"]
-			id: "2AEE1AFA3BC416CE"
-			tasks: [{
-				id: "6550FEDCE5175F8C"
-				type: "advancement"
-				title: "驯服所有可驯服的动物"
-				icon: "farmersdelight:horse_feed"
-				advancement: "enigmatica:husbandry/tame_all_animals"
-				criterion: ""
-			}]
-		}
-		{
-			title: "两个接两个"
-			x: 3.0d
-			y: 0.0d
-			subtitle: "蜜蜂和鸟儿....."
-			description: [
-				"每一只动物都需要繁殖！"
-				""
-				"（你可以通过查看管理选项卡中的“两个接两个”进度来跟踪你的进度）"
-			]
-			dependencies: ["1C6E46EA96373E74"]
-			id: "24ED473C9C545C09"
-			tasks: [{
-				id: "76A9D7B6C6D4C04F"
-				type: "advancement"
-				title: "培育所有可繁殖的动物"
-				icon: "minecraft:golden_carrot"
-				advancement: "minecraft:husbandry/bred_all_animals"
-				criterion: ""
-			}]
-		}
-		{
 			title: "无限工具"
-			x: -0.5d
-			y: 2.5d
+			x: -1.5d
+			y: 2.0d
 			description: [
 				"为了完成这个任务，你必须获得所有无限工具，并将它们升级到神器等级。"
 				""
@@ -985,8 +943,8 @@
 		}
 		{
 			title: "终极土豆"
-			x: 3.0d
-			y: -1.0d
+			x: 2.5d
+			y: 0.0d
 			subtitle: "什么是土豆，宝贝？"
 			description: ["煮土豆，土豆泥，大锅炖土豆！"]
 			dependencies: ["1C6E46EA96373E74"]
@@ -1087,6 +1045,17 @@
 					consume_items: true
 				}
 			]
+			rewards: [{
+				id: "69D5F8CF6AEC5977"
+				type: "item"
+				item: {
+					id: "create:potato_cannon"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 	]
 }

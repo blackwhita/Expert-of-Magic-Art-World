@@ -9,36 +9,6 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "欢迎来到幻梦！"
-			icon: "eidolon:codex"
-			x: 1.5d
-			y: 0.5d
-			shape: "hexagon"
-			subtitle: "另外幻梦的意思是“生者或死者的幻像”"
-			description: [
-				"幻梦是一个专注于祈祷、炼金、献祭和魔法的黑魔法模组！"
-				""
-				"虽然它仍然处于早期的开发阶段，但它目前已经提供了一些很酷的小工具或和小玩具，并且为真正的未来奠定一个坚实的基础。所以你现在在等什么，在其他人加入之前感觉加入把。"
-				""
-				"拿起你的《秘仪教典》，让它指导你在模组的每一步并准备好取悦黑暗君王的准备。"
-				""
-				"~Merlo"
-			]
-			size: 1.5d
-			optional: true
-			id: "0000000000000E80"
-			tasks: [{
-				id: "5BB374740D4295E0"
-				type: "item"
-				item: "eidolon:tattered_cloth"
-			}]
-			rewards: [{
-				id: "5855578CE2117C3E"
-				type: "xp"
-				xp: 100
-			}]
-		}
-		{
 			title: "基础祭坛"
 			icon: "eidolon:wooden_altar"
 			x: 1.5d
@@ -58,18 +28,11 @@
 			dependencies: ["0000000000000E85"]
 			min_width: 300
 			id: "0000000000000E83"
-			tasks: [
-				{
-					id: "0000000000000E84"
-					type: "item"
-					item: "eidolon:stone_altar"
-				}
-				{
-					id: "0000000000000E96"
-					type: "item"
-					item: "eidolon:straw_effigy"
-				}
-			]
+			tasks: [{
+				id: "0000000000000E96"
+				type: "item"
+				item: "eidolon:straw_effigy"
+			}]
 			rewards: [
 				{
 					id: "0000000000000ECE"
@@ -83,6 +46,11 @@
 					type: "item"
 					title: "僵尸头颅"
 					item: "minecraft:zombie_head"
+				}
+				{
+					id: "47D1331CC5B56ABC"
+					type: "item"
+					item: "minecraft:witch_spawn_egg"
 				}
 			]
 		}
@@ -202,8 +170,8 @@
 		{
 			title: "白镴"
 			icon: "eidolon:pewter_ingot"
-			x: -1.5d
-			y: 2.0d
+			x: -0.5d
+			y: 1.5d
 			subtitle: "与布洛克一起战斗吧！"
 			description: [
 				"该模组的许多物品需要一种锡、铁、铅的合金。"
@@ -245,8 +213,8 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: 3.0d
+			x: -2.5d
+			y: 2.5d
 			subtitle: "没有这个就不属于魔法模组了！"
 			description: [
 				"在幻梦中有许多材料都是通过坩埚制作而成的，因此你需要熟练的掌握它。合成一个坩埚并装满水，放在热源上，例如：熔岩或者岩浆块，然后等待坩埚内的水沸腾。"
@@ -257,7 +225,7 @@
 				""
 				"有些配方还需要你搅拌坩埚，你可以在正确的时机右键坩埚来进行搅拌。"
 			]
-			dependencies: ["0000000000000E8E"]
+			dependencies: ["0000000000000E80"]
 			min_width: 300
 			id: "0000000000000E90"
 			tasks: [{
@@ -342,8 +310,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 3.0d
+			x: -0.5d
+			y: 2.5d
 			subtitle: "我觉得它是绿色的！"
 			description: [
 				"在本模组中，大多数魔法物品都需要在比原版工作台中更高级的魔力工作台中合成，所以，请升级你的工作台。"
@@ -563,10 +531,35 @@
 			}]
 		}
 		{
+			icon: "eidolon:stone_altar"
+			x: 1.5d
+			y: 6.5d
+			subtitle: "滚石祭坛"
+			description: [
+				"你将解锁强大的颂歌，但目前只能在石头祭坛上进行，上面有一个长者雕像。"
+				""
+				"这就是你如何解锁该模组的最终符文，“心灵符文”的办法，不幸的是，它目前并没有任何用途，但它可以让你很快的解锁该模组的最终内容。"
+			]
+			dependencies: ["0000000000000E9F"]
+			id: "0000000000000EA1"
+			tasks: [
+				{
+					id: "0000000000000EA2"
+					type: "item"
+					item: "eidolon:stone_altar"
+				}
+				{
+					id: "0000000000000EA3"
+					type: "item"
+					item: "eidolon:unholy_effigy"
+				}
+			]
+		}
+		{
 			title: "炼金术实践！"
 			icon: "eidolon:arcane_gold_ingot"
-			x: -1.5d
-			y: 4.0d
+			x: -2.5d
+			y: 3.5d
 			subtitle: "尽量不要把这个地方烧了，好吗？"
 			description: [
 				"是时候发展一些魔法了！去了解在幻梦中制作魔法所需要的基础炼金材料吧。"
@@ -678,8 +671,8 @@
 		}
 		{
 			title: "大量魔杖"
-			x: -2.5d
-			y: 5.5d
+			x: -2.0d
+			y: 4.5d
 			subtitle: "看看这些粒子效果吧！"
 			description: [
 				"和那些功能强大的魔法模组一样，幻梦也提供了一些比较酷的魔杖来作为远程武器。"
@@ -724,8 +717,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 5.5d
+			x: -1.0d
+			y: 3.5d
 			subtitle: "令人困惑..."
 			description: [
 				"颠倒之镐是一个有趣的工具，它可以被用于采矿，正如名字一样，它与普通的镐子相反。"
@@ -757,7 +750,7 @@
 		}
 		{
 			x: -1.0d
-			y: 6.5d
+			y: 4.5d
 			subtitle: "可控制的附魔"
 			description: [
 				"灵歌附魔台是一种用特殊的方法来为你的工具附魔的设备，但是它只能添加最基础的1级附魔，并消耗灵魂碎片，你可以通过此方法来为工具添加指定的附魔。"
@@ -779,8 +772,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 6.5d
+			x: -1.5d
+			y: 5.5d
 			subtitle: "它很脆弱..."
 			description: ["玻璃之手是所有敢死队的终极玻璃大炮，它能使你的攻击力翻倍但是会让玩家受到的伤害增加五倍，你准备好来接受挑战了吗？"]
 			hide_dependency_lines: true
@@ -799,7 +792,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: 5.5d
 			subtitle: "试试砍柴斧"
 			description: [
@@ -830,21 +823,33 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 7.5d
-			hide_dependency_lines: true
-			dependencies: ["0000000000000EAA"]
-			id: "10C75A1942057600"
+			title: "欢迎来到幻梦！"
+			icon: "eidolon:codex"
+			x: 2.25d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "另外幻梦的意思是“生者或死者的幻像”"
+			description: [
+				"幻梦是一个专注于祈祷、炼金、献祭和魔法的黑魔法模组！"
+				""
+				"虽然它仍然处于早期的开发阶段，但它目前已经提供了一些很酷的小工具或和小玩具，并且为真正的未来奠定一个坚实的基础。所以你现在在等什么，在其他人加入之前感觉加入把。"
+				""
+				"拿起你的《秘仪教典》，让它指导你在模组的每一步并准备好取悦黑暗君王的准备。"
+				""
+				"~Merlo"
+			]
+			size: 1.5d
+			optional: true
+			id: "0000000000000E80"
 			tasks: [{
-				id: "10EA064EA10E699C"
+				id: "5BB374740D4295E0"
 				type: "item"
-				item: {
-					id: "eidolon:sapping_sword"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "eidolon:tattered_cloth"
+			}]
+			rewards: [{
+				id: "5855578CE2117C3E"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]

@@ -81,66 +81,6 @@
 			}]
 		}
 		{
-			title: "沉浸工程 - 传送带"
-			icon: "immersiveengineering:conveyor_basic"
-			x: 4.5d
-			y: -1.5d
-			description: [
-				"沉浸工程模组的传送带能够将物品作为实体在世界中移动；抽取传送带能够将容器中的物品抽出，并且会自动将物品传送进指定的容器中。"
-				""
-				"可以在放置到世界上时使用染料来为传送带的护栏染色，也能在被钢脚手架覆盖时一起改变。"
-			]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "4DD97175C1818801"
-			tasks: [
-				{
-					id: "366C08F8F32D7E4A"
-					type: "item"
-					title: "任意传送带"
-					icon: "immersiveengineering:conveyor_basic"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "immersiveengineering:conveyor_basic"
-									Count: 1b
-								}
-								{
-									id: "immersiveengineering:conveyor_redstone"
-									Count: 1b
-								}
-								{
-									id: "immersiveengineering:conveyor_dropper"
-									Count: 1b
-								}
-								{
-									id: "immersiveengineering:conveyor_vertical"
-									Count: 1b
-								}
-								{
-									id: "immersiveengineering:conveyor_splitter"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "1657A85990D2F7FC"
-					type: "item"
-					item: "immersiveengineering:conveyor_extract"
-				}
-			]
-			rewards: [{
-				id: "6FE59A0E58F2E620"
-				type: "item"
-				item: "immersiveengineering:conveyor_basic"
-				count: 6
-			}]
-		}
-		{
 			title: "传送带"
 			x: 4.5d
 			y: 3.5d
@@ -293,7 +233,7 @@
 		}
 		{
 			title: "全方向漏斗"
-			x: 6.5d
+			x: 6.0d
 			y: 3.0d
 			description: ["气动工艺模组的万向漏斗能够将物品传送到任意朝向内的容器中，可以通过安装升级来提升它的速度。"]
 			dependencies: ["30AA6A8DF0B65273"]
@@ -311,8 +251,8 @@
 		}
 		{
 			title: "卡班克尔"
-			x: 8.0d
-			y: 1.5d
+			x: 7.0d
+			y: 1.0d
 			description: ["魔法模组也能够利用魔法让运输物品变得更有趣，卡班克尔能够收集掉落物并存放到附近的容器中。"]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "2831B38150565AEF"
@@ -332,8 +272,8 @@
 		}
 		{
 			title: "多媒体"
-			x: 8.0d
-			y: 0.5d
+			x: 2.0d
+			y: 0.0d
 			description: [
 				"植物魔法的多媒体网络能够在容器之间访问，与常规物流不同的是它不需要管道只需要放置多媒体火花就行，类似于AE系统。"
 				""
@@ -1000,7 +940,7 @@
 		{
 			icon: "enderstorage:ender_chest"
 			x: 7.0d
-			y: 1.0d
+			y: 0.0d
 			description: [
 				"与原版的末影箱不同，末影箱子每个不同频道都相当于一个独立的容器，而相同的频道公用库存空间，所以也能够轻松地跨纬度使用。"
 				""
@@ -1038,8 +978,8 @@
 			]
 		}
 		{
-			x: 7.0d
-			y: 0.0d
+			x: 5.0d
+			y: -1.5d
 			description: ["末影板条箱的功能与末影箱类似，能够跨纬度使用，相同末影名称的末影板条箱之间共用存储空间，将末影板条箱与末影之眼一起放到铁砧里在上方修改名字就能够给予末影名称;每次打开末影板条箱都会消耗少量的灵气。"]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "46589062E091762E"
@@ -1118,75 +1058,6 @@
 				id: "535E72E3B501F2AA"
 				type: "item"
 				item: "create:chute"
-			}]
-		}
-		{
-			title: "工业先锋 - 传送带"
-			icon: "industrialforegoing:conveyor"
-			x: 5.5d
-			y: -1.5d
-			description: [
-				"工业先锋模组的传送带能够运输物品、实体、液体，要想使用它们就需要搭配相应的例如提取升级才能够使用,也有一些其他类型的升级。"
-				""
-				"能够在被放置到世界中的时候染色，能够改变传送带的颜色。"
-				""
-				"你能够在工业先锋提供的指导手册中查找相对应的说明。"
-			]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "6D8F2F2A24C48898"
-			tasks: [
-				{
-					id: "5C650F2B0511D4B9"
-					type: "item"
-					item: "industrialforegoing:conveyor"
-				}
-				{
-					id: "64840DBB127F1522"
-					type: "item"
-					title: "任意传送带升级"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "industrialforegoing:conveyor_detection_upgrade"
-									Count: 1b
-								}
-								{
-									id: "industrialforegoing:conveyor_insertion_upgrade"
-									Count: 1b
-								}
-								{
-									id: "industrialforegoing:conveyor_extraction_upgrade"
-									Count: 1b
-								}
-								{
-									id: "industrialforegoing:conveyor_bouncing_upgrade"
-									Count: 1b
-								}
-								{
-									id: "industrialforegoing:conveyor_dropping_upgrade"
-									Count: 1b
-								}
-								{
-									id: "industrialforegoing:conveyor_blinking_upgrade"
-									Count: 1b
-								}
-								{
-									id: "industrialforegoing:conveyor_splitting_upgrade"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "4F77C91667650D88"
-				type: "item"
-				item: "industrialforegoing:conveyor"
-				count: 6
 			}]
 		}
 		{
@@ -1270,8 +1141,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 2.0d
+			x: 3.5d
+			y: 3.0d
 			description: ["在9x9的区域内收集掉落物，并内置了一个过滤器。"]
 			dependencies: ["30AA6A8DF0B65273"]
 			id: "14502C1A1BCB79E2"
@@ -1417,76 +1288,6 @@
 			}]
 		}
 		{
-			title: "基于背包的自动化"
-			icon: "sophisticatedbackpacks:iron_backpack"
-			x: 2.5d
-			y: 3.0d
-			subtitle: "不，这个任务没有在错误的任务章节中！"
-			description: [
-				"背包的用途不仅限于用于个人存储物品！当放置在世界中（手持背包右键方块）时，背包内的许多升级仍然能够工作，你可以像任何容器一样使用管道来连接它们。"
-				""
-				"当把背包放置到世界中时的一些有用示例："
-				"过滤升级：让背包输入或者输出指定类型的物品。"
-				"磁铁升级：拾取附近7x7x7范围内的物品。"
-				"压缩升级：自动将物品压缩成对应的方块，例如雪球变成雪块，高级压缩则是铁锭变成铁块。"
-			]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "506D4EF3FFC8B11B"
-			tasks: [{
-				id: "47C00029C050A20C"
-				type: "item"
-				title: "过滤升级"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "sophisticatedbackpacks:filter_upgrade"
-								Count: 1b
-							}
-							{
-								id: "sophisticatedbackpacks:advanced_filter_upgrade"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "092B56B47CD50A73"
-				type: "command"
-				title: "拾荒者快乐包"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: 3.5d
-			y: 3.5d
-			description: [
-				"鼓风机可以吹走周围的物品和实体，当为其提供顺时针旋力时，其会产生吹力，逆时针旋力会使其产生吸力；风力的大小取决于转速的大小。"
-				""
-				"有关如何使用此物品的功能，请使用“思索”功能，方法是将鼠标悬停在背包内的物品或者JEI的物品上，然后按住思索键（默认按键：W）。"
-			]
-			dependencies: ["30AA6A8DF0B65273"]
-			id: "0E5467F884E6B23A"
-			tasks: [{
-				id: "17CBAEF23312421A"
-				type: "item"
-				item: "create:encased_fan"
-			}]
-			rewards: [{
-				id: "141581BC00F3E20A"
-				type: "command"
-				title: "拾荒者快乐包"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
 			x: 0.0d
 			y: -0.5d
 			description: ["RF工具箱过滤器与XNet兼容，用于标签过滤(XNet中默认的标签选项有bug)；将过滤器插入UI顶部的4个槽中的一个，并使用右侧的“过滤器索引”按钮选择连接器使用的过滤器。"]
@@ -1516,7 +1317,7 @@
 				Count: 1b
 				tag: { }
 			}
-			x: 7.0d
+			x: 6.5d
 			y: 2.0d
 			subtitle: "幻影的脸？"
 			description: [
@@ -1680,8 +1481,8 @@
 		}
 		{
 			icon: "create:brass_funnel"
-			x: 5.5d
-			y: 3.5d
+			x: 2.5d
+			y: 2.0d
 			description: [
 				"机械动力模组的漏斗能够安装在容器的上方或者下方，可以通过扳手来修改垂直传输物品，其中黄铜漏斗能够过滤物品。"
 				""

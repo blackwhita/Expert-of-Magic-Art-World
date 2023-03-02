@@ -21,6 +21,7 @@
 		{
 			x: 0.0d
 			y: 1.5d
+			description: ["机械手可以帮您"]
 			dependencies: ["6FC6786A1A978BBC"]
 			id: "39394DE59423B7D1"
 			tasks: [{
@@ -28,6 +29,18 @@
 				type: "item"
 				item: "mekanism:ultimate_control_circuit"
 			}]
+			rewards: [
+				{
+					id: "50C48E2238CF38D2"
+					type: "item"
+					item: "create:deployer"
+				}
+				{
+					id: "7F0D6802C51767EC"
+					type: "item"
+					item: "ars_creo:starbuncle_wheel"
+				}
+			]
 		}
 		{
 			x: 0.0d

@@ -38,40 +38,6 @@
 			}]
 		}
 		{
-			title: "材料加工"
-			icon: "mekanism:alloy_infused"
-			x: 1.5d
-			y: -1.5d
-			description: [
-				"正如前面所述，通用机械在整个模组中都非常注重效率，随着机器的升级它们的效率也变得更高效且运行成本也降低了。"
-				""
-				"如果从一开始就注重与提高效率的话，从长远来看将会非常值得的。"
-			]
-			dependencies: ["00000000000006A1"]
-			id: "00000000000006A5"
-			tasks: [{
-				id: "00000000000006A6"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "00000000000006CD"
-				type: "item"
-				title: "配置器"
-				item: {
-					id: "mekanism:configurator"
-					Count: 1b
-					tag: {
-						mekData: {
-							EnergyContainers: [{
-								Container: 0b
-								stored: "60000"
-							}]
-						}
-					}
-				}
-			}]
-		}
-		{
 			title: "更先进的发电"
 			icon: "mekanism:basic_universal_cable"
 			x: 5.5d
@@ -177,9 +143,10 @@
 			y: 4.0d
 			subtitle: "可怕的效率"
 			description: [
-				"燃气发电机本身主要是燃烧乙烯来发电，但它也能用来燃烧多余的氢气，但燃烧氢气并非长久之计，氢气作为别的用途比用来发电更好。"
 				""
-				"警告：在本整合包中，增加了获取乙烯所需要的时间，它转化成电力的成本变高了，这平衡了其他的发电机；然而，保留了乙烯的发电量以及燃烧速度，这使得乙烯仍然是一个不错的发电来源。"
+				""
+				""
+				"我称之为高效"
 			]
 			dependencies: [
 				"00000000000006B1"
@@ -286,15 +253,15 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 0.0d
+			x: 2.5d
+			y: -1.0d
 			subtitle: "冶金灌注机"
 			description: [
 				"一旦将基础的电力获取解决后，下一步就需要使用冶金灌注机，有个这个机器，钢和其他的合金都能够制作出来。"
 				""
 				"建议多制作一些灌注机，每种灌注类型都准备一个，制作一个冶金灌注机自动化也不是不可能，但需要更多的付出。"
 			]
-			dependencies: ["00000000000006A5"]
+			dependencies: ["00000000000006A1"]
 			id: "00000000000006BD"
 			tasks: [{
 				id: "00000000000006BE"
@@ -628,7 +595,7 @@
 			]
 		}
 		{
-			x: 0.5d
+			x: 1.0d
 			y: 2.5d
 			subtitle: "让它们分开"
 			description: [
@@ -2225,44 +2192,6 @@
 			]
 		}
 		{
-			title: "不要惊慌"
-			icon: "minecraft:cod"
-			x: 5.5d
-			y: 0.0d
-			subtitle: "有个佛洛德真的知道他的毛巾在哪里"
-			description: [
-				"事故时有发生。"
-				""
-				"获得一条鱼，完成这项任务，以防你的整个家都受到不可逆转的辐射。"
-				""
-				"只能完成一次！"
-			]
-			dependencies: ["0000000000000793"]
-			optional: true
-			id: "00000000000007E4"
-			tasks: [
-				{
-					id: "00000000000007E9"
-					type: "checkmark"
-					title: "不要惊慌"
-				}
-				{
-					id: "00000000000007EA"
-					type: "item"
-					item: "minecraft:cod"
-					consume_items: true
-				}
-			]
-			rewards: [{
-				id: "00000000000007E6"
-				type: "command"
-				title: "清除辐射"
-				icon: "engineersdecor:sign_radioactive"
-				command: "/mek radiation removeAll"
-				player_command: false
-			}]
-		}
-		{
 			title: "热力锅炉"
 			icon: "mekanism:superheating_element"
 			x: 4.5d
@@ -2341,7 +2270,7 @@
 				""
 				"同样的，Shift+右键能够手动清空当前滴管内的液体或者气体。"
 			]
-			dependencies: ["00000000000006A5"]
+			dependencies: ["00000000000006BD"]
 			id: "1100DDF4FA8D31C3"
 			tasks: [{
 				id: "590FDCF2C714EE6B"
@@ -2358,8 +2287,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 0.5d
+			x: 3.0d
+			y: 0.0d
 			subtitle: "老兄，听说你喜欢机器..."
 			description: [
 				"机器可以使用升级的次数是有限的，之后如果还想再升级，就需要横向使用安装器来完成这个升级；值得庆幸的是，使用安装器升级的机器在处理速度上不会比只给机器添加速度升级的效率慢不到哪里去，记住，这一切都是为了提高效率！"
@@ -2716,40 +2645,6 @@
 			}]
 			rewards: [{
 				id: "0EF5031647DF246B"
-				type: "command"
-				title: "稀有通用机械战利品箱"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			x: 1.5d
-			y: 3.0d
-			subtitle: "这是农民的笑话吗？"
-			description: [
-				"还在像14世纪一样在泥土中挖掘矿物？为什么不召唤一个朋友来简化这个流程呢？"
-				""
-				"通过量子纠缠和一个没有意识的机器人，能够制作出一个轻松挖掘世界上方块的宝贵工具。"
-				""
-				"随着标签的出现，过滤器也发生了变化，旧版本的矿物标签现在被新版本的标签所替代，要想查看矿物的标签，请使用F3+H启用提示后将鼠标悬浮在JEI中的目标矿物或者方块上就能查看，"
-				""
-				"例子："
-				""
-				"●forge:ores     将所有矿石设置为白名单或者黑名单"
-				"●forge:ores/diamond     将钻石矿石设置为白名单或者黑名单"
-				"●forge:ores/netherite     将下界残骸设置为白名单或者黑名单"
-			]
-			dependencies: ["00000000000006BF"]
-			min_width: 300
-			id: "37B0CBFA4CBAD409"
-			tasks: [{
-				id: "4B3658ACF1768133"
-				type: "item"
-				item: "mekanism:digital_miner"
-			}]
-			rewards: [{
-				id: "2103C11313ED672B"
 				type: "command"
 				title: "稀有通用机械战利品箱"
 				icon: "kubejs:rare_lootbox"

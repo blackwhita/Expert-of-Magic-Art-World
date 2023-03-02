@@ -543,27 +543,6 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -14.5d
-			subtitle: "放松，我需要了解一些信息"
-			description: ["许多灵气装置都有一个有效范围，这可以通过使用奥秘放大镜右键该灵气装置查看，对于任何一个植物学家来说，这都是一个很有价值的工具之一。"]
-			dependencies: ["00000000000002BD"]
-			id: "00000000000002C9"
-			tasks: [{
-				id: "00000000000002CA"
-				type: "item"
-				item: "naturesaura:range_visualizer"
-			}]
-			rewards: [{
-				id: "0000000000000377"
-				type: "command"
-				title: "稀有自然灵气战利品箱"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare"
-				player_command: false
-			}]
-		}
-		{
 			x: -2.0d
 			y: -12.5d
 			subtitle: "虽然你知道原理，但它仍然是魔法"
@@ -745,12 +724,6 @@
 				type: "item"
 				item: "naturesaura:animal_container"
 			}]
-			rewards: [{
-				id: "000000000000032B"
-				type: "item"
-				title: "工业调节开关"
-				item: "rsgauges:industrial_dimmer"
-			}]
 		}
 		{
 			icon: "naturesaura:animal_spawner"
@@ -802,8 +775,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -8.0d
+			x: -1.5d
+			y: -8.5d
 			subtitle: "相长干涉"
 			description: [
 				"无感知建造器能协助去完成复杂的自动化任务，会从附近的容器中提取物品并放置出来。"
@@ -837,8 +810,8 @@
 		}
 		{
 			title: "灵气场生成器"
-			x: -3.5d
-			y: -7.5d
+			x: -2.5d
+			y: -8.0d
 			subtitle: "破坏性的干扰"
 			description: [
 				"灵气场生成器可以连接在一起，在它们中间形成一个区域，区域内的方块会被破坏。"
@@ -902,111 +875,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -8.5d
-			subtitle: "麦克斯韦妖"
-			description: ["从环境中汲取灵气，加热熔炉、高炉和烟熏炉。"]
-			hide_dependency_lines: true
-			dependencies: [
-				"00000000000002B9"
-				"00000000000002BD"
-				"000000000000032E"
-			]
-			id: "0000000000000308"
-			tasks: [{
-				id: "0000000000000309"
-				type: "item"
-				item: "naturesaura:furnace_heater"
-			}]
-			rewards: [{
-				id: "0000000000000356"
-				type: "command"
-				title: "稀有自然灵气战利品箱"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			x: 3.5d
-			y: -7.0d
-			subtitle: "阿巴顿之门"
-			description: [
-				"扭曲的末影箱。通过同时在铁砧中重命名末影板条箱并将其与末影之眼合并，可以将末影板条箱分配至一个频道。"
-				""
-				"每次从板条箱中搬进或搬出物品时都会使用少量灵气。"
-			]
-			hide_dependency_lines: true
-			id: "000000000000030A"
-			tasks: [{
-				id: "000000000000030B"
-				type: "item"
-				item: "naturesaura:ender_crate"
-			}]
-			rewards: [
-				{
-					id: "000000000000033D"
-					type: "item"
-					title: "末影目镜"
-					item: "naturesaura:ender_access"
-				}
-				{
-					id: "000000000000033E"
-					type: "item"
-					title: "末影之眼"
-					item: "minecraft:ender_eye"
-					count: 2
-				}
-			]
-		}
-		{
-			x: 2.5d
-			y: -7.5d
-			subtitle: "它呼唤，无人回应，它继续呼唤"
-			description: ["当被放置到专家型漏斗上时，能收集七格内的掉落物，在专家型漏斗上生效的过滤器也能在漏斗增强器上生效。"]
-			hide_dependency_lines: true
-			dependencies: ["00000000000002BD"]
-			id: "000000000000030C"
-			tasks: [{
-				id: "000000000000030D"
-				type: "item"
-				item: "naturesaura:hopper_upgrade"
-			}]
-			rewards: [{
-				id: "0000000000000363"
-				type: "item"
-				title: "传送门护符"
-				item: "darkutils:charm_portal"
-			}]
-		}
-		{
 			x: 1.5d
 			y: -8.0d
-			subtitle: "穿过沼泽"
-			description: [
-				"在本模组中存在许多能够传输物品的装置，例如：专家型漏斗可以通过在漏斗上放置物品展示框来作为过滤器。"
-				""
-				"在《自然灵气之书》中能查询到更加详细的信息。"
-			]
-			hide_dependency_lines: true
-			dependencies: ["00000000000002BD"]
-			id: "000000000000030E"
-			tasks: [{
-				id: "000000000000030F"
-				type: "item"
-				item: "naturesaura:grated_chute"
-			}]
-			rewards: [{
-				id: "000000000000031D"
-				type: "item"
-				title: "物品展示框"
-				item: "minecraft:item_frame"
-				count: 4
-			}]
-		}
-		{
-			x: -4.5d
-			y: -7.0d
 			subtitle: "相对参照系"
 			description: [
 				"由灵气驱动的简易区块加载装置。"
@@ -1032,7 +902,7 @@
 		}
 		{
 			x: -2.5d
-			y: -14.5d
+			y: -15.0d
 			subtitle: "胜于绵羊"
 			description: [
 				"这个最基础的灵气生成装置能够吞噬附近的各种花朵来生成灵气。"
@@ -1057,7 +927,7 @@
 		}
 		{
 			x: -0.5d
-			y: -14.5d
+			y: -15.0d
 			subtitle: "要么去做，要么不做，没有尝试一说"
 			description: ["这个最基础的灵气生成装置能够吞噬附近的苔石类方块来生成灵气，最后会留下一个普通的石质方块。"]
 			dependencies: ["00000000000002C1"]
@@ -1100,7 +970,7 @@
 		{
 			title: "神秘生态学"
 			icon: "naturesaura:chorus_generator"
-			x: -1.0d
+			x: -1.5d
 			y: -15.5d
 			description: ["能够生成灵气的装置不至于此，可以在《自然灵气之书》中查看到其他类型的灵气生成装置，以防止过渡消耗灵气而导致灾难。"]
 			dependencies: ["00000000000002C1"]

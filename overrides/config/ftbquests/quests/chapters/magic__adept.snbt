@@ -22,17 +22,6 @@
 			x: 0.0d
 			y: 1.5d
 			dependencies: ["4EF6114189E1C863"]
-			id: "1D064FDA846ED444"
-			tasks: [{
-				id: "7D9A04BF85673CE0"
-				type: "item"
-				item: "eidolon:worktable"
-			}]
-		}
-		{
-			x: 0.0d
-			y: 3.0d
-			dependencies: ["1D064FDA846ED444"]
 			id: "012DD40DE2090A6A"
 			tasks: [{
 				id: "2F31F78195829B07"
@@ -42,8 +31,8 @@
 		}
 		{
 			x: 1.5d
-			y: 3.0d
-			dependencies: ["1D064FDA846ED444"]
+			y: 1.5d
+			dependencies: ["4EF6114189E1C863"]
 			id: "7D7BB84D62F9749F"
 			tasks: [{
 				id: "52A03EBC5ED4A5A4"
@@ -63,7 +52,7 @@
 		}
 		{
 			x: 2.0d
-			y: 4.5d
+			y: 3.0d
 			dependencies: ["7D7BB84D62F9749F"]
 			id: "1AE3394B9641CCC7"
 			tasks: [{
@@ -120,7 +109,7 @@
 		}
 		{
 			x: 0.0d
-			y: 4.5d
+			y: 3.0d
 			dependencies: ["012DD40DE2090A6A"]
 			id: "1965B1CC679D4FB9"
 			tasks: [{
@@ -130,25 +119,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 4.5d
-			dependencies: ["012DD40DE2090A6A"]
-			id: "77759161BBCF4C86"
-			tasks: [{
-				id: "520BF86F6B20B828"
-				type: "item"
-				item: {
-					id: "eidolon:sapping_sword"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
 			x: 1.0d
-			y: 4.5d
+			y: 3.0d
 			dependencies: ["012DD40DE2090A6A"]
 			id: "6EA7DC91765AD37E"
 			tasks: [{
@@ -159,7 +131,7 @@
 		}
 		{
 			x: 0.0d
-			y: 5.5d
+			y: 4.5d
 			dependencies: ["1965B1CC679D4FB9"]
 			id: "21EDA39DD223F157"
 			tasks: [{
@@ -169,8 +141,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: 7.0d
+			x: -3.5d
+			y: 6.5d
 			description: ["点燃它，召唤火焰"]
 			id: "21047667F6E16932"
 			tasks: [{
@@ -180,8 +152,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: 7.0d
+			x: -2.0d
+			y: 6.5d
 			dependencies: ["21047667F6E16932"]
 			id: "0B622C2D50C83967"
 			tasks: [{
@@ -191,8 +163,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 8.5d
+			x: 1.0d
+			y: 6.5d
 			shape: "square"
 			dependencies: ["386D5D10A13CBBDA"]
 			id: "79FDF7C7CCDBB128"
@@ -204,7 +176,7 @@
 		}
 		{
 			x: 1.0d
-			y: 7.0d
+			y: 4.5d
 			shape: "square"
 			dependencies: [
 				"6EA7DC91765AD37E"
@@ -218,8 +190,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 7.0d
+			x: -0.5d
+			y: 6.5d
 			dependencies: [
 				"425488B1FE02EF14"
 				"0B622C2D50C83967"
@@ -240,17 +212,6 @@
 				id: "36EBEDEBBA3448FC"
 				type: "item"
 				item: "occultism:chalk_gold_impure"
-			}]
-		}
-		{
-			x: -1.0d
-			y: 6.0d
-			dependencies: ["77759161BBCF4C86"]
-			id: "5F935BFF7C2D8D07"
-			tasks: [{
-				id: "712446D8DBBED339"
-				type: "item"
-				item: "bloodmagic:daggerofsacrifice"
 			}]
 		}
 	]
