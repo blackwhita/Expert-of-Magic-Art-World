@@ -762,69 +762,6 @@
 			}]
 		}
 		{
-			title: "末影单元"
-			icon: "powah:ender_cell_basic"
-			x: 4.5d
-			y: 1.5d
-			subtitle: "几乎像Wi-Fi！"
-			description: [
-				"末影单元是本模组无线传输能量的方式，也是最好的传输能量的方式，一开始它们并不能传输很多的能量，但随着你慢慢升级，你会发现它们是很好用的。"
-				""
-				"首先，你能使用一些频道（越高级的末影单元频道数量越多）来传输能量，默认存储能量为0RF。"
-				"这些通道对于玩家来说是通用的，所以你能放置在每个世界上共享末影单元内的能量，前提是需要频道相同。"
-				"现在可以选择一个频道右键能量单元来添加到末影单元让它们单独的缓存区变成共享的缓存区。"
-				"（对于那些经常使用的末影单元，能为它们添加一个末影道门来作为能量输出）"
-				""
-				"你可以堆叠这些末影单元来增加它们的频道，只要单元内存在能量，就能在任何地方任何地点来使用它们，从而实现跨纬度传输能量。"
-			]
-			dependencies: ["000000000000018E"]
-			min_width: 300
-			id: "0000000000000190"
-			tasks: [{
-				id: "0000000000000191"
-				type: "item"
-				title: "末影单元（任意等级）"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "powah:ender_cell_basic"
-								Count: 1b
-							}
-							{
-								id: "powah:ender_cell_hardened"
-								Count: 1b
-							}
-							{
-								id: "powah:ender_cell_blazing"
-								Count: 1b
-							}
-							{
-								id: "powah:ender_cell_niotic"
-								Count: 1b
-							}
-							{
-								id: "powah:ender_cell_spirited"
-								Count: 1b
-							}
-							{
-								id: "powah:ender_cell_nitro"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "0000000000000226"
-				type: "item"
-				title: "能量单元（硬化）"
-				item: "powah:energy_cell_hardened"
-			}]
-		}
-		{
 			title: "玩家供电仪"
 			icon: "powah:player_transmitter_basic"
 			x: 4.5d
@@ -890,65 +827,6 @@
 				icon: "kubejs:epic_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot"
 				player_command: false
-			}]
-		}
-		{
-			title: "末影道门"
-			icon: "powah:ender_gate_basic"
-			x: 6.0d
-			y: 1.5d
-			shape: "diamond"
-			subtitle: "超级紧凑！"
-			description: [
-				"末影道门是末影单元更小更方便的变种，它们能直接放置在本模组的能量线缆上，它们会占用1个方块空间。"
-				"然而，有个缺点，那就是无法通过末影道门去升级末影单元的频道，所以至少需要在某个地方保留一些末影单元。"
-			]
-			dependencies: ["0000000000000190"]
-			optional: true
-			id: "0000000000000194"
-			tasks: [{
-				id: "0000000000000195"
-				type: "item"
-				title: "末影道门（任意等级）"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "powah:ender_gate_basic"
-								Count: 1b
-							}
-							{
-								id: "powah:ender_gate_hardened"
-								Count: 1b
-							}
-							{
-								id: "powah:ender_gate_blazing"
-								Count: 1b
-							}
-							{
-								id: "powah:ender_gate_niotic"
-								Count: 1b
-							}
-							{
-								id: "powah:ender_gate_spirited"
-								Count: 1b
-							}
-							{
-								id: "powah:ender_gate_nitro"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "0000000000000227"
-				type: "item"
-				title: "末影核心"
-				item: "powah:ender_core"
-				count: 4
 			}]
 		}
 		{

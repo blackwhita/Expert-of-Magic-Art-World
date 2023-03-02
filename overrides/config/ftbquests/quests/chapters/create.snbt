@@ -42,7 +42,7 @@
 		{
 			title: "机械动力"
 			icon: "create:goggles"
-			x: 4.0d
+			x: 6.5d
 			y: 2.0d
 			subtitle: "需要一些机械"
 			description: [
@@ -76,7 +76,7 @@
 		{
 			title: "风车"
 			icon: "create:white_sail"
-			x: 4.0d
+			x: 6.5d
 			y: 3.5d
 			subtitle: "不含电池"
 			description: [
@@ -136,8 +136,8 @@
 			]
 		}
 		{
-			x: 5.5d
-			y: 2.5d
+			x: 7.5d
+			y: 3.0d
 			subtitle: "像唱片一样，宝贝"
 			description: [
 				"水车虽然比风车更容易获得，但所向对应的生产出来的动力也会烧很多。"
@@ -163,100 +163,8 @@
 			}]
 		}
 		{
-			icon: "create:propeller"
-			x: 5.5d
-			y: 4.0d
-			subtitle: "再生能源?我是超级粉丝"
-			description: [
-				"比禁止的水更有用，但被鼓风机吹动时，它所带来的的旋涡能够用于一些特殊物品的获取。"
-				""
-				"要想让它获得旋涡，它的下方必须要放置在一些热的方块上，例如：岩浆块、熔岩等等，弹但要注意，别发生火灾！"
-				""
-				"给予鼓风机一个红石信号能够让它开始工作。"
-				""
-				"--------------------------------"
-				""
-				"要使用鼓风机来制作物品，则必须要让鼓风机的分吹过熔岩、水、火焰或者灵魂火，掉落在气流中的物品将会被分别进行熔炼、洗涤、烟熏与缠魂。"
-				""
-				"气流可以穿过某些方块，例如：铁栏杆、活板门等，从而能够安全的控制熔岩和水。"
-				""
-				"特别值得注意的是，鼓风机可用于直接在置物台或传送带上来处理物品，但是传送带上的物品在处理时不会停止移动。"
-				""
-				"为了有效利用风扇和传送带，请多设置一些传送带的长度，更快的动力意味着能吹得更远处理速度也越快，这也允许鼓风机能够一次性处理多个物品。"
-			]
-			dependencies: [
-				"0000000000000CBD"
-				"0000000000000CFC"
-			]
-			id: "0000000000000CC4"
-			tasks: [{
-				id: "0000000000000CC5"
-				type: "item"
-				item: "create:encased_fan"
-			}]
-			rewards: [
-				{
-					id: "0000000000000CCA"
-					type: "item"
-					title: "模拟拉杆"
-					item: "create:analog_lever"
-				}
-				{
-					id: "0000000000000D73"
-					type: "item"
-					title: "岩浆块"
-					item: "minecraft:magma_block"
-					count: 4
-				}
-			]
-		}
-		{
-			icon: "create:flywheel"
-			x: 4.0d
-			y: 5.0d
-			subtitle: "备受尊敬"
-			description: [
-				"紧凑型发电的极致，熔炉引擎是一个由三部分组成的多方块结构，它能产生大量的动力。"
-				""
-				"为了运行，必须激活熔炉或者高炉，这通常在熔炉中烧制一些东西，尽管还有其它的办法能够达到这样的状态。"
-				""
-				"要建造它，请将熔炉引擎放置熔炉或者高炉的顶部，这会覆盖掉熔炉，并且会有一部分伸出，在那一侧的空一格位置上放置飞轮（距离熔炉的第三格）"
-			]
-			dependencies: ["0000000000000CBD"]
-			id: "0000000000000CC6"
-			tasks: [
-				{
-					id: "0000000000000CC7"
-					type: "item"
-					item: "steampowered:bronze_steam_engine"
-				}
-				{
-					id: "0000000000000CC8"
-					type: "item"
-					title: "Any #resourcefulbees:valid_apiary"
-					item: "steampowered:bronze_flywheel"
-				}
-			]
-			rewards: [
-				{
-					id: "0000000000000D76"
-					type: "command"
-					title: "传奇机械动力战利品箱"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
-					player_command: false
-				}
-				{
-					id: "0000000000000D8A"
-					type: "item"
-					title: "高炉"
-					item: "minecraft:blast_furnace"
-				}
-			]
-		}
-		{
 			title: "传动杆"
-			x: 1.5d
+			x: 4.5d
 			y: 2.0d
 			subtitle: "闭嘴"
 			description: [
@@ -292,7 +200,7 @@
 		}
 		{
 			title: "安山机壳"
-			x: 1.0d
+			x: 5.5d
 			y: 1.0d
 			subtitle: "那是在腰带以下"
 			description: [
@@ -321,7 +229,7 @@
 		}
 		{
 			title: "支架"
-			x: 2.0d
+			x: 4.0d
 			y: 1.0d
 			subtitle: "振作起来"
 			description: [
@@ -355,7 +263,7 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -0.5d
 			y: 1.0d
 			subtitle: "让我们尝试改变方向"
 			description: [
@@ -381,7 +289,7 @@
 		}
 		{
 			title: "齿轮"
-			x: -1.0d
+			x: 1.0d
 			y: 2.0d
 			subtitle: "斯贝斯利太空飞轮"
 			description: [
@@ -422,8 +330,8 @@
 		}
 		{
 			title: "传送带"
-			x: 1.5d
-			y: 3.0d
+			x: 4.0d
+			y: 3.5d
 			subtitle: "你现在很顺利"
 			description: [
 				"和机械动力其它的物品一样，传送带也有多种用途。"
@@ -452,7 +360,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 2.5d
 			y: 3.0d
 			subtitle: "在传动箱上工作"
 			description: [
@@ -478,7 +386,7 @@
 		}
 		{
 			icon: "create:rotation_speed_controller"
-			x: -4.0d
+			x: -0.5d
 			y: 2.0d
 			subtitle: "把它变成超速档"
 			description: [
@@ -511,8 +419,8 @@
 			]
 		}
 		{
-			x: 0.5d
-			y: 4.5d
+			x: 2.0d
+			y: 4.0d
 			subtitle: "有点滑"
 			description: [
 				"漏斗既能够输入到容器中也能将容器中的物品输出到外面。"
@@ -537,8 +445,8 @@
 		}
 		{
 			title: "溜槽"
-			x: 1.5d
-			y: 4.0d
+			x: 3.0d
+			y: 4.5d
 			subtitle: "学习幻灯片中的内容"
 			description: [
 				"溜槽是一个简单且快速向下传输物品的设备，只需要将它们放置在容器底部，物品就会传输到底部。"
@@ -563,8 +471,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 4.5d
+			x: 5.5d
+			y: 3.5d
 			subtitle: "分类物品"
 			description: [
 				"安山岩隧道不是一个简单用于覆盖方块的道具，它在用来分类物品时很有用。"
@@ -588,7 +496,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 2.0d
 			y: 5.5d
 			subtitle: "嘻哈滑滑梯"
 			description: ["黄铜漏斗类似于安山岩漏斗，但它们能够使用过滤器来过滤指定类型的物品。"]
@@ -609,8 +517,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 5.5d
+			x: 5.5d
+			y: 4.5d
 			subtitle: "波函数坍缩"
 			description: [
 				"黄铜隧道与安山岩隧道的工作方式略有不同，黄铜隧道可以为并联的传送带路线提供多个物品分流的方案。"
@@ -636,8 +544,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 5.0d
+			x: 3.5d
+			y: 5.5d
 			subtitle: "缓冲区分配失败"
 			description: [
 				"一个简单的缓存物品的地方。"
@@ -661,8 +569,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 6.0d
+			x: 5.0d
+			y: 5.5d
 			subtitle: "5号还活着"
 			description: [
 				"动力臂作为先进的短距离传输物品的道具，它能一次从一个或者多个位置进行传输。"
@@ -688,8 +596,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 3.5d
+			x: 10.0d
+			y: 1.5d
 			subtitle: "你知道如何使用齿轮吗？"
 			description: [
 				"手推石磨已经使用很长一段时间，这意味着我们仍然在使用这种古老的技术，我们需要一个新的技术来提高效率。"
@@ -714,8 +622,8 @@
 		}
 		{
 			title: "粉碎轮"
-			x: 9.0d
-			y: 5.5d
+			x: 15.0d
+			y: 4.5d
 			subtitle: "现在是关键时刻"
 			description: [
 				"粉碎轮是你迄今为止仍然是石磨的老大哥，通常来说，粉碎轮能够做的更好，让你获得比石磨更多的物品。"
@@ -744,8 +652,8 @@
 		}
 		{
 			icon: "create:brass_hand"
-			x: 8.0d
-			y: 5.0d
+			x: 12.5d
+			y: 3.5d
 			subtitle: "言归正传"
 			description: [
 				"机械手能够用在许多自动化上，但它的主要用途是自动化制作磨制玫瑰石英。"
@@ -784,8 +692,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 3.5d
+			x: 12.5d
+			y: 2.0d
 			subtitle: "人性的欧姆"
 			description: [
 				"电子管可用于制作机械动力中最先进的机器，它需要磨制石英来为自动化发光发热！"
@@ -812,8 +720,8 @@
 		}
 		{
 			icon: "create:whisk"
-			x: 7.0d
-			y: 2.0d
+			x: 11.5d
+			y: 0.5d
 			subtitle: "只是我搅起的一点点东西"
 			description: ["有了基础的动力和后勤，我们就应该继续开始推进了，机械动力提供了集中制作物品的方式，这些方式能够提高与模组之间的理解能力。"]
 			dependencies: ["0000000000000C40"]
@@ -833,8 +741,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 4.5d
+			x: 8.5d
+			y: 2.5d
 			subtitle: "煮、捣碎，做成菜！"
 			description: [
 				"动力锟压机允许你用更低的成本将锭压成板的设备，当与工作盆一起工作时，它也能够同时挤压材料，比如说将铁锭变成铁块。"
@@ -865,8 +773,8 @@
 		}
 		{
 			icon: "create:mechanical_mixer"
-			x: 7.0d
-			y: 5.5d
+			x: 11.0d
+			y: 2.5d
 			subtitle: "有一个搅拌机，警官"
 			description: [
 				"动力搅拌机能将固体与液体进行混合来获取一种新的物质，例如：制作药水、制作更高级的合金，搅拌器都能完成所有的工作，但搅拌机下方需要放置一个工作盆。"
@@ -897,8 +805,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 5.5d
+			x: 11.0d
+			y: 4.0d
 			subtitle: "灰常得大"
 			description: [
 				"当需要高温时，没有什么能比得上下界的这种灼热，那为什么不把它带回家呢？"
@@ -924,8 +832,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 6.5d
+			x: 9.5d
+			y: 5.5d
 			subtitle: "禁止吃零食"
 			description: [
 				"不够热是什么意思？ 好吧，让他们吃蛋糕吧！"
@@ -949,8 +857,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 3.0d
+			x: 1.0d
+			y: 4.5d
 			subtitle: "阿基米德螺线"
 			description: [
 				"就像传输物品不是免费的一样，它也需要一定的动力来传输流体。"
@@ -977,7 +885,7 @@
 		}
 		{
 			title: "流体管道"
-			x: -1.0d
+			x: 1.0d
 			y: 3.0d
 			subtitle: "清晰的通道"
 			description: ["管道是输送流体的主要方式，流体进来，流体出去，非常简单的！"]
@@ -1000,8 +908,8 @@
 		}
 		{
 			icon: "create:fluid_valve"
-			x: -2.5d
-			y: 4.0d
+			x: 1.0d
+			y: 6.0d
 			subtitle: "关掉这扇门"
 			description: ["流体阀门可以通过给予一些动力来打开或者关闭，例如：阀门手轮。"]
 			dependencies: ["0000000000000D0F"]
@@ -1028,8 +936,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 5.0d
+			x: -0.5d
+			y: 6.0d
 			subtitle: "智能流体过滤器"
 			description: ["带有过滤器插槽，可以标记物品或插入过滤器（使用桶装或瓶装流体进行标记），只允许满足条件的流体通过，使用智能流体管道时应尽量紧贴流体源，否则有几率因其他种类流体先被排出而使管道堵塞。"]
 			dependencies: ["0000000000000D0F"]
@@ -1050,8 +958,8 @@
 		}
 		{
 			title: "流体储罐"
-			x: -3.0d
-			y: 3.0d
+			x: -0.5d
+			y: 4.0d
 			subtitle: "深不可测"
 			description: [
 				"流体储罐是一个多方块结构的储罐，能够满足大多数的储存液体的需求。"
@@ -1078,8 +986,8 @@
 		}
 		{
 			icon: "create:mechanical_crafter"
-			x: 9.0d
-			y: 4.5d
+			x: 15.0d
+			y: 3.0d
 			description: [
 				"嫌弃那些3x3合成表太过于简单时，就有了合成器。或者，准确来说应该是叫动力合成器，这些合成器连接在一起的时候能够形成一个大型的多方块合成结构，每个合成器只允许放置一个物品。"
 				""
@@ -1119,8 +1027,8 @@
 		}
 		{
 			icon: "create:polished_rose_quartz"
-			x: 8.0d
-			y: 6.5d
+			x: 12.5d
+			y: 5.0d
 			shape: "octagon"
 			description: [
 				"所有的内容都在哪里，你能把它们都适用上吗？制作一条全自动的磨制玫瑰石英工厂，只需要给予红石和下界石英而已。"
@@ -1140,8 +1048,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 4.0d
+			x: -0.5d
+			y: 5.0d
 			subtitle: "胡说八道"
 			description: ["当容器物品（如桶，玻璃瓶）由传送带经过注液器下方时，会播放注液动画，注液器会用内部流体储存加注容器（流体和容器必须兼容），被加注的容器由传送带运输离开,当注液器内的流体不足时，会截停下方的任何容器,也可以加注置物台上的容器。"]
 			dependencies: ["0000000000000D11"]
@@ -1161,404 +1069,8 @@
 			}]
 		}
 		{
-			title: "模块化装置"
-			icon: {
-				id: "create:minecart_contraption"
-				Count: 1b
-				tag: {
-					Contraption: {
-						Blocks: [
-							{
-								Pos: {
-									X: 0
-									Y: 0
-									Z: 0
-								}
-								Block: {
-									Properties: {
-										axis: "z"
-									}
-									Name: "create:minecart_anchor"
-								}
-							}
-							{
-								Pos: {
-									X: 0
-									Y: 1
-									Z: 0
-								}
-								Block: {
-									Name: "minecraft:spruce_planks"
-								}
-							}
-						]
-						BoundsFront: [
-							0.0f
-							0.0f
-							0.0f
-							1.0f
-							2.0f
-							1.0f
-						]
-						SubContraptions: [ ]
-						Actors: [ ]
-						Seats: [ ]
-						Type: "mounted"
-						Anchor: {
-							X: 108
-							Y: 84
-							Z: -93
-						}
-						Superglue: [ ]
-						Storage: [ ]
-						Passengers: [ ]
-						RotationMode: "ROTATE"
-						FluidStorage: [ ]
-						Stalled: 0b
-					}
-					display: { }
-				}
-			}
-			x: 10.0d
-			y: 2.0d
-			description: [
-				"模块化装置是自己建造的多方块结构，具有几乎无限的可能性。"
-				""
-				"它们既可以固定在适当的位置并使用旋转动力运行，也可以连接到矿车并免费运行，只需要动力轨道来保持矿车移动。"
-				""
-				"以下是一些可用于这些装置的专用方块。"
-			]
-			dependencies: ["0000000000000C40"]
-			id: "0000000000000D2B"
-			tasks: [{
-				id: "0000000000000D2C"
-				type: "checkmark"
-			}]
-			rewards: [{
-				id: "0000000000000D65"
-				type: "item"
-				title: "矿车"
-				item: "minecraft:minecart"
-			}]
-		}
-		{
-			icon: "create:mechanical_piston"
-			x: 10.5d
+			x: -0.5d
 			y: 3.0d
-			subtitle: "工程拓展计划"
-			description: [
-				"说道移动装置，动力活塞就是一个可以在前期制作的伟大装置。"
-				""
-				"作为一个可以使用这些的简单示例，想象一下长长的农田；机械活塞可用于定期在田地上来回推动收割装置以收集农作物。"
-			]
-			dependencies: ["0000000000000D2B"]
-			id: "0000000000000D2D"
-			tasks: [{
-				id: "0000000000000D2E"
-				type: "item"
-				title: "动力活塞"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "create:mechanical_piston"
-								Count: 1b
-							}
-							{
-								id: "create:sticky_mechanical_piston"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "0000000000000D69"
-					type: "command"
-					title: "稀有机械动力战利品箱"
-					icon: "kubejs:rare_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-					player_command: false
-				}
-				{
-					id: "0000000000000D8C"
-					type: "item"
-					title: "活塞杆"
-					item: "create:piston_extension_pole"
-					count: 8
-				}
-			]
-		}
-		{
-			x: 11.0d
-			y: 4.0d
-			subtitle: "把车放在马前"
-			description: [
-				"矿车装配站可用于制造一个可乘坐的矿车装置。"
-				""
-				"矿车装配站必须放置在铁轨上（包括原版所有铁轨以及控制铁轨），上方的箭头代表结构对于矿车的方向。当内部存在矿车时被红石激活，会将上方连接的结构实体化并安装到矿车上。"
-				""
-				"使用扳手右击矿车结构的内的矿车可以将整个矿车结构变为物品形式掉落。"
-				""
-				"相比其他动态元件，矿车装配站更加自由，它可以用于将结构装载在矿车上；成为动态结构后可以在铁轨上移动，结构包含的作业元件也在移动时运作；利用此特性，玩家可以搭建出大型的收割机、盾构机，或是可以自由在上方自由走动的火车。"
-			]
-			dependencies: ["0000000000000D2B"]
-			id: "0000000000000D2F"
-			tasks: [{
-				id: "0000000000000D30"
-				type: "item"
-				item: "create:cart_assembler"
-			}]
-			rewards: [{
-				id: "0000000000000D6A"
-				type: "command"
-				title: "稀有机械动力战利品箱"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			x: 11.5d
-			y: 5.0d
-			subtitle: "摆脱不能旋转的苦恼"
-			description: [
-				"与风车轴承类似，但动力轴承可以用来旋转。"
-				""
-				"例如：可以建造一个长长的动力装置，它可用于树场，砍伐一个区域内的所有树木。"
-			]
-			dependencies: ["0000000000000D2B"]
-			id: "0000000000000D31"
-			tasks: [{
-				id: "0000000000000D32"
-				type: "item"
-				item: "create:mechanical_bearing"
-			}]
-			rewards: [{
-				id: "0000000000000D6B"
-				type: "command"
-				title: "稀有机械动力战利品箱"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			title: "底盘"
-			x: 12.5d
-			y: 4.0d
-			description: [
-				"更大的地盘能够制作出更大的模块化装置。"
-				""
-				"底盘会互相相连，当其中一个机壳底盘成为动态结构时，会带动所有相连的底盘。"
-				"使用黏液球（不消耗）或强力胶对机壳底盘的面右击，可将该面变为黏性面。"
-				""
-				"再次右击则会将两面都变为黏性面；黏性面会粘连方块，每面最多可粘连16格。"
-				""
-				"这导致很少会需要使用胶水来制作一些非常庞大的装置，但，这些都不是必须的。"
-				""
-				"不用担心，一旦形成多方块结构，胶水的痕迹能够变成不可见的，从而使整个结构变得更加美观。"
-				""
-				"当旋转时在工作范围内旋转所有连接到粘性面的方块，范围可以用扳手调整。"
-				""
-				"注意：史莱姆球可以在底盘上使用无数次，手持粘液球右键一侧可以给予胶水，再次右击则会将两面都变为黏性面。"
-			]
-			dependencies: [
-				"0000000000000D2D"
-				"0000000000000D2F"
-				"0000000000000D31"
-				"0000000000000D45"
-			]
-			dependency_requirement: "one_completed"
-			min_width: 300
-			id: "0000000000000D33"
-			tasks: [
-				{
-					id: "0000000000000D34"
-					type: "item"
-					item: "create:radial_chassis"
-				}
-				{
-					id: "0000000000000D35"
-					type: "item"
-					item: "create:linear_chassis"
-				}
-			]
-			rewards: [{
-				id: "0000000000000D64"
-				type: "command"
-				title: "史诗机械动力战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: 14.5d
-			y: 4.0d
-			subtitle: "杰出的佼佼者"
-			description: ["只会收割成熟作物的智能收割机。"]
-			dependencies: ["0000000000000D33"]
-			id: "0000000000000D3A"
-			tasks: [{
-				id: "0000000000000D3B"
-				type: "item"
-				item: "create:mechanical_harvester"
-			}]
-			rewards: [{
-				id: "0000000000000D60"
-				type: "command"
-				title: "史诗机械动力战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: 14.5d
-			y: 5.0d
-			subtitle: "没什么可看的，只是一台无聊的机器"
-			description: ["一个能够移动或者在原地的采矿设备，其功能非常强大。"]
-			dependencies: ["0000000000000D33"]
-			id: "0000000000000D3C"
-			tasks: [{
-				id: "0000000000000D3D"
-				type: "item"
-				item: "create:mechanical_drill"
-			}]
-			rewards: [{
-				id: "0000000000000D61"
-				type: "command"
-				title: "史诗机械动力战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: 13.5d
-			y: 7.0d
-			subtitle: "突破性的创新"
-			description: [
-				"耕地也是一个很艰苦的活，不如做个机器来偷懒吧！"
-				""
-				"然而，动力犁并不是只能用来种地，也能够成为移动矿车的铺设轨道的装置。"
-			]
-			dependencies: ["0000000000000D33"]
-			id: "0000000000000D3E"
-			tasks: [{
-				id: "0000000000000D3F"
-				type: "item"
-				item: "create:mechanical_plough"
-			}]
-			rewards: [{
-				id: "0000000000000D63"
-				type: "command"
-				title: "史诗机械动力战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: 14.0d
-			y: 6.0d
-			subtitle: "尖端技术"
-			description: [
-				"从伐木到分解原木，这把锯子早已看穿一些。"
-				""
-				"当动力锯获得动力之后，它既能够用来伐木也能够用来分解原木，也能当成切割机，物品在动力锯上切割的方向为转向的反方向，如方向不正确可能使物品滞留。"
-				""
-				"当接触到树木时，它能够一口气将这棵树全部砍伐掉，制作一个简单的树场应该很简单。"
-			]
-			dependencies: ["0000000000000D33"]
-			id: "0000000000000D40"
-			tasks: [{
-				id: "0000000000000D41"
-				type: "item"
-				item: "create:mechanical_saw"
-			}]
-			rewards: [{
-				id: "0000000000000D62"
-				type: "command"
-				title: "史诗机械动力战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			title: "便携式接口"
-			x: 14.5d
-			y: 3.0d
-			subtitle: "即插即用"
-			description: [
-				"在正常情况下，只要设备拥有足够的存储空间，它就能自动拾取掉落物。"
-				""
-				"简单地将一个箱子粘在一个地方就足以提供一个存储空间，但将物品再次取出是另一回事了。"
-				""
-				"接口能够充当移动机器容器的代理，每当装置上的便携式接口遇到位于世界上的接口时，装置将短暂暂停，并与它创建连接。"
-				""
-				"如果设置了从该接口进行输入或输出该接口，则机器将保持暂停状态，直到没有任何东西经过该接口，一旦停止，它就会继续前进。"
-				""
-				"为了防止这种暂停或提前被中段，可以向接口提供一个红石信号。"
-			]
-			dependencies: ["0000000000000D33"]
-			id: "0000000000000D42"
-			tasks: [
-				{
-					id: "0000000000000D43"
-					type: "item"
-					item: "create:portable_fluid_interface"
-				}
-				{
-					id: "0000000000000D44"
-					type: "item"
-					item: "create:portable_storage_interface"
-				}
-			]
-			rewards: [{
-				id: "0000000000000D5F"
-				type: "command"
-				title: "史诗机械动力战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: 12.0d
-			y: 6.0d
-			subtitle: "它能屈能伸"
-			description: [
-				"需要电梯吗？"
-				""
-				"通过连接自己的平台，能使用绳索滑轮来制作一个类似电梯的装置。"
-				""
-				"可以通过可编程齿轮箱的“开始驱动活塞/软管滑轮/起重机”程序以控制单次移动距离。"
-			]
-			dependencies: ["0000000000000D2B"]
-			id: "0000000000000D45"
-			tasks: [{
-				id: "0000000000000D46"
-				type: "item"
-				item: "create:rope_pulley"
-			}]
-			rewards: [{
-				id: "0000000000000D6C"
-				type: "command"
-				title: "稀有机械动力战利品箱"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			x: -3.0d
-			y: 2.0d
 			subtitle: "换到更高的档位"
 			description: [
 				"比乱糟糟的齿轮相比，可调节的齿轮箱能够接收红石信号来改变专属，最高可以达到输入的两倍。"
@@ -1582,35 +1094,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 5.0d
-			subtitle: "嗯，有好处也有坏处"
-			description: [
-				"使用软管滑轮，流体可以输入导致输出到世界中，建造一个巨大的湖泊或者排干它们都非常有用！"
-				""
-				"遇见非常大的物体时，例如海洋或巨大的熔岩湖将被认为是无限的，所以如果你想排干海洋纪念碑之类的东西，可能仍然需要建造一些方块来围起它们。"
-				""
-				"注意：软管本身抽取的流体不会运输，需要使用动力泵来完成传输的这个工作。"
-			]
-			dependencies: ["0000000000000D11"]
-			id: "0000000000000D49"
-			tasks: [{
-				id: "0000000000000D4A"
-				type: "item"
-				item: "create:hose_pulley"
-			}]
-			rewards: [{
-				id: "0000000000000D88"
-				type: "command"
-				title: "史诗机械动力战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic"
-				player_command: false
-			}]
-		}
-		{
 			x: -0.5d
-			y: 1.0d
+			y: -1.0d
 			subtitle: "是时候改变了"
 			description: [
 				"需要反转方向吗？那么这个反转齿轮箱会很适合你。"
@@ -1634,7 +1119,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -0.5d
 			y: 0.0d
 			subtitle: "将不得不在那里阻止"
 			description: [
@@ -1659,8 +1144,9 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 6.0d
+			title: "饮茶先啦"
+			x: 9.0d
+			y: 4.0d
 			subtitle: "你好 Brew-TEA-Full!"
 			description: [
 				"像1773年那样在外面喝茶太晚了？在你的生活中需要更多的茶饮吗？"
@@ -1685,8 +1171,8 @@
 		}
 		{
 			title: "保存蓝图"
-			x: 4.0d
-			y: -0.5d
+			x: 7.5d
+			y: -1.5d
 			subtitle: "建筑101"
 			description: [
 				"机械动力有一套专门用来保存多方块结构的蓝图工具。"
@@ -1698,6 +1184,7 @@
 				"3、右键空气可以命名并保存蓝图。"
 				""
 				"机械动力的Github上有一个wiki界面，其中就包含了使用蓝图的教程：https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic"
+				"里面有这个包的多方块"
 			]
 			dependencies: ["0000000000000C40"]
 			min_width: 250
@@ -1718,8 +1205,8 @@
 		}
 		{
 			title: "放置蓝图"
-			x: 2.5d
-			y: -0.5d
+			x: 6.0d
+			y: -2.5d
 			subtitle: "申请建筑许可证"
 			description: [
 				"为了使用保存的多方块结构蓝图，需要在蓝图桌上完成。"
@@ -1749,8 +1236,8 @@
 		}
 		{
 			title: "将蓝图放出来"
-			x: 1.0d
-			y: -0.5d
+			x: 5.0d
+			y: -1.0d
 			subtitle: "放置蓝图"
 			description: [
 				"蓝图加农炮是你放置多方块结构的方式之一，它需要火药来驱动，并会从相邻的容器中提取方块并放置出来。"
@@ -1780,8 +1267,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 7.0d
+			x: 12.5d
+			y: 6.5d
 			dependencies: ["0000000000000D1F"]
 			id: "5D89215255F46A38"
 			tasks: [{
@@ -1795,8 +1282,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 8.0d
+			x: 11.0d
+			y: 7.5d
 			description: ["它会在光照下自然转换，信标的光是极致的"]
 			dependencies: ["5D89215255F46A38"]
 			id: "3FC01DEE0E79DF9E"
@@ -1807,8 +1294,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 8.0d
+			x: 12.5d
+			y: 7.5d
 			description: ["它可能需要一点电力去刺激他，例如特斯拉"]
 			dependencies: ["5D89215255F46A38"]
 			id: "39ACD41D8373B9A7"
@@ -1819,8 +1306,8 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: 8.0d
+			x: 14.0d
+			y: 7.5d
 			description: [
 				"生于虚空，死于虚空"
 				"请放弃它"
@@ -1834,8 +1321,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 9.0d
+			x: 11.0d
+			y: 9.5d
 			dependencies: ["3FC01DEE0E79DF9E"]
 			id: "77E380D62B24B5AE"
 			tasks: [{
@@ -1845,8 +1332,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 9.0d
+			x: 12.5d
+			y: 9.5d
 			dependencies: ["39ACD41D8373B9A7"]
 			id: "1ACFBE6829063741"
 			tasks: [{
@@ -1856,8 +1343,8 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: 9.0d
+			x: 14.0d
+			y: 9.5d
 			dependencies: ["3141F55842B1B0C4"]
 			id: "5CE3AE7C574925AC"
 			tasks: [{
@@ -1867,8 +1354,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: 1.0d
+			x: 1.0d
+			y: -1.0d
 			description: ["它可能是用作什么充能的"]
 			dependencies: ["201490A920B4ABBE"]
 			id: "3824B91D3B392967"
@@ -1879,8 +1366,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 1.0d
+			x: 1.0d
+			y: 0.5d
 			description: [
 				"电磁感应"
 				"或许它的发电量更大了"
@@ -1892,6 +1379,29 @@
 				type: "item"
 				item: "steampowered:alternator"
 			}]
+		}
+		{
+			x: 6.5d
+			y: 5.0d
+			dependencies: ["0000000000000CBD"]
+			id: "6EDC30311065953C"
+			tasks: [
+				{
+					id: "46A9206B8DC13774"
+					type: "item"
+					item: "steampowered:cast_iron_boiler"
+				}
+				{
+					id: "68131A8C66F343C0"
+					type: "item"
+					item: "steampowered:cast_iron_steam_engine"
+				}
+				{
+					id: "67531E0E32109CF3"
+					type: "item"
+					item: "steampowered:cast_iron_flywheel"
+				}
+			]
 		}
 	]
 }

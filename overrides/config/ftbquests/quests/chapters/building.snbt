@@ -58,11 +58,18 @@
 			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "085A8424875A2B23"
-			tasks: [{
-				id: "0F45B05043BCCBE6"
-				type: "item"
-				item: "portable_stonecutter:portable_stonecutter"
-			}]
+			tasks: [
+				{
+					id: "0F45B05043BCCBE6"
+					type: "item"
+					item: "portable_stonecutter:portable_stonecutter"
+				}
+				{
+					id: "184E671C3257F704"
+					type: "item"
+					item: "sophisticatedbackpacks:stonecutter_upgrade"
+				}
+			]
 			rewards: [{
 				id: "31F796972A4B7369"
 				type: "command"

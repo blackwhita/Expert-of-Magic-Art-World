@@ -425,8 +425,8 @@
 		}
 		{
 			title: "金色粉笔"
-			x: 6.0d
-			y: 3.5d
+			x: 7.5d
+			y: 2.5d
 			subtitle: "闪闪发光！！"
 			description: [
 				"金色粉笔也是神秘学专家们经常使用的一种粉笔类型。"
@@ -487,8 +487,8 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: 6.0d
+			x: 2.5d
+			y: 5.0d
 			description: [
 				"为了在仪式中使用火灵灵髓，首先需要将火灵灵髓注入粉笔中来形成红色粉笔。"
 				""
@@ -527,234 +527,8 @@
 			]
 		}
 		{
-			x: 5.0d
-			y: 4.5d
-			shape: "hexagon"
-			description: [
-				"维度存储促动器是你在异界物品存储的大门。"
-				""
-				"它一开始的储量非常的小，但是可以通过增加最多六个的指向维度存储促动器的维度存储稳定器（每个面各一个）来拓展玩家的存储空间上限。"
-			]
-			dependencies: [
-				"0000000000000D9C"
-				"0000000000000D9E"
-			]
-			id: "0000000000000DA4"
-			tasks: [{
-				id: "0000000000000DA5"
-				type: "item"
-				item: "occultism:storage_controller"
-			}]
-			rewards: [{
-				id: "0000000000000E6C"
-				type: "command"
-				title: "史诗神秘学战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: 5.0d
-			y: 6.0d
-			shape: "hexagon"
-			description: [
-				"维度存储稳定器需要指向维度存储促动器来拓展存储空间。"
-				""
-				"维度存储稳定器的等级越高，玩家能够存储物品的上限也会越高！"
-				""
-				"一个维度存储促动器最多能够被六个维度存储稳定器相连，每升一级都会增加稳定性和存储数量上限。"
-				""
-				"维度存储稳定器需要面向维度存储促动器的上半部分矩阵放置，有效范围为五格，东南西北、上下总共六个面都能与维度存储促动器相连。"
-			]
-			dependencies: ["0000000000000DA4"]
-			id: "0000000000000DA8"
-			tasks: [{
-				id: "0000000000000DA9"
-				type: "item"
-				item: "occultism:storage_stabilizer_tier1"
-			}]
-			rewards: [
-				{
-					id: "0000000000000E59"
-					type: "item"
-					title: "等级1维度存储稳定器"
-					item: "occultism:storage_stabilizer_tier1"
-				}
-				{
-					id: "0000000000000E5A"
-					type: "xp"
-					xp: 400
-				}
-			]
-		}
-		{
-			x: 5.0d
-			y: 7.0d
-			shape: "hexagon"
-			dependencies: ["0000000000000DA8"]
-			id: "0000000000000DAA"
-			tasks: [{
-				id: "0000000000000DAB"
-				type: "item"
-				item: "occultism:storage_stabilizer_tier2"
-			}]
-			rewards: [
-				{
-					id: "0000000000000E61"
-					type: "item"
-					title: "等级2维度存储稳定器"
-					item: "occultism:storage_stabilizer_tier2"
-				}
-				{
-					id: "0000000000000E62"
-					type: "command"
-					title: "史诗神秘学战利品箱"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-					player_command: false
-				}
-			]
-		}
-		{
-			x: 5.0d
-			y: 8.0d
-			shape: "hexagon"
-			dependencies: ["0000000000000DAA"]
-			id: "0000000000000DAC"
-			tasks: [{
-				id: "0000000000000DAD"
-				type: "item"
-				item: "occultism:storage_stabilizer_tier3"
-			}]
-			rewards: [
-				{
-					id: "0000000000000E56"
-					type: "xp"
-					xp: 800
-				}
-				{
-					id: "0000000000000E57"
-					type: "item"
-					title: "等级3维度存储稳定器"
-					item: "occultism:storage_stabilizer_tier3"
-				}
-				{
-					id: "0000000000000E58"
-					type: "item"
-					item: "occultism:iesnium_block"
-				}
-			]
-		}
-		{
-			x: 3.5d
-			y: 8.0d
-			shape: "hexagon"
-			subtitle: "*拍了拍维度存储稳定器的顶部* 这小家伙居然能够装这么多东西。"
-			description: ["最顶级的维度存储稳定器。"]
-			dependencies: [
-				"0000000000000DAC"
-				"0000000000000DA0"
-			]
-			id: "0000000000000DAE"
-			tasks: [{
-				id: "0000000000000DAF"
-				type: "item"
-				item: "occultism:storage_stabilizer_tier4"
-			}]
-			rewards: [
-				{
-					id: "0000000000000E54"
-					type: "item"
-					title: "等级4维度存储稳定器"
-					item: "occultism:storage_stabilizer_tier4"
-				}
-				{
-					id: "0000000000000E55"
-					type: "command"
-					title: "传奇神秘学战利品箱"
-					icon: "kubejs:legendary_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary"
-					player_command: false
-				}
-			]
-		}
-		{
-			x: 6.0d
-			y: 5.5d
-			shape: "hexagon"
-			description: ["存储访问器可无视距离距离和维度远程访问你的维度存储空间。"]
-			dependencies: ["0000000000000DA4"]
-			id: "0000000000000DB2"
-			tasks: [{
-				id: "0000000000000DB3"
-				type: "item"
-				item: {
-					id: "occultism:storage_remote"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [
-				{
-					id: "0000000000000E5D"
-					type: "command"
-					title: "史诗神秘学战利品箱"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-					player_command: false
-				}
-				{
-					id: "0000000000000E5E"
-					type: "xp"
-					xp: 400
-				}
-			]
-		}
-		{
-			x: 4.0d
-			y: 5.5d
-			shape: "hexagon"
-			description: [
-				"稳定虫洞是一个可放置的物品，它可以使你在任何维度都能访问你的维度存储空间，也可以通过管道来输入或者输出。"
-				""
-				"与其他存储类模组一起使用时，稳定虫洞的功能将会更加完善且强大。"
-			]
-			dependencies: ["0000000000000DA4"]
-			id: "0000000000000DBA"
-			tasks: [{
-				id: "0000000000000DBB"
-				type: "item"
-				item: {
-					id: "occultism:stable_wormhole"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [
-				{
-					id: "0000000000000E5B"
-					type: "command"
-					title: "史诗神秘学战利品箱"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-					player_command: false
-				}
-				{
-					id: "0000000000000E5C"
-					type: "item"
-					title: "稳定虫洞"
-					item: {
-						id: "occultism:stable_wormhole"
-						Count: 1b
-						tag: { }
-					}
-				}
-			]
-		}
-		{
 			title: "灵魂宝石"
-			x: 4.5d
+			x: 5.5d
 			y: 2.0d
 			shape: "hexagon"
 			subtitle: "你的口袋里装了怪物，还是见到我很高兴？"
@@ -789,8 +563,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 4.5d
+			x: 8.0d
+			y: 4.0d
 			subtitle: "我在夜里总是戴着我的异界眼镜"
 			description: [
 				"异界眼镜可以让你在即使不吃魔鬼之梦果的前提下也能看到异界材料。"
@@ -827,54 +601,6 @@
 					icon: "kubejs:scavengers_delight"
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 					player_command: false
-				}
-			]
-		}
-		{
-			x: 7.0d
-			y: 1.0d
-			shape: "hexagon"
-			subtitle: "里面比外面还大！！"
-			description: [
-				"令人惊讶的背包..."
-				""
-				"嗯..."
-				""
-				"非常结实！！"
-			]
-			dependencies: ["0000000000000D9C"]
-			id: "0000000000000DC0"
-			tasks: [{
-				id: "0000000000000DC1"
-				type: "item"
-				item: {
-					id: "occultism:satchel"
-					Count: 1b
-					tag: {
-						spiritName: "Morredes"
-					}
-				}
-			}]
-			rewards: [
-				{
-					id: "0000000000000E29"
-					type: "command"
-					title: "矿工快乐包"
-					icon: "kubejs:miners_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
-					player_command: false
-				}
-				{
-					id: "0000000000000E2C"
-					type: "xp"
-					xp: 400
-				}
-				{
-					id: "0000000000000E2D"
-					type: "item"
-					title: "史诗奥利奥"
-					item: "resourcefulbees:oreo_cookie"
-					count: 8
 				}
 			]
 		}
@@ -920,50 +646,8 @@
 			]
 		}
 		{
-			icon: "minecraft:end_stone"
-			x: 6.0d
-			y: 1.0d
-			shape: "hexagon"
-			dependencies: ["0000000000000D9C"]
-			id: "0000000000000DC4"
-			tasks: [
-				{
-					id: "0000000000000E10"
-					type: "advancement"
-					title: "召唤被附身的末影螨"
-					icon: "occultism:book_of_binding_foliot"
-					advancement: "occultism:occultism/possess_endermite"
-					criterion: ""
-				}
-				{
-					id: "0000000000000E11"
-					type: "kill"
-					icon: "minecraft:end_stone"
-					entity: "occultism:possessed_endermite"
-					value: 1L
-				}
-			]
-			rewards: [
-				{
-					id: "0000000000000E66"
-					type: "item"
-					title: "末地石"
-					item: "minecraft:end_stone"
-					count: 16
-				}
-				{
-					id: "0000000000000E67"
-					type: "command"
-					title: "拾荒者快乐包"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
-				}
-			]
-		}
-		{
 			icon: "minecraft:bone"
-			x: 5.0d
+			x: 7.5d
 			y: 1.0d
 			shape: "hexagon"
 			description: [
@@ -972,6 +656,7 @@
 				"这些被附身的怪物有一点强大，但是它们也有概率在被击杀时获得更多的掉落物。"
 			]
 			dependencies: ["0000000000000D9C"]
+			dependency_requirement: "one_completed"
 			id: "0000000000000DC6"
 			tasks: [
 				{
@@ -1009,8 +694,8 @@
 		}
 		{
 			icon: "minecraft:ender_pearl"
-			x: 5.0d
-			y: 0.0d
+			x: 4.5d
+			y: 1.0d
 			shape: "hexagon"
 			dependencies: ["0000000000000D9E"]
 			id: "0000000000000DC8"
@@ -1138,7 +823,7 @@
 			description: [
 				"掘矿者巨灵比对应的魔精属性上会更强大，采矿速度和每次携带量都有提升！"
 				""
-				"在本整合包中，掘矿者巨灵的持续时间被增加了，在掘矿者消耗耐久之前你看不到该变化。"
+				""
 			]
 			dependencies: ["0000000000000DCC"]
 			id: "0000000000000DCE"
@@ -1373,8 +1058,8 @@
 		}
 		{
 			icon: "occultism:afrit_essence"
-			x: 2.0d
-			y: 5.0d
+			x: 4.0d
+			y: 4.5d
 			shape: "hexagon"
 			description: [
 				"为了召唤更强大的魔灵，你需要准备火灵灵髓。"
@@ -1598,55 +1283,10 @@
 			}]
 		}
 		{
-			icon: "minecraft:furnace"
-			x: 6.0d
-			y: 4.5d
-			shape: "hexagon"
-			subtitle: "我最好再加会班..."
-			description: [
-				"巨灵机器操作员可以与维度存储促动器互相搭配使用能制作最基础的自动化。"
-				""
-				"使用召唤之书将巨灵与机器绑定，然后依次再次设置巨灵的输入与输出，最后再为巨灵分配一个维度存储促动器即可。"
-				""
-				"在维度存储促动器中，你可以选择64个想让巨灵去处理的物品，并放在GUI内左侧栏中，这时会弹出一个选择菜单会让你选择哪个操作员去执行该任务。"
-			]
-			dependencies: ["0000000000000DA4"]
-			id: "0000000000000E71"
-			tasks: [
-				{
-					id: "0000000000000E72"
-					type: "advancement"
-					title: "召唤巨灵机器操作员"
-					advancement: "occultism:occultism/summon_djinni_manage_machine"
-					criterion: ""
-				}
-				{
-					id: "0000000000000E75"
-					type: "item"
-					item: "occultism:book_of_binding_djinni"
-				}
-			]
-			rewards: [
-				{
-					id: "0000000000000E76"
-					type: "command"
-					title: "史诗神秘学战利品箱"
-					icon: "kubejs:epic_lootbox"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-					player_command: false
-				}
-				{
-					id: "0000000000000E77"
-					type: "xp"
-					xp: 500
-				}
-			]
-		}
-		{
 			title: "召唤具翼使魔"
 			icon: "minecraft:feather"
-			x: 2.0d
-			y: 0.0d
+			x: 2.5d
+			y: 1.0d
 			shape: "hexagon"
 			description: [
 				"神秘学专家们也可通过召唤使魔来协助他们完成旅程。"
@@ -1684,47 +1324,9 @@
 			]
 		}
 		{
-			x: 4.5d
-			y: 3.0d
-			description: [
-				"神秘学专家们可以通过使用使魔之戒来存储他们的使魔，将力量直接转移到戒指上。"
-				""
-				"只需要手持使魔之戒对着任意一只使魔右键即可绑定，并将该使魔之戒放到饰品栏中才能生效。"
-				""
-				"也可以通过使用该方式来转移该使魔的主人，将使魔之戒内的使魔放出的玩家将会成为该使魔的新主人！"
-			]
-			dependencies: [
-				"0000000000000D9C"
-				"0000000000000D9E"
-			]
-			id: "50FCDBB9ABEFC493"
-			tasks: [{
-				id: "402BD39506DFCF52"
-				type: "item"
-				item: {
-					id: "occultism:familiar_ring"
-					Count: 1b
-					tag: { }
-					ForgeCaps: {
-						Parent: {
-							hasFamiliar: 0b
-						}
-					}
-				}
-			}]
-			rewards: [{
-				id: "132D5C23B97D5E1F"
-				type: "command"
-				title: "史诗神秘学战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
 			icon: "minecraft:gold_ore"
-			x: 3.5d
-			y: 4.5d
+			x: 5.0d
+			y: 4.0d
 			shape: "hexagon"
 			description: [
 				"碎矿者巨灵是魔精中更强大的一个类型，在该类型中灵髓将不会有衰减的限制。"
@@ -1751,8 +1353,8 @@
 		}
 		{
 			icon: "minecraft:diamond_ore"
-			x: 2.0d
-			y: 7.0d
+			x: 4.0d
+			y: 6.0d
 			shape: "hexagon"
 			description: ["碎矿者火灵相比巨灵还更强大，能够以更快的速度产出更多的矿粉。"]
 			dependencies: ["0000000000000DA0"]
@@ -1776,8 +1378,8 @@
 		}
 		{
 			icon: "occultism:iesnium_ore"
-			x: 0.5d
-			y: 7.0d
+			x: 2.5d
+			y: 6.5d
 			shape: "hexagon"
 			subtitle: "我在这些傻子旁边推磨。"
 			description: ["碎矿者魔王是神秘学专家们的顶级矿物翻倍手段！该魔王比碎矿者火灵还更加强大，同时处理速度更快！"]
@@ -1811,38 +1413,8 @@
 			]
 		}
 		{
-			x: 8.0d
-			y: 1.5d
-			shape: "hexagon"
-			description: [
-				"贪婪使魔是你在探险中不错的伙伴！"
-				""
-				"这个使魔会始终跟随你，能帮你捡掉落物并直接存入你的物品栏中！"
-				""
-				"将贪婪使魔绑定到使魔之戒中，并将该使魔之戒放入饰品栏中，你将拥有磁铁的能力。"
-			]
-			dependencies: ["0000000000000D9C"]
-			id: "7C066CF3F26957FA"
-			tasks: [{
-				id: "35B087061AEF871F"
-				type: "advancement"
-				title: "召唤贪婪使魔"
-				icon: "artifacts:universal_attractor"
-				advancement: "occultism:occultism/familiar_greedy"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "28BE9B44E120DB5B"
-				type: "command"
-				title: "史诗神秘学战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-				player_command: false
-			}]
-		}
-		{
-			x: 1.0d
-			y: 0.5d
+			x: 1.5d
+			y: 1.0d
 			shape: "hexagon"
 			subtitle: "我在黑夜中戴上了墨镜 :catjam:"
 			description: ["蝙蝠使魔使用蝙蝠的回声能力让你在黑夜中的视野更加清晰，本质上就是夜视效果！"]
@@ -1866,8 +1438,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 0.0d
+			x: 3.5d
+			y: 1.0d
 			shape: "hexagon"
 			description: [
 				"铁匠使魔是神秘学专家们常用的使魔之一。"
@@ -1897,8 +1469,8 @@
 		}
 		{
 			icon: "occultism:ritual_dummy/custom_ritual"
-			x: 1.5d
-			y: -1.5d
+			x: 3.0d
+			y: -0.5d
 			description: [
 				"这些只是神秘学专家们列举经常使用使魔。"
 				""
@@ -1921,6 +1493,20 @@
 				type: "item"
 				item: "occultism:book_of_binding_djinni"
 				count: 3
+			}]
+		}
+		{
+			title: "异界石交易者"
+			x: 11.5d
+			y: 4.0d
+			subtitle: "好帮手"
+			description: ["可以用更好的方法获得异界石"]
+			dependencies: ["0000000000000CF7"]
+			id: "714CCC69DC44BA28"
+			tasks: [{
+				id: "6836F1DF72EF519A"
+				type: "item"
+				item: "occultism:otherstone"
 			}]
 		}
 	]

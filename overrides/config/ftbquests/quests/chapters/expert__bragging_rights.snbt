@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
+			x: 0.5d
 			y: 0.0d
 			dependencies: [
 				"38AF4AF6CA358849"
@@ -21,7 +21,10 @@
 				"1FF9985DFB14C4A6"
 				"09554CB6A8F62081"
 				"3C78A0461A171131"
+				"23479C16F12EC48F"
+				"6233CEFE83FE60B7"
 			]
+			hide: false
 			id: "00A6967062AB123B"
 			tasks: [{
 				id: "528284F301FCC9E8"
@@ -30,8 +33,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 0.5d
+			x: 0.5d
+			y: -2.0d
 			id: "3C78A0461A171131"
 			tasks: [{
 				id: "75D85050EAE49FF4"
@@ -41,7 +44,7 @@
 		}
 		{
 			x: 2.5d
-			y: -0.5d
+			y: 0.0d
 			id: "09554CB6A8F62081"
 			tasks: [{
 				id: "251328C6E6C4DD53"
@@ -50,8 +53,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -2.5d
+			x: -0.5d
+			y: -2.0d
 			id: "1FF9985DFB14C4A6"
 			tasks: [{
 				id: "600083CED5BA0BFA"
@@ -60,8 +63,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -2.5d
+			x: 1.5d
+			y: -2.0d
 			id: "388449FEC453CD63"
 			tasks: [{
 				id: "7CEFFB7A4D49BF00"
@@ -70,8 +73,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: -0.5d
+			x: -1.5d
+			y: 0.0d
 			id: "3FF16BA9A674E13F"
 			tasks: [{
 				id: "76B1A20061AB3C2C"
@@ -80,8 +83,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 0.5d
+			x: -1.5d
+			y: 1.0d
 			id: "2818E18C1DDDB1D5"
 			tasks: [{
 				id: "0404AB7E01012230"
@@ -100,7 +103,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 1.5d
 			y: 2.0d
 			id: "38AF4AF6CA358849"
 			tasks: [{
@@ -138,13 +141,44 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 3.0d
+			x: 0.5d
+			y: 2.0d
 			id: "1BDB06CB80F1712D"
 			tasks: [{
 				id: "27A39E99E40652FC"
 				type: "item"
 				item: "ars_nouveau:creative_mana_jar"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			id: "23479C16F12EC48F"
+			tasks: [{
+				id: "7E79EFC683983FCD"
+				type: "item"
+				item: "pneumaticcraft:creative_compressor"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.0d
+			id: "6233CEFE83FE60B7"
+			tasks: [{
+				id: "3530A4BC25D1DDBD"
+				type: "item"
+				item: "storagedrawers:creative_storage_upgrade"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			subtitle: "不必要"
+			id: "503BDC7A54F986CD"
+			tasks: [{
+				id: "3A0768109473982C"
+				type: "item"
+				item: "storagedrawers:creative_vending_upgrade"
 			}]
 		}
 	]

@@ -94,6 +94,11 @@
 				type: "item"
 				item: "powah:energizing_rod_starter"
 			}]
+			rewards: [{
+				id: "346842BB25CC8C6E"
+				type: "item"
+				item: "powah:energizing_rod_starter"
+			}]
 		}
 		{
 			x: 1.5d

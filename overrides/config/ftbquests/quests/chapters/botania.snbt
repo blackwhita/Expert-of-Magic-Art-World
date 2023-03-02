@@ -52,14 +52,14 @@
 			title: "神秘花"
 			icon: "botania:magenta_mystical_flower"
 			x: -3.0d
-			y: 1.5d
+			y: 2.5d
 			subtitle: "非自然生机"
 			description: [
 				"在主世界上生长着一些超自然亮度的花朵，去收集一些来探索花的奥秘吧。"
 				""
 				"也可以通过黄神秘花瓣种到地上，并使用骨粉将它们催熟。在收获高神秘花时要注意，它们比普通的神秘花更脆弱。"
 			]
-			dependencies: ["0000000000000501"]
+			dependencies: ["0000000000000509"]
 			id: "0000000000000505"
 			tasks: [{
 				id: "0000000000000507"
@@ -104,11 +104,11 @@
 			]
 		}
 		{
-			x: -4.0d
-			y: 1.0d
+			x: -3.0d
+			y: 1.5d
 			subtitle: "生长奇迹"
 			description: ["无法寻找到足够类型的神秘花？那就在土地上使用一些花肥来让它们和草一样生成吧。"]
-			dependencies: ["0000000000000505"]
+			dependencies: ["0000000000000501"]
 			id: "0000000000000509"
 			tasks: [{
 				id: "000000000000050A"
@@ -127,7 +127,7 @@
 			title: "花药台"
 			icon: "botania:apothecary_default"
 			x: -3.0d
-			y: 2.5d
+			y: 3.5d
 			subtitle: "也许是纳米人？"
 			description: ["当神秘花瓣、一些材料和种子放在一起时，发生了一些奇怪的事。它们似乎会自动组合成一个新的结构。"]
 			dependencies: ["0000000000000505"]
@@ -166,7 +166,7 @@
 		{
 			title: "活木和活石"
 			x: -3.0d
-			y: 3.5d
+			y: 4.5d
 			subtitle: "汲取新生命"
 			description: ["纯洁的白雏菊似乎能从大地中吸取精华，并将精华注入到附近的其他材料中，也许这些精华能够被直接地利用？"]
 			dependencies: ["000000000000050B"]
@@ -324,7 +324,7 @@
 		}
 		{
 			x: -4.0d
-			y: 5.0d
+			y: 6.0d
 			subtitle: "不可貌相"
 			description: [
 				"活石是一个不错的魔力容器，在保障魔力安全的同时也能随时使用这些魔力。"
@@ -349,7 +349,7 @@
 		}
 		{
 			x: -2.0d
-			y: 5.0d
+			y: 6.0d
 			subtitle: "瞄准和射击"
 			description: [
 				"活木是一个不错的魔力导体。"
@@ -376,7 +376,7 @@
 		}
 		{
 			x: -3.0d
-			y: 5.0d
+			y: 6.0d
 			description: [
 				"活木似乎对来自大地的魔法具有极强的亲和力，制作一根森林法杖来更加精准的引导魔力吧。"
 				""
@@ -404,7 +404,7 @@
 		}
 		{
 			x: -3.0d
-			y: 6.5d
+			y: 7.5d
 			subtitle: "世界在动，它就在烧'"
 			description: [
 				"这在某些幻想小说中十分的常见，人类一旦发现新的能量源泉，就会立即利用它而导致地球被破坏，现在，你是这个故事的主角！"
@@ -529,8 +529,8 @@
 		{
 			title: "命运骰子"
 			icon: "botania:dice"
-			x: 12.0d
-			y: 4.5d
+			x: 13.5d
+			y: 3.0d
 			subtitle: "扭转刀锋"
 			description: [
 				"看来，虽然你已经付出了很多努力，但仍然没有彻底的杀死盖亚守护者，是时候埋头苦干继续加油了。"
@@ -603,7 +603,7 @@
 		}
 		{
 			x: -4.5d
-			y: 7.0d
+			y: 8.0d
 			subtitle: "玻色-末影斯坦凝聚体"
 			description: ["如果说收集末影珍珠还不能让人头疼的话，那么将末影珍珠丢入装有魔力的魔力池中，它能使周围产生扭曲的效果，令人震惊。"]
 			dependencies: ["0000000000000521"]
@@ -624,7 +624,7 @@
 		}
 		{
 			x: -1.5d
-			y: 7.0d
+			y: 8.0d
 			subtitle: "超辐射散射"
 			description: ["这颗宝石的切面似乎正在将它里面的能量放大化，是时候开展更加深入的研究了。"]
 			dependencies: ["0000000000000521"]
@@ -645,7 +645,7 @@
 		}
 		{
 			x: -2.5d
-			y: 9.0d
+			y: 10.0d
 			subtitle: "永恒"
 			description: ["即使短暂的放入魔力池中，铁锭也会被转化成一个魔力容器，将魔力存储进内部以便日后使用，甚至能在遭受强力冲击之后自动重组，但这似乎是工具或者盔甲的制作材料，应该有其他更好的用途。"]
 			dependencies: ["0000000000000521"]
@@ -666,7 +666,7 @@
 		}
 		{
 			x: -2.0d
-			y: 8.0d
+			y: 9.0d
 			subtitle: "它在...蠕动吗？"
 			description: ["一根普通的绳子无法驾驭主魔力的野性，但它似乎无法时刻将自己保持完整。"]
 			dependencies: ["0000000000000521"]
@@ -687,7 +687,7 @@
 		}
 		{
 			x: -4.0d
-			y: 8.0d
+			y: 9.0d
 			subtitle: "水晶结合剂"
 			description: ["似乎大多数粉末都能在魔力池中融成一种更强大的粘合剂，它们或许有用。"]
 			dependencies: ["0000000000000521"]
@@ -708,7 +708,7 @@
 		}
 		{
 			x: -3.0d
-			y: 8.0d
+			y: 9.0d
 			subtitle: "环游世界"
 			description: [
 				"我们迄今为止发现的这几种材料组合在一起能变成较为有用的魔力戒指，魔力戒指可被当做便携式的魔力池，随身携带一个魔力戒指，让魔力创造无限可能。"
@@ -773,7 +773,7 @@
 		}
 		{
 			x: 2.0d
-			y: 6.5d
+			y: 6.0d
 			description: ["由于未知的原因，由不纯魔力组成的小球会在生命终止后短暂存在。阿卡纳蔷薇能够吸收并纯化这些小球，以供进一步使用。"]
 			dependencies: ["000000000000052D"]
 			id: "0000000000000542"
@@ -790,39 +790,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
 				player_command: false
 			}]
-		}
-		{
-			x: 1.0d
-			y: 6.0d
-			subtitle: "别往下看"
-			description: ["一阵狂风呼啸而来，把使用者包裹在一个保护套中，将他们拉向天空，并在落地时为他们提供优雅的缓冲。"]
-			dependencies: ["000000000000052D"]
-			id: "0000000000000544"
-			tasks: [{
-				id: "0000000000000545"
-				type: "item"
-				item: {
-					id: "botania:tornado_rod"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [
-				{
-					id: "0000000000000556"
-					type: "item"
-					title: "活木化身"
-					item: "botania:avatar"
-				}
-				{
-					id: "0000000000000A76"
-					type: "command"
-					title: "拾荒者快乐包"
-					icon: "kubejs:scavengers_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-					player_command: false
-				}
-			]
 		}
 		{
 			x: 1.5d
@@ -850,8 +817,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 6.0d
+			x: 3.5d
+			y: 4.5d
 			subtitle: "高山还是矮山？"
 			description: ["使用该法杖时可以听到隆隆声，这是地球被移动的声音，迫使泥土填满接触的地方。"]
 			dependencies: ["000000000000052D"]
@@ -884,27 +851,6 @@
 			}]
 			rewards: [{
 				id: "00000000000005DE"
-				type: "command"
-				title: "稀有植物魔法战利品箱"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
-				player_command: false
-			}]
-		}
-		{
-			x: 3.5d
-			y: 4.5d
-			subtitle: "涨潮"
-			description: ["只需等待一会就能从大地当中吸取水源，十分方便。"]
-			dependencies: ["000000000000052D"]
-			id: "000000000000054C"
-			tasks: [{
-				id: "000000000000054D"
-				type: "item"
-				item: "botania:water_rod"
-			}]
-			rewards: [{
-				id: "00000000000005DF"
 				type: "command"
 				title: "稀有植物魔法战利品箱"
 				icon: "kubejs:rare_lootbox"
@@ -985,7 +931,7 @@
 		}
 		{
 			x: -3.5d
-			y: 9.0d
+			y: 10.0d
 			subtitle: "清晰的视力"
 			description: ["注入玻璃内的魔力提供了一个更加明亮的光源，透过它可以用观察到一个神秘的世界。"]
 			dependencies: ["0000000000000521"]
@@ -1191,8 +1137,8 @@
 		}
 		{
 			title: "魔力透镜"
-			x: 2.0d
-			y: 9.0d
+			x: -0.5d
+			y: 6.0d
 			subtitle: "立体魔力操控"
 			description: [
 				"事实证明，通过将各种符文与魔力透镜相结合，能够增加它们与魔力发射器的亲和力。除此之外，在工作台内在两个魔力透镜之间使用一个黏液球似乎可以将它们永久性的黏合在一起。"
@@ -1245,8 +1191,8 @@
 		}
 		{
 			icon: "mythicbotany:mana_infuser"
-			x: 7.0d
-			y: 8.0d
+			x: 6.0d
+			y: 4.5d
 			subtitle: "诡计多端的电控稳定化"
 			description: [
 				"当暴露在强大的魔力场时，亚尔夫海姆的材料似乎能组成一种新的材料，其组成的方式和泰拉钢的获取方式一样。"
@@ -1293,8 +1239,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 9.0d
+			x: 8.0d
+			y: 4.5d
 			subtitle: "额外的水晶"
 			description: [
 				"此时魔力已经证明了它在重组物品这方面的重要性，一些受限的魔法通过吸取生物死亡时产生的球状体来获得潜在的魔力。精灵水晶有助于加速这一过程，并将真正的魔力注入这些可修复耐久的物品中。"
@@ -1318,8 +1264,8 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: 4.0d
+			x: 10.5d
+			y: 3.0d
 			subtitle: "康威游戏"
 			description: [
 				"一个虽简单又复杂的游戏，它与模仿的生命体十分相似，通过解开它的秘密让它持续为你生产魔力。"
@@ -1353,32 +1299,7 @@
 		}
 		{
 			x: 13.0d
-			y: 4.0d
-			subtitle: "与你一起生长"
-			description: [
-				"并非每种材料都能受魔力的影响而自动重组，但它通过与盖亚之魂结合起来，就能将该属性赋予在任何物品上。"
-				""
-				"永恒常春藤通常可以在任何能在铁砧上修复耐久的物品上生效，只需要将赋予常春藤的物品、永恒常春藤以及三个用于在铁砧修复物品的物品在工作台中绑定。例如：为一把钻石镐上绑定永恒常春藤就需要三颗钻石，钻石剑也是一样需要三颗钻石。"
-			]
-			dependencies: ["0000000000000524"]
-			id: "00000000000005A2"
-			tasks: [{
-				id: "00000000000005A3"
-				type: "item"
-				item: "botaniaadditions:regen_ivy"
-			}]
-			rewards: [{
-				id: "00000000000005CD"
-				type: "command"
-				title: "传奇植物魔法战利品箱"
-				icon: "kubejs:legendary_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
-				player_command: false
-			}]
-		}
-		{
-			x: 14.0d
-			y: 3.5d
+			y: 2.0d
 			subtitle: "打通任督二脉"
 			description: ["魔力发射器的最终版本，在发射器内注入了盖亚之力，在魔力发射器种类里有着最强的魔力传输量。"]
 			dependencies: ["0000000000000524"]
@@ -1398,8 +1319,8 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 3.5d
+			x: 11.0d
+			y: 2.0d
 			subtitle: "注意差距"
 			description: ["通过注入盖亚之力来稳定，可以形成一个黑洞维度来存储大量的同种物品。"]
 			dependencies: ["0000000000000524"]
@@ -1425,8 +1346,8 @@
 		{
 			title: "密米尔之泉的泉水"
 			icon: "mythicbotany:gjallar_horn_full"
-			x: 12.0d
-			y: 5.5d
+			x: 11.0d
+			y: 4.0d
 			subtitle: "嘬一小口，芙蕾雅就会爱上你！"
 			description: [
 				"圣水来自世界树，世界树的根系能够穿透所有维度，你敢喝下这个供奉神明的圣水吗？"
@@ -1464,8 +1385,8 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: 8.0d
+			x: 12.0d
+			y: 4.5d
 			subtitle: "释放源头"
 			description: [
 				"一旦开始流血，它就永远都不会停止，寻找一个流浪商人并引诱流浪商人站到符文仪式中间。"
@@ -1495,7 +1416,7 @@
 		{
 			title: "亚尔夫海姆"
 			x: 12.0d
-			y: 9.0d
+			y: 6.0d
 			subtitle: "从黑暗到光明"
 			description: [
 				"喝下这令人不按的圣水之后，通往亚尔夫海姆的大门将会为你敞开，你将畅通无阻。"
@@ -1519,8 +1440,8 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 7.0d
+			x: 13.0d
+			y: 4.0d
 			subtitle: "诗情画意"
 			description: [
 				"随着主教得到安全保障，想要前进就必须先退一步去努力与这片大地上的盖亚守护者做对抗，使用盖亚魂锭召唤盖亚的第二形态并击败它吧。"

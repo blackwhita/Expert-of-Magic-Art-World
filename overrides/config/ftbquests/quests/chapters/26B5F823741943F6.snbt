@@ -301,5 +301,25 @@
 				item: "emendatusenigmatica:iron_chunk"
 			}]
 		}
+		{
+			x: 0.5d
+			y: 9.0d
+			shape: "hexagon"
+			description: ["这是一个礼物"]
+			dependencies: ["7CFB3139C2079D46"]
+			dependency_requirement: "one_completed"
+			id: "4F08B1922B2398A3"
+			tasks: [{
+				id: "1E979533FF6D223C"
+				type: "item"
+				item: "pamhc2trees:spiderweb_sapling"
+			}]
+			rewards: [{
+				id: "189829F779AFF0B0"
+				type: "item"
+				item: "minecraft:string"
+				count: 8
+			}]
+		}
 	]
 }

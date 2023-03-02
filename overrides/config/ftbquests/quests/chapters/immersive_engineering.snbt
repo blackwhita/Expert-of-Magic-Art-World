@@ -592,26 +592,6 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: -4.5d
-			description: ["外置加热器是一个简单粗暴的机器，当它被通电时，它能加钱相邻的熔炉，这能使熔炉能更快的烧制而不需要燃料。"]
-			dependencies: ["000000000000000F"]
-			id: "0000000000000034"
-			tasks: [{
-				id: "0000000000000035"
-				type: "item"
-				item: "immersiveengineering:furnace_heater"
-			}]
-			rewards: [{
-				id: "0000000000000616"
-				type: "command"
-				title: "稀有沉浸工程战利品箱"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
-				player_command: false
-			}]
-		}
-		{
 			x: -1.5d
 			y: -1.5d
 			description: ["热传导发电机是另外一种能够无限产生能源的机器，当它周围被热源与冰产生温差时，它就能够根据温差来发电，具体参数请参看工程师手册。"]
@@ -857,79 +837,6 @@
 			}]
 		}
 		{
-			title: "斗轮式挖掘机"
-			icon: "immersiveengineering:bucket_wheel"
-			x: -6.5d
-			y: 1.0d
-			description: [
-				"一旦你确定了一个合适的采矿地点，你就能在这个区块内建造这个机器，它工作需要消耗大量的FE能源。"
-				""
-				"整合包增加了几个额外的矿脉，例如：沙民遗迹矿脉、奈布矿脉等等，更多矿脉可以在工程师手册中查看。"
-				""
-				"注意：在你的“building_gadgets_patterns”文件内提供了大量的多方块结构蓝图，可以去使用复制粘贴小帮手或者蓝图加农炮来完成建造。"
-			]
-			dependencies: ["0000000000000061"]
-			id: "0000000000000040"
-			tasks: [
-				{
-					id: "5B9AAE9A66CF1A1F"
-					type: "item"
-					item: "immersiveengineering:heavy_engineering"
-					count: 4L
-				}
-				{
-					id: "14152385FF2C7F94"
-					type: "item"
-					item: "immersiveengineering:light_engineering"
-					count: 9L
-				}
-				{
-					id: "715D9FF0DF871042"
-					type: "item"
-					item: "immersiveengineering:rs_engineering"
-				}
-				{
-					id: "0DC27129321B844B"
-					type: "item"
-					item: "immersiveengineering:radiator"
-					count: 3L
-				}
-				{
-					id: "486083D949A6EB82"
-					type: "item"
-					item: "immersiveengineering:sheetmetal_steel"
-					count: 16L
-				}
-				{
-					id: "14349203FE43E315"
-					type: "item"
-					item: "immersiveengineering:steel_scaffolding_standard"
-					count: 26L
-				}
-				{
-					id: "1CA9D0AFE77C2611"
-					type: "item"
-					title: "9x 钢块"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:storage_blocks/steel"
-						}
-					}
-					count: 9L
-				}
-			]
-			rewards: [{
-				id: "000000000000061C"
-				type: "command"
-				title: "史诗沉浸工程战利品箱"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
-				player_command: false
-			}]
-		}
-		{
 			title: "岩芯钻井"
 			icon: "immersiveengineering:sample_drill"
 			x: -5.5d
@@ -988,38 +895,6 @@
 				icon: "kubejs:rare_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
 				player_command: false
-			}]
-		}
-		{
-			title: "工程照明"
-			icon: "immersiveengineering:electric_lantern"
-			x: -8.5d
-			y: -4.5d
-			description: [
-				"当提供少量电力时，电灯能够抑制32格之内的生物生成，并且发出光亮。"
-				""
-				"泛光灯能够照亮前方一大片的区域。"
-			]
-			dependencies: ["0000000000000019"]
-			id: "0000000000000243"
-			tasks: [
-				{
-					id: "0000000000000244"
-					type: "item"
-					item: "immersiveengineering:electric_lantern"
-				}
-				{
-					id: "0000000000000245"
-					type: "item"
-					item: "immersiveengineering:floodlight"
-				}
-			]
-			rewards: [{
-				id: "0000000000000610"
-				type: "item"
-				title: "荧石"
-				item: "minecraft:glowstone"
-				count: 4
 			}]
 		}
 		{

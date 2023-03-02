@@ -66,84 +66,6 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 4.0d
-			subtitle: "比我的笑话还干燥"
-			description: ["当烘干池和挤压机一起工作时，会让获取门瑞欧更简单；将烘干池放置在挤压机旁边然后让挤压机的输出口对准它就能够正常工作了。"]
-			dependencies: ["42D9F6E36CF8F06E"]
-			optional: true
-			id: "510121D501040EA5"
-			tasks: [{
-				id: "6DFFC1D94075DA22"
-				type: "item"
-				title: "烘干池"
-				icon: "integrateddynamics:drying_basin"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "integrateddynamics:drying_basin"
-								Count: 1b
-							}
-							{
-								id: "integrateddynamics:crystalized_menril_block"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "6FCCEF89844BC6E9"
-				type: "command"
-				title: "拾荒者快乐包"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
-			x: -1.5d
-			y: 4.0d
-			subtitle: "更快干燥"
-			description: ["与烘干池功能一样但速度更快也会消耗RF能源。"]
-			dependencies: ["510121D501040EA5"]
-			optional: true
-			id: "05C24B4CAB4AC124"
-			tasks: [{
-				id: "4884D5DED8B35CFD"
-				type: "item"
-				title: "电动烘干池"
-				icon: "integrateddynamics:mechanical_drying_basin"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "integrateddynamics:mechanical_drying_basin"
-								Count: 1b
-							}
-							{
-								id: "integrateddynamics:crystalized_chorus_block"
-								Count: 1b
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "2490003809DE5195"
-				type: "command"
-				title: "拾荒者快乐包"
-				icon: "kubejs:scavengers_delight"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
-				player_command: false
-			}]
-		}
-		{
 			title: "流体传输"
 			icon: "minecraft:water_bucket"
 			x: -3.0d
@@ -600,6 +522,33 @@
 				id: "2C36F7C1789E5E61"
 				type: "item"
 				item: "integratedtunnels:part_player_simulator"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			description: ["是的就是这样"]
+			hide_dependency_lines: false
+			dependencies: ["42D9F6E36CF8F06E"]
+			dependency_requirement: "one_completed"
+			id: "6783E6AA8BE75CEA"
+			tasks: [
+				{
+					id: "08CD427C3300F770"
+					type: "item"
+					item: "integrateddynamics:bucket_menril_resin"
+				}
+				{
+					id: "4360F1BDE1DE5494"
+					type: "item"
+					item: "pneumaticcraft:thermopneumatic_processing_plant"
+				}
+			]
+			rewards: [{
+				id: "173BAA779D582598"
+				type: "item"
+				item: "integrateddynamics:crystalized_menril_block"
+				count: 4
 			}]
 		}
 	]

@@ -39,10 +39,10 @@
 			]
 		}
 		{
-			x: 1.5d
-			y: 2.5d
+			x: 2.0d
+			y: 2.0d
 			description: ["通过细心地处理，恶魔的意志似乎可以被净化与结晶，虽然他们类似于某种糖果，但那些试图通过食用的人很快就变成了胡言乱语的可怜虫；目前暂不清楚这些是否加速了他们的疯狂，或者是直接导致他们的疯狂，但从那以后，再也没有一位理智的魔法师尝试过这样做了。"]
-			dependencies: ["690063418D6815D2"]
+			dependencies: ["06E76BE2A422E8AC"]
 			id: "5E1A0B48076CD5F6"
 			tasks: [
 				{
@@ -101,8 +101,8 @@
 			]
 		}
 		{
-			x: 4.0d
-			y: 0.5d
+			x: 4.5d
+			y: 1.0d
 			description: [
 				"“很少有问题是靠一点魔法和一把像样的刀解决不了的，对于一把神奇的刀片来说更是如此。”"
 				""
@@ -123,82 +123,7 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 0.5d
-			shape: "diamond"
-			description: [
-				"在我们跑步之前，我们要会走路；在我们走路之前，我们要学会爬行。"
-				""
-				"如果我们要直接挖掘艾瑟金属矿石，会发现根本就达不到挖掘矿石的条件；但魔法师们似乎发现能够借助魔灵来达到这个目的。"
-			]
-			dependencies: ["152B45DD8C1899C2"]
-			id: "07786879C8859B12"
-			tasks: [{
-				id: "0E36F674D2F3A549"
-				type: "item"
-				item: {
-					id: "occultism:infused_pickaxe"
-					Count: 1b
-					tag: {
-						spiritName: "Krarcmur"
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
-			x: 1.5d
-			y: 1.0d
-			shape: "diamond"
-			description: [
-				"一种神秘的矿石渗透进了这个世界的深处，但似乎来自于另外一个世界；人们对于它的起源知之甚少，尽管各种事实证明其并非来自大自然。"
-				""
-				"因其神秘且独特的能力而被魔法师与工匠们备受追捧。"
-				""
-				"借助探测杖与异界眼镜能够在下界寻找一些。"
-			]
-			dependencies: ["07786879C8859B12"]
-			id: "690063418D6815D2"
-			tasks: [{
-				id: "1AD42494E69B8715"
-				type: "item"
-				item: "occultism:iesnium_ore"
-			}]
-		}
-		{
-			x: 1.0d
-			y: 0.5d
-			shape: "diamond"
-			description: ["由各个维度的材料和多种魔法制成的强大工具。感知工具的发明是魔法界一个里程碑式的奇迹，打开了当时还无法想象的大门。"]
-			dependencies: ["690063418D6815D2"]
-			id: "051F9C054B9CDE96"
-			tasks: [
-				{
-					id: "6841E8793EE2C2E0"
-					type: "item"
-					item: {
-						id: "bloodmagic:soulpickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "0B1582FDA55A0D17"
-					type: "item"
-					item: {
-						id: "bloodmagic:soulsword"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-		}
-		{
-			x: 4.0d
+			x: 4.5d
 			y: 3.0d
 			description: [
 				"据说，异界的魔灵在它们的家中以一种无形的状态存在；将他们带到这个世界的魔法帮助他们构建了一个可寄宿于这个世界的形态，以在他们停留期间保护他们。"
@@ -249,7 +174,7 @@
 		{
 			title: "血魔法 - 第四级和第五级"
 			icon: "bloodmagic:altar"
-			x: 3.5d
+			x: 4.0d
 			y: 4.5d
 			description: [
 				"有了火灵灵髓指引祭坛，就可以让更多的符文派上用场，从而获得曾无法得到的力量。"
@@ -400,7 +325,7 @@
 		{
 			title: "隐域之缘"
 			x: 1.5d
-			y: -0.5d
+			y: 0.5d
 			shape: "hexagon"
 			description: [
 				"前往一个隐藏的领域，一个与世隔绝的地方；在这里，可以找到一种古老散发血红的莓，或许应该带回来并且尝试种植一些。"
@@ -424,7 +349,7 @@
 			]
 		}
 		{
-			x: 4.5d
+			x: 5.0d
 			y: 5.0d
 			shape: "gear"
 			dependencies: ["3103AD6157F2D6AC"]
