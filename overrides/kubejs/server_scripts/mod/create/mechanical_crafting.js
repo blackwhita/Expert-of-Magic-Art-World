@@ -42,7 +42,7 @@ onEvent('recipes', (event) => {
             E: Item.of('pneumaticcraft:air_compressor').ignoreNBT()
         },
     },
-    {
+    /*{
         output: 'pneumaticcraft:assembly_io_unit_export',
         pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
         key: {
@@ -52,7 +52,7 @@ onEvent('recipes', (event) => {
             D: 'pneumaticcraft:reinforced_stone_slab',
             E: Item.of('pneumaticcraft:air_compressor').ignoreNBT()
         },
-    },
+    },*/
     {
         output: 'pneumaticcraft:assembly_controller',
         pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
