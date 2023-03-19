@@ -1,2 +1,0 @@
-onEvent('item.tags', (event) => {
-});

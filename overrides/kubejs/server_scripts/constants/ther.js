@@ -1,1 +1,0 @@
-let ther_other=['thermal:press_gear_die', 'thermal:press_packing_2x2_die', 'thermal:press_packing_3x3_die', 'thermal:press_unpacking_die', 'thermal:chiller_rod_cast', 'thermal:chiller_ingot_cast']

@@ -1,2 +1,0 @@
-onEvent('block.tags', (event) => {
-});

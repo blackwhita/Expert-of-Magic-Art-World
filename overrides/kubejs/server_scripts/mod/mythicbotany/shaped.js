@@ -1,2 +1,0 @@
-onEvent('recipes', (event) => {
-});
