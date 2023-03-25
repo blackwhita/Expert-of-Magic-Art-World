@@ -1,0 +1,32 @@
+{
+    "controllerId": "industrial_assembly_machine",
+    "name": "Industrial_assembly_machine",
+    "textureOverride":"immersiveengineering:block/metal_decoration/radiator",
+    "ports": [
+      {
+        "type": "masterfulmachinery:items",
+        "name": "Item",
+        "id": "item",
+        "data": {
+          "rows": 6,
+          "columns": 6
+        }
+      },
+      {
+        "type": "masterfulmachinery:fluids",
+        "name": "Fluid",
+        "id": "fluid",
+        "data": {
+          "capacity": 1000000
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "name": "Energy",
+        "id": "energy",
+        "data": {
+          "capacity": 1000000000
+        }
+      }
+    ]
+  }

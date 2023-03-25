@@ -1,0 +1,326 @@
+{
+	id: "3E83AD1B1F63233C"
+	group: "34B7FB260B6AEB81"
+	order_index: 1
+	filename: "26B5F823741943F6"
+	title: "虚假的开始"
+	icon: "ftbsluice:iron_sluice"
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "活木的恩惠（有限的）"
+			x: 0.0d
+			y: 0.0d
+			dependency_requirement: "all_started"
+			id: "3B449F7D273C0F44"
+			tasks: [{
+				id: "5D3B96F2350E7310"
+				type: "item"
+				item: "botania:living_root"
+			}]
+		}
+		{
+			title: "铁砂掌"
+			x: 1.5d
+			y: 0.0d
+			description: ["不敢相信我能只用手就能在土里挖出石子"]
+			id: "46CF112F5CC66FB5"
+			tasks: [{
+				id: "2397AC97D6B68F86"
+				type: "item"
+				item: "botania:pebble"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["5A88F1519012D43C"]
+			id: "3AC8B5845761A6F8"
+			tasks: [{
+				id: "0F4665191B544ADB"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+		}
+		{
+			title: "壳斗科植物"
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["339A2DCAF5D58443"]
+			id: "6DBB0B5A8368AC8E"
+			tasks: [{
+				id: "6DC92AAC5DAE1737"
+				type: "item"
+				item: "minecraft:oak_sapling"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.5d
+			description: ["也许他能做点什么"]
+			dependencies: ["6DC0B8A548D52CAC"]
+			id: "5B01CD7BBB97F42A"
+			tasks: [{
+				id: "49D78B45F86E3947"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			title: "我好像在玩原版"
+			x: -1.0d
+			y: 2.5d
+			dependencies: ["401797CA663FB86F"]
+			id: "486C7C73D3195ACE"
+			tasks: [{
+				id: "6BB3E82DCE01A706"
+				type: "item"
+				item: "minecraft:oak_log"
+			}]
+		}
+		{
+			title: "哇，锤子"
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["27390A59C7744388"]
+			id: "10ED207FF1D9E310"
+			tasks: [{
+				id: "20CAF0C38FA684EA"
+				type: "item"
+				item: {
+					id: "ftbsluice:wooden_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "工作台"
+			x: -2.0d
+			y: 4.0d
+			dependencies: ["27390A59C7744388"]
+			id: "6A619FC5CEE93AFD"
+			tasks: [{
+				id: "1168EF13141FF579"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			dependencies: ["165EC07C1E4BD9A2"]
+			id: "52F015911B18A1C5"
+			tasks: [
+				{
+					id: "0D27ED65F08CF490"
+					type: "item"
+					item: "minecraft:sand"
+				}
+				{
+					id: "6EF386A7992877D4"
+					type: "item"
+					item: "minecraft:dirt"
+				}
+				{
+					id: "7A724AD8E73BA31A"
+					type: "item"
+					item: "minecraft:gravel"
+				}
+				{
+					id: "10171B723A761E7E"
+					type: "item"
+					item: "ftbsluice:dust"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 4.0d
+			dependencies: ["21A456EE697505F7"]
+			id: "337AAA000234DE4B"
+			tasks: [{
+				id: "7D2DAEEE243C73F1"
+				type: "item"
+				item: "minecraft:glass"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.5d
+			description: ["它将陪伴你一半的路程"]
+			dependencies: [
+				"2D974616DCE7DD04"
+				"2BA48166E6D8B755"
+			]
+			id: "65E8E42AC6AE10A6"
+			tasks: [{
+				id: "213006F3DC5ED2B4"
+				type: "item"
+				item: "ftbjarmod:tempered_jar"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			dependencies: ["21A456EE697505F7"]
+			id: "60CD6714E5BF64F2"
+			tasks: [{
+				id: "4A6B01A994278031"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 7.0d
+			description: ["emm,也许它需要转换一下 "]
+			dependencies: ["1998FA0FE84C05BD"]
+			id: "5837A1D4A857815B"
+			tasks: [{
+				id: "554DC078720533B9"
+				type: "item"
+				item: {
+					id: "ftblibrary:fluid_container"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:water"
+							Amount: 1000
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.0d
+			dependencies: ["2626C5671BDBC9C9"]
+			id: "72B7EA856F90D700"
+			tasks: [{
+				id: "1697850143533E1E"
+				type: "item"
+				item: "ftbjarmod:jar"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 8.0d
+			dependencies: ["4CC23B61C641E1C1"]
+			id: "4CBA0CE4E7066768"
+			tasks: [{
+				id: "077409450294B0FA"
+				type: "item"
+				item: "ftbsluice:clay_water_bucket"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			dependencies: ["27390A59C7744388"]
+			id: "19807E51437309D9"
+			tasks: [{
+				id: "07D690850C351889"
+				type: "item"
+				item: "ftbdripper:dripper"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.5d
+			dependencies: [
+				"41DD6FC7A1D95158"
+				"5F87349B8286CE0F"
+			]
+			id: "47932AD0DB55318E"
+			tasks: [{
+				id: "3171304CBF74D9D5"
+				type: "item"
+				item: "minecraft:clay"
+			}]
+		}
+		{
+			title: "洗一洗"
+			x: 1.5d
+			y: 9.0d
+			description: ["或许，他还有其他获取方法，可能吧，谁知道呢？"]
+			dependencies: [
+				"3D5D3CC176A4C7E0"
+				"41DD6FC7A1D95158"
+			]
+			id: "40B9E44D3D2355D1"
+			tasks: [{
+				id: "772000E30F1C9971"
+				type: "item"
+				item: "minecraft:string"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 10.0d
+			dependencies: ["7CFB3139C2079D46"]
+			id: "2B7A65CA469C9612"
+			tasks: [{
+				id: "0806094B52285A22"
+				type: "item"
+				item: "ftbsluice:cloth_mesh"
+			}]
+		}
+		{
+			title: "终于有矿物了，芜湖 "
+			x: 0.5d
+			y: 10.0d
+			description: [
+				"它看起来好麻烦啊"
+				"或许我可以尝试升级它"
+			]
+			hide_dependency_lines: true
+			dependencies: ["27390A59C7744388"]
+			id: "59CF43CA08BEF281"
+			tasks: [{
+				id: "1FB5CFD8BC672BFB"
+				type: "item"
+				item: "ftbsluice:oak_sluice"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 11.5d
+			dependencies: [
+				"20B6E385E61D0BC2"
+				"10311C7DFD5AFD4C"
+			]
+			id: "6B1589918D7E7C55"
+			tasks: [{
+				id: "725FA8A141E85CB0"
+				type: "item"
+				tags: ["chunks"]
+				item: "emendatusenigmatica:iron_chunk"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 9.0d
+			shape: "hexagon"
+			description: ["这是一个礼物"]
+			dependencies: ["7CFB3139C2079D46"]
+			dependency_requirement: "one_completed"
+			id: "3CEFE99137409A6C"
+			tasks: [{
+				id: "34D27B5AAB6BE86E"
+				type: "item"
+				item: "pamhc2trees:spiderweb_sapling"
+			}]
+			rewards: [{
+				id: "26ABE05C4E7807C6"
+				type: "item"
+				item: "minecraft:string"
+				count: 8
+			}]
+		}
+	]
+}

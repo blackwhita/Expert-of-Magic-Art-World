@@ -1,0 +1,387 @@
+{
+	id: "0000000000000B65"
+	group: "34B7FB260B6AEB81"
+	order_index: 2
+	filename: "gates_wip"
+	title: "真正的开始！"
+	icon: "minecraft:oak_fence_gate"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "机械动力"
+			x: -3.0d
+			y: 1.5d
+			dependencies: ["4286DE0D0D142E12"]
+			id: "0000000000000FBD"
+			tasks: [{
+				id: "0000000000000FBE"
+				type: "item"
+				item: "create:gearbox"
+			}]
+		}
+		{
+			title: "热力系列"
+			icon: "thermal:machine_furnace"
+			x: -2.0d
+			y: 4.5d
+			dependencies: ["0000000000000FDB"]
+			id: "0000000000000FBF"
+			tasks: [{
+				id: "0000000000000FC0"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+		{
+			title: "XNet"
+			x: 0.0d
+			y: 2.5d
+			shape: "diamond"
+			dependencies: ["0000000000000FD7"]
+			size: 1.25d
+			id: "0000000000000FC1"
+			tasks: [{
+				id: "0000000000000FC2"
+				type: "item"
+				item: "xnet:controller"
+			}]
+		}
+		{
+			title: "幻梦"
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["0000000000000FC7"]
+			id: "0000000000000FC3"
+			tasks: [{
+				id: "0000000000000FC4"
+				type: "item"
+				icon: "eidolon:pewter_inlay"
+				item: "eidolon:pewter_inlay"
+			}]
+		}
+		{
+			title: "新生魔艺"
+			x: 3.0d
+			y: 3.0d
+			dependencies: ["0000000000000FC7"]
+			id: "0000000000000FC5"
+			tasks: [{
+				id: "0000000000000FC6"
+				type: "item"
+				item: "ars_nouveau:novice_spell_book"
+			}]
+		}
+		{
+			title: "自然灵气"
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["4286DE0D0D142E12"]
+			id: "0000000000000FC7"
+			tasks: [{
+				id: "0000000000000FC8"
+				type: "item"
+				item: "naturesaura:gold_leaf"
+			}]
+		}
+		{
+			title: "植物魔法"
+			x: 3.0d
+			y: 6.0d
+			dependencies: ["0000000000000FC7"]
+			id: "0000000000000FC9"
+			tasks: [{
+				id: "0000000000000FCA"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+		}
+		{
+			title: "星辉魔法"
+			x: 1.0d
+			y: 7.0d
+			dependencies: [
+				"573D1ADF4FBE3044"
+				"0000000000000FC9"
+			]
+			id: "0000000000000FCB"
+			tasks: [{
+				id: "0000000000000FCC"
+				type: "item"
+				item: {
+					id: "astralsorcery:celestial_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "神秘学"
+			icon: {
+				id: "occultism:dimensional_matrix"
+				Count: 1b
+				tag: {
+					spiritName: "KliKli"
+				}
+			}
+			x: 3.0d
+			y: 4.5d
+			dependencies: [
+				"0000000000000FC3"
+				"0000000000000FC5"
+			]
+			id: "0000000000000FCD"
+			tasks: [{
+				id: "0000000000000FCE"
+				type: "item"
+				item: {
+					id: "occultism:chalk_white"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Powah"
+			x: -5.0d
+			y: 4.5d
+			dependencies: ["0000000000000FDB"]
+			id: "0000000000000FD3"
+			tasks: [{
+				id: "0000000000000FD4"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			title: "沉浸工程"
+			x: -4.0d
+			y: 4.5d
+			dependencies: ["0000000000000FDB"]
+			id: "0000000000000FD5"
+			tasks: [{
+				id: "0000000000000FD6"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+		}
+		{
+			title: "RF工具箱"
+			x: 0.0d
+			y: 1.5d
+			shape: "diamond"
+			dependencies: ["4286DE0D0D142E12"]
+			id: "0000000000000FD7"
+			tasks: [{
+				id: "0000000000000FD8"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+		}
+		{
+			title: "模块化路由器"
+			x: -4.375d
+			y: 3.125d
+			shape: "diamond"
+			dependencies: ["0000000000000FD5"]
+			size: 1.25d
+			id: "0000000000000FD9"
+			tasks: [{
+				id: "0000000000000FDA"
+				type: "item"
+				item: "modularrouters:item_router"
+			}]
+		}
+		{
+			title: "气动工艺"
+			icon: "pneumaticcraft:pressure_gauge"
+			x: -3.0d
+			y: 3.0d
+			dependencies: ["0000000000000FBD"]
+			id: "0000000000000FDB"
+			tasks: [{
+				id: "0000000000000FDC"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				count: 16L
+			}]
+		}
+		{
+			title: "精致存储：自动化"
+			x: -0.625d
+			y: 4.375d
+			shape: "diamond"
+			dependencies: ["0000000000000FBF"]
+			size: 1.25d
+			id: "0000000000000FDD"
+			tasks: [{
+				id: "0000000000000FDE"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+		}
+		{
+			title: "工业先锋"
+			icon: "industrialforegoing:pink_slime"
+			x: -3.0d
+			y: 4.5d
+			dependencies: ["0000000000000FDB"]
+			id: "0000000000000FDF"
+			tasks: [{
+				id: "0000000000000FE0"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			title: "缤纷蜜蜂"
+			icon: "minecraft:honeycomb"
+			x: 4.375d
+			y: 2.5d
+			shape: "diamond"
+			dependencies: ["0000000000000FC7"]
+			size: 1.25d
+			id: "0000000000000FE1"
+			tasks: [{
+				id: "0000000000000FE2"
+				type: "item"
+				item: "minecraft:honeycomb"
+			}]
+		}
+		{
+			title: "通用机械"
+			icon: "mekanism:alloy_atomic"
+			x: -1.0d
+			y: 7.0d
+			dependencies: [
+				"0000000000000FBF"
+				"0000000000000FDF"
+				"0000000000000FD5"
+				"0000000000000FD3"
+			]
+			id: "0000000000000FE5"
+			tasks: [{
+				id: "0EBD46ADF246F17F"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+		}
+		{
+			title: "集成动力"
+			icon: "integrateddynamics:variable_transformer_input"
+			x: 0.0d
+			y: 3.75d
+			shape: "diamond"
+			dependencies: [
+				"0000000000000FDD"
+				"0000000000000FDB"
+			]
+			size: 1.25d
+			id: "218FBDC6B17EDF33"
+			tasks: [{
+				id: "2A11C229CEEEBE6F"
+				type: "item"
+				item: "integrateddynamics:variablestore"
+			}]
+		}
+		{
+			title: "通量网络"
+			x: 4.375d
+			y: 4.375d
+			shape: "diamond"
+			dependencies: ["0000000000000FCD"]
+			size: 1.25d
+			id: "11FC40A4B8CBA98A"
+			tasks: [{
+				id: "590186031154D036"
+				type: "item"
+				item: "fluxnetworks:flux_core"
+			}]
+		}
+		{
+			title: "基座"
+			icon: "pedestals:pedestal/stone333"
+			x: 0.0d
+			y: 5.0d
+			shape: "diamond"
+			dependencies: ["573D1ADF4FBE3044"]
+			size: 1.25d
+			id: "6CA3B688C7701907"
+			tasks: [{
+				id: "5727C862289731E8"
+				type: "item"
+				item: "pedestals:pedestal/stone333"
+			}]
+		}
+		{
+			title: "血魔法"
+			x: 2.0d
+			y: 5.5d
+			dependencies: ["0000000000000FCD"]
+			id: "573D1ADF4FBE3044"
+			tasks: [{
+				id: "50E8AA4A66F47704"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+		}
+		{
+			title: "精致存储：数字存储"
+			x: 0.625d
+			y: 4.375d
+			shape: "diamond"
+			dependencies: ["0000000000000FDD"]
+			size: 1.25d
+			id: "2AFC23BBBA407467"
+			tasks: [{
+				id: "786CC87833A2294A"
+				type: "item"
+				item: "refinedstorage:disk_drive"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.0d
+			description: ["尝试学习极致的自动化吧"]
+			dependencies: [
+				"0000000000000FE5"
+				"0000000000000FCB"
+			]
+			id: "6FB70659214F5F7D"
+			tasks: [{
+				id: "66728B732F67DAAD"
+				type: "item"
+				item: "extendedcrafting:ultimate_auto_table"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 9.5d
+			description: ["记录着作者的话"]
+			dependencies: ["6FB70659214F5F7D"]
+			id: "7C44BFA14490C34E"
+			tasks: [{
+				id: "06DF0B8D4C5AACC0"
+				type: "item"
+				item: "avaritia:akashic_record"
+			}]
+		}
+		{
+			icon: "eomaw:ico"
+			x: 0.0d
+			y: 0.0d
+			description: ["体验EOMAW的乐趣吧"]
+			id: "4286DE0D0D142E12"
+			tasks: [{
+				id: "5DB9555CF85FE9FB"
+				type: "checkmark"
+				title: "真正的开始"
+			}]
+		}
+	]
+}

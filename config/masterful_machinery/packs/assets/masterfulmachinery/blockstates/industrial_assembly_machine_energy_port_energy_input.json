@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "masterfulmachinery:block/industrial_assembly_machine_energy_port_energy_input"
+    }
+  }
+}

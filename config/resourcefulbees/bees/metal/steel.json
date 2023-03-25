@@ -1,0 +1,30 @@
+{
+  "flower": "all",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 700,
+  "traits":["can_swim"],
+  "baseLayerTexture": "metal/steel_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#7A7A7A",
+    "modelType": "ORE"
+  },
+  "MutationData": {
+    "hasMutation": false
+},
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "emendatusenigmatica:steel_ingot"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "emendatusenigmatica:steel_ingot",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

@@ -1,0 +1,105 @@
+{
+	id: "0000000000000044"
+	group: ""
+	order_index: 0
+	filename: "getting_started"
+	title: "开始"
+	icon: "minecraft:nether_star"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -30.0d
+		y: -26.5d
+		width: 20.0d
+		height: 20.0d
+		rotation: 0.0d
+		image: "eomaw:textures/ico.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			icon: "eomaw:ico"
+			x: -30.0d
+			y: -27.5d
+			description: [
+				"这个是blackwhita制作的第一款整合包"
+				"很多魔改使用技巧都是从E6E学习过来的"
+				"在游玩过程中你可能会遇见很多奇奇怪怪的情况"
+				"不必担心，blackwhita会定时更新整合包"
+			]
+			id: "57222739AE24B08A"
+			tasks: [{
+				id: "293E211D7B896B60"
+				type: "checkmark"
+				title: "欢迎来到eomaw"
+			}]
+		}
+		{
+			x: -30.0d
+			y: -26.0d
+			description: [
+				"本整合包使用空岛建立者进行开局"
+				"你可以通过/skyblock create <name> <players>去建立空岛"
+				"如果你在服务器的话，你需要使用/skyblock manage teams createAndJoin"
+				"/execute as @p run skyblock manage teams createAndJoin"
+			]
+			dependencies: ["57222739AE24B08A"]
+			id: "10A157E80260838B"
+			tasks: [{
+				id: "371667FB0DAF400F"
+				type: "checkmark"
+				title: "空岛建立者"
+			}]
+		}
+		{
+			title: "联系我们"
+			x: -30.0d
+			y: -29.0d
+			description: [
+				"KOOK频道https://kook.top/EFE04L"
+				""
+				"discord频道https://discord.gg/cUC3Mbn5rA"
+			]
+			dependencies: ["57222739AE24B08A"]
+			id: "54CAB0BACD912610"
+			tasks: [{
+				id: "33A63AA53171FEF3"
+				type: "checkmark"
+				title: "介绍"
+			}]
+		}
+		{
+			x: -28.5d
+			y: -27.5d
+			description: [
+				"mcmod网站https://www.mcmod.cn/modpack/573.html"
+				""
+				"mcbbs网站https://www.mcbbs.net/thread-1425010-1-1.html"
+				""
+				"curseforge下载https://www.curseforge.com/minecraft/modpacks/expert-of-magic-art-world"
+			]
+			dependencies: ["57222739AE24B08A"]
+			id: "60B8795EE2947DB7"
+			tasks: [{
+				id: "3853BF93A3F43CF9"
+				type: "checkmark"
+				title: "了解更多"
+			}]
+		}
+		{
+			x: -31.5d
+			y: -27.5d
+			description: ["https://github.com/blackwhita/Expert-of-Magic-Art-World"]
+			dependencies: ["57222739AE24B08A"]
+			id: "11774DF24B7345E7"
+			tasks: [{
+				id: "197FEB8D48406E62"
+				type: "checkmark"
+				title: "提交反馈"
+			}]
+		}
+	]
+}

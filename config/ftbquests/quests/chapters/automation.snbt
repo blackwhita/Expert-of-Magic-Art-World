@@ -1,0 +1,2132 @@
+{
+	id: "00000000000002AB"
+	group: "0856CF7F5CBEB20A"
+	order_index: 1
+	filename: "automation"
+	title: "自动化"
+	icon: "minecraft:hopper"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "物流"
+			icon: "minecraft:hopper"
+			x: 4.5d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "A点到B点"
+			description: [
+				"需要一种方法来把物品移动到别的地方吗？"
+				"不，“箱子”并不是一种可持续发展的容器。"
+			]
+			size: 1.5d
+			id: "30AA6A8DF0B65273"
+			tasks: [{
+				id: "4FB3F0534FC9F890"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "1AF3E35B6E460EFA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "物流管道"
+			x: 6.5d
+			y: -1.0d
+			description: [
+				"通用机械模组的物流管道可以通过调整器来设置为拉、推以及更改成不同颜色的管道。"
+				""
+				"机械管道、加压管道、通用线缆分别对应的是可以传输流体、气体、能源。"
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "3FF1B8E5563D4ECF"
+			tasks: [{
+				id: "523B5EFA6AB455D2"
+				type: "item"
+				title: "任意物流管道"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_logistical_transporter"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_logistical_transporter"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5319BF6929089EA6"
+				type: "command"
+				title: "法师快乐包"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "传送带"
+			x: 4.5d
+			y: 3.5d
+			description: [
+				"传送带是机械动力模组的动力系统重要组件之一，使用传送带是制作自动化与自动组装的完美选择。"
+				"如果你不仅仅要线性运动，请尝试使用动力臂或者弹射置物台。"
+				""
+				"有关如何使用此物品的功能，请使用“思索”功能，方法是将鼠标悬停在背包内的物品或者JEI的物品上，然后按住思索键（默认按键：W）。"
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "2441588EA9FC9FDB"
+			tasks: [{
+				id: "747E30A621DAC480"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "5288E3C74F547749"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "物品路由器"
+			icon: "modularrouters:item_router"
+			x: -0.5d
+			y: -4.0d
+			subtitle: "你试过把它关掉再打开吗？"
+			description: [
+				"模块化路由器模组是一个非常强大的自动化工具，它们是一个单独的模块，但有很多不同类型的拓展，比如破坏模块、放置模块等等。"
+				""
+				"模块化路由器中的所有升级模块以及升级信息都会有相应的提示，只需要按住“i”，同时在JEI或者背包中按住鼠标可以获取更多关于它们的信息。"
+				"（如果已经打开了JEI的界面，例如合成表，则不会生效）"
+				""
+				"有关更多信息请查看模组自带的“模块化路由器手册”"
+			]
+			dependencies: [
+				"30AA6A8DF0B65273"
+				"3468E652B4FE85FA"
+			]
+			id: "15E49A6B00BE744C"
+			tasks: [{
+				id: "366C08F8F32D7E4B"
+				type: "item"
+				item: "modularrouters:item_router"
+			}]
+			rewards: [{
+				id: "0000000000000968"
+				type: "command"
+				title: "矿工快乐包"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "XNet控制器"
+			icon: "xnet:controller"
+			x: -0.5d
+			y: 0.5d
+			description: [
+				"XNet能够更加智能的传输物品，也能够立即完成，由于目标容器已满，因此不再有物品管道。"
+				""
+				"需要通过连接器连接到电缆，连接器可以用于访问不同的容器。"
+				""
+				"有关更多信息请查看“RF工具箱”章节。"
+			]
+			dependencies: [
+				"30AA6A8DF0B65273"
+				"3468E652B4FE85FA"
+			]
+			id: "559D7D60CDDE5596"
+			tasks: [
+				{
+					id: "204956F05E407E82"
+					type: "item"
+					item: "xnet:controller"
+				}
+				{
+					id: "79D951766C0A6EF5"
+					type: "item"
+					title: "任意XNet线缆"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "xnet:netcable_red"
+									Count: 1b
+								}
+								{
+									id: "xnet:netcable_green"
+									Count: 1b
+								}
+								{
+									id: "xnet:netcable_blue"
+									Count: 1b
+								}
+								{
+									id: "xnet:netcable_yellow"
+									Count: 1b
+								}
+							]
+						}
+					}
+					consume_items: false
+				}
+				{
+					id: "4B2CE60937C00CCE"
+					type: "item"
+					title: "任意XNet连接器"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "xnet:connector_red"
+									Count: 1b
+								}
+								{
+									id: "xnet:connector_green"
+									Count: 1b
+								}
+								{
+									id: "xnet:connector_blue"
+									Count: 1b
+								}
+								{
+									id: "xnet:connector_yellow"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0000000000000A5D"
+				type: "command"
+				title: "农夫快乐包"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "全方向漏斗"
+			x: 6.0d
+			y: 3.0d
+			description: ["气动工艺模组的万向漏斗能够将物品传送到任意朝向内的容器中，可以通过安装升级来提升它的速度。"]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "0EF9750F679732E6"
+			tasks: [{
+				id: "3FE101E73831B589"
+				type: "item"
+				item: "pneumaticcraft:omnidirectional_hopper"
+			}]
+			rewards: [{
+				id: "376DCADB491EFE54"
+				type: "item"
+				item: "pneumaticcraft:dispenser_upgrade"
+			}]
+		}
+		{
+			title: "卡班克尔"
+			x: 7.0d
+			y: 1.0d
+			description: ["魔法模组也能够利用魔法让运输物品变得更有趣，卡班克尔能够收集掉落物并存放到附近的容器中。"]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "2831B38150565AEF"
+			tasks: [{
+				id: "6895F42F97F55A26"
+				type: "item"
+				item: "ars_nouveau:carbuncle_charm"
+			}]
+			rewards: [{
+				id: "6328E4D871385365"
+				type: "command"
+				title: "法师快乐包"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "多媒体"
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"植物魔法的多媒体网络能够在容器之间访问，与常规物流不同的是它不需要管道只需要放置多媒体火花就行，类似于AE系统。"
+				""
+				"更多内容请查看“植物魔法”章节。"
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "7C44D1DEA350DB7E"
+			tasks: [{
+				id: "2BDBC3D43C040EE8"
+				type: "item"
+				item: "botania:corporea_spark"
+			}]
+			rewards: [{
+				id: "317C80815FA09662"
+				type: "command"
+				title: "法师快乐包"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "红石和逻辑"
+			icon: "minecraft:comparator"
+			x: -5.5d
+			y: 1.0d
+			shape: "gear"
+			description: ["在使用红石这方面，模组提供了大量的帮助；从可以同时传输16种强度的线缆、紧凑的计时器或者锁存器，或者仅仅跨纬度传输，这些总有一个方案非常适合你。"]
+			size: 1.5d
+			id: "3468E652B4FE85FA"
+			tasks: [{
+				id: "61B85B234D1E9F5E"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "0DFBD5289D4AFCA0"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -0.5d
+			y: -7.0d
+			description: [
+				"为了让你的路由器为你做任何事情前至少要准备一个模块。"
+				""
+				"安装在路由器中从左往右依次执行，每个模块都有可以设置的选项，包括过滤器；你可以使用大量的路由器来制作成一些程序并执行一些非常复杂的任务。"
+			]
+			dependencies: ["15E49A6B00BE744C"]
+			id: "21B266F6556271EB"
+			tasks: [{
+				id: "428BD8D12FB203C8"
+				type: "item"
+				item: "modularrouters:blank_module"
+			}]
+			rewards: [{
+				id: "04E2CB365714CFFD"
+				type: "item"
+				item: "modularrouters:blank_module"
+				count: 2
+			}]
+		}
+		{
+			x: 1.0d
+			y: -6.5d
+			description: [
+				"可以将物品发送到周围8格内的容器中，要设置目标就手持模块右键容器，如果操作正确将会有高亮显示。"
+				""
+				"与调节拓展一起工作的话效果更佳，例如：允许将每一件物品发送到连接的容器中。"
+				""
+				"并提供了不同的模式，如：列表循环、随机、最近、最远。"
+			]
+			dependencies: ["21B266F6556271EB"]
+			id: "1956D60143703C16"
+			tasks: [{
+				id: "6F60B6D7143847D6"
+				type: "item"
+				item: {
+					id: "modularrouters:distributor_module"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "239155FDD340ECAF"
+				type: "command"
+				title: "农夫快乐包"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: -8.5d
+			description: [
+				"破坏掉前方的方块并且将方块吸入路由器内部。"
+				""
+				"制作模块时你可以使用任意等级的原版镐子，合成出来的模块会与参与合成的镐子所有属性一致，如果被附魔了，附魔也会转移到模块中，也就只有原版的精准采集和时运会影响模块。"
+			]
+			dependencies: ["21B266F6556271EB"]
+			id: "108E174F5672BF48"
+			tasks: [{
+				id: "614539807F15E23E"
+				type: "item"
+				item: {
+					id: "modularrouters:breaker_module"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "1277D5B23BCA8923"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_pickaxe"
+					Count: 1b
+					tag: {
+						RepairCost: 1
+						Damage: 0
+						Enchantments: [{
+							lvl: 1s
+							id: "minecraft:silk_touch"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.5d
+			description: ["可以让路由器右键或者使用路由器内的物品进行攻击，但攻击会需要消耗路由器的能量。"]
+			dependencies: ["21B266F6556271EB"]
+			id: "27C9B26FB5FF10E1"
+			tasks: [{
+				id: "462755624D5FE2DE"
+				type: "item"
+				item: {
+					id: "modularrouters:activator_module"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3922A588208AF529"
+				type: "command"
+				title: "法师快乐包"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.5d
+			description: ["收集附近的掉落物，可以升级范围以便更快收集或者收集附近的经验球。"]
+			dependencies: ["21B266F6556271EB"]
+			id: "322583CAAD093EE4"
+			tasks: [{
+				id: "56280F9C61952290"
+				type: "item"
+				item: {
+					id: "modularrouters:vacuum_module"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3C512C78B12406AA"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.5d
+			description: [
+				"可以用于从路由器提取或者传输到路由器，但也仅适用于流体；需要在路由器中的物品槽放置任意一个流体储罐才能够与世界上其他的储罐进行交互，MK2拥有更远的交互距离。"
+				""
+				"手持MK2流体模块右键范围内的目标容器能够选定为目标，如果操作正确会有高亮显示。"
+			]
+			dependencies: ["21B266F6556271EB"]
+			id: "56234AA9ED3E8324"
+			tasks: [{
+				id: "6F58BD0AC1F29AD4"
+				type: "item"
+				title: "流体模块"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "modularrouters:fluid_module"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										FluidDir: 0b
+										MaxTransfer: 1000
+										ModuleFilter: { }
+										Direction: "NONE"
+									}
+								}
+							}
+							{
+								id: "modularrouters:fluid_module_2"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										FluidDir: 0b
+										MaxTransfer: 1000
+										ModuleFilter: { }
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "30E1EC30981D6B46"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.5d
+			y: 5.5d
+			description: [
+				"动力臂可以在多个输入与输出口之间移动物品，但无法访问大多数的容器，通常只能访问传送带、置物台、溜槽等。"
+				""
+				"如果要进行设置，手持动力臂在任意位置右键一次蓝色为输入，两次橙色为输出，然后再右键放下即可；最大工作范围为4格的球体。"
+				""
+				"有关如何使用此物品的功能，请使用“思索”功能，方法是将鼠标悬停在背包内的物品或者JEI的物品上，然后按住思索键（默认按键：W）。"
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "6FD366DECA24BCE2"
+			tasks: [{
+				id: "60910BC8BC9E4763"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+			rewards: [{
+				id: "56CA8A9B268DAD53"
+				type: "command"
+				title: "农夫快乐包"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "气动工艺 - 物流网络"
+			x: 7.5d
+			y: 4.0d
+			description: [
+				"使用气动工艺模组的物流框架或者物流模块能够创建一条独立的分类系统，如果不想使用管道，甚至能够通过无人机来实现管道的功能。"
+				""
+				"更多信息请查看“气动工艺”章节。"
+			]
+			dependencies: ["0EF9750F679732E6"]
+			id: "5D9993B074F13846"
+			tasks: [
+				{
+					id: "4ABEFC9942D16386"
+					type: "item"
+					title: "任意物流框架"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "pneumaticcraft:logistics_frame_requester"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:logistics_frame_storage"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:logistics_frame_default_storage"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:logistics_frame_passive_provider"
+									Count: 1b
+								}
+								{
+									id: "pneumaticcraft:logistics_frame_active_provider"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7B13649BFE29381F"
+					type: "item"
+					item: "pneumaticcraft:logistics_module"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "3A1FCBBA4730B4F4"
+				type: "item"
+				item: "pneumaticcraft:pressure_tube"
+				count: 4
+			}]
+		}
+		{
+			title: "沉浸工程 - 红石线"
+			icon: "immersiveengineering:wirecoil_redstone"
+			x: -7.5d
+			y: -1.0d
+			description: [
+				"它拥有16种频道，可以远距离传输红石信号，单个线圈最远能够延伸32格，接线器也能够同时充当继电器来将较远距离的线圈连接到一起。"
+				""
+				"使用工程师螺丝刀来连接线圈。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "24734CF49B87D810"
+			tasks: [
+				{
+					id: "5F0331EC4C91FD7C"
+					type: "item"
+					item: "immersiveengineering:wirecoil_redstone"
+					count: 4L
+				}
+				{
+					id: "0F6BD9BB53137D58"
+					type: "item"
+					icon: "immersiveengineering:connector_bundled"
+					item: "immersiveengineering:connector_redstone"
+					count: 4L
+				}
+				{
+					id: "43B9CFD93A321FCB"
+					type: "item"
+					item: "immersiveengineering:screwdriver"
+				}
+			]
+			rewards: [
+				{
+					id: "7AE7E2E3A4862210"
+					type: "item"
+					item: "immersiveengineering:wirecoil_redstone"
+					count: 4
+				}
+				{
+					id: "3312A02466B4A2BA"
+					type: "item"
+					item: "immersiveengineering:connector_redstone"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			description: [
+				"红石模块将压力管道变成了具有16种频道的红石线缆，在模块的UI界面中，在右上角处可以在输入与输出模式来回切换。"
+				""
+				"将高级PCB应用到模块将解锁逻辑功能，例如在两个不同的信号上运行AND运算符，或作为比较器检查模块指向的方块。"
+				""
+				"不消耗压缩空气，甚至也不需要压力来操作。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "386EC1D34B3969E5"
+			tasks: [{
+				id: "28C6D6C09A1A14A2"
+				type: "item"
+				item: "pneumaticcraft:redstone_module"
+				count: 2L
+			}]
+			rewards: [{
+				id: "3CC18D8D933DF433"
+				type: "item"
+				item: "pneumaticcraft:pressure_tube"
+				count: 4
+			}]
+		}
+		{
+			title: "RF工具箱逻辑"
+			icon: "rftoolsutility:logic"
+			x: -8.0d
+			y: 1.0d
+			description: [
+				"红石逻辑和控制强度的不同模块，例如定时器、可定制的逻辑门、库存检测器或者无线红石等等。"
+				""
+				"在“RF工具箱”章节的任务重有更多的讲解。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "4EB7B3610D407775"
+			tasks: [{
+				id: "6212C5EAC52CD7D6"
+				type: "item"
+				title: "任意RF工具箱逻辑门"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "rftoolsutility:analog"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:invchecker"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:sensor"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:sequencer"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:logic"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:timer"
+								Count: 1b
+							}
+							{
+								id: "rftoolsutility:wire"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "2B4EB7EFF98BBF05"
+				type: "item"
+				item: "rftoolsbase:machine_base"
+				count: 2
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.5d
+			description: [
+				"便宜的无线红石，无限频道，但貌似不是无限范围。"
+				""
+				"有关如何使用此物品的功能，请使用“思索”功能，方法是将鼠标悬停在背包内的物品或者JEI的物品上，然后按住思索键（默认按键：W）。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "28A8C7959A7EEBAE"
+			tasks: [{
+				id: "1C4826588F57C889"
+				type: "item"
+				item: "create:redstone_link"
+				count: 2L
+			}]
+			rewards: [{
+				id: "6F390DC46A49341F"
+				type: "item"
+				item: "create:redstone_link"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 5.5d
+			description: [
+				"可以远程激活连接的红石线路。"
+				""
+				"有关如何使用此物品的功能，请使用“思索”功能，方法是将鼠标悬停在背包内的物品或者JEI的物品上，然后按住思索键（默认按键：W）。"
+			]
+			dependencies: ["28A8C7959A7EEBAE"]
+			id: "21E4D556E8AE724E"
+			tasks: [{
+				id: "161C3B3F56665A92"
+				type: "item"
+				item: "create:linked_controller"
+			}]
+			rewards: [{
+				id: "21EC369B48E4317E"
+				type: "item"
+				item: "minecraft:lectern"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 3.5d
+			description: [
+				"后面输入红石信号输出能够设置为开启状态，侧面输入红石信号设定为关闭，非常适合用于切换发电。"
+				""
+				"有关如何使用此物品的功能，请使用“思索”功能，方法是将鼠标悬停在背包内的物品或者JEI的物品上，然后按住思索键（默认按键：W）。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "1042C49086A29CE2"
+			tasks: [{
+				id: "6A55E19410163485"
+				type: "item"
+				item: "create:powered_latch"
+			}]
+			rewards: [{
+				id: "3AA02F6637A04AD3"
+				type: "item"
+				item: "minecraft:comparator"
+			}]
+		}
+		{
+			title: "RF工具箱设置"
+			icon: "rftoolscontrol:processor"
+			x: -0.5d
+			y: 1.5d
+			description: ["使用可视化编程UI对复杂的自动化进行编程，在编程器中制作你的程序，然后用程序卡将它传送到处理器；处理器需要CPU才能运行，并且可以升级为运行速度更快或使用更多内存。"]
+			dependencies: [
+				"3468E652B4FE85FA"
+				"30AA6A8DF0B65273"
+			]
+			id: "1C24D2BD564F9E58"
+			tasks: [
+				{
+					id: "3A648B70B73CF497"
+					type: "item"
+					item: "rftoolscontrol:processor"
+				}
+				{
+					id: "53B6687A1024692F"
+					type: "item"
+					item: "rftoolscontrol:programmer"
+				}
+				{
+					id: "6CFA2106351100B2"
+					type: "item"
+					item: "rftoolscontrol:program_card"
+				}
+			]
+			rewards: [{
+				id: "20DF77C0364ADE55"
+				type: "item"
+				item: "rftoolscontrol:cpu_core_500"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 3.0d
+			description: [
+				"集成动力是一个很不错的模组，可以满足简单到复杂的所有红石逻辑需求。"
+				""
+				"即使不使用逻辑编程器，你也可以用它来传输红石信号，像比较器一样读取模块，或设置具有自定义脉冲长度的时钟。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "556F3942AF7CFB8C"
+			tasks: [{
+				id: "51C8B1DAC8F7BE8C"
+				type: "item"
+				item: "integrateddynamics:cable"
+			}]
+			rewards: [{
+				id: "76756F33D7703CDC"
+				type: "item"
+				item: "integrateddynamics:cable"
+				count: 4
+			}]
+		}
+		{
+			title: "红石代理器（更新）"
+			x: -1.0d
+			y: -0.5d
+			description: ["当您想直接使用XNet发出红石信号并在更新时触发方块更新时使用；用于将XNet自动化合成到外部系统中；还可以从为代理供电的外部资源读取红石信号。"]
+			dependencies: ["559D7D60CDDE5596"]
+			id: "34D8561D229A3122"
+			tasks: [{
+				id: "52CC0A821DCFE9D5"
+				type: "item"
+				item: "xnet:redstone_proxy_upd"
+			}]
+			rewards: [{
+				id: "6A693F43E60B3E3B"
+				type: "item"
+				item: "xnet:connector_blue"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.0d
+			description: [
+				"可以用作于计时器，转动时发出红石红石脉冲，可以通过手持沙子右键沙漏来设定时间，不同的沙子种类与数量会影响最终的时间。"
+				""
+				"要想查看更多信息请打开植物魔法模组提供的“植物魔法辞典”指导手册。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "29803ABB5ED76295"
+			tasks: [{
+				id: "3D8A78B97E92A697"
+				type: "item"
+				item: "botania:hourglass"
+			}]
+			rewards: [
+				{
+					id: "58A3177CC744984E"
+					type: "item"
+					item: "minecraft:sand"
+					count: 60
+				}
+				{
+					id: "3469D68A3DEBB2C4"
+					type: "item"
+					item: "minecraft:red_sand"
+					count: 6
+				}
+				{
+					id: "75F550507C0BA786"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: 3.0d
+			subtitle: "...红石通道要出来了！"
+			description: [
+				"获得连接的变量卡后，只需将其放入红石读取器的相应插槽中即可；如果卡片有蓝色边角，则它是“布尔”类型的卡片，输出“true”或“false”；橙色角表示“整数”类型，它输出一个数字。"
+				""
+				"因此，如果您有一张与红石读取器相关的变量卡，它将是一个整数卡，因此将该卡放在写入器的橙色红石输出中，该写入器将发出与读取器的比较器强度相等的红石信号提供。"
+			]
+			dependencies: ["3195632E0EE15137"]
+			id: "36C83AD9F9CE9970"
+			tasks: [{
+				id: "6E70FB12746633E9"
+				type: "item"
+				item: "integrateddynamics:part_redstone_writer"
+			}]
+			rewards: [{
+				id: "6C9866BF4C38B8C3"
+				type: "item"
+				item: "integrateddynamics:variable"
+				count: 2
+			}]
+		}
+		{
+			icon: "enderstorage:ender_chest"
+			x: 7.0d
+			y: 0.0d
+			description: [
+				"与原版的末影箱不同，末影箱子每个不同频道都相当于一个独立的容器，而相同的频道公用库存空间，所以也能够轻松地跨纬度使用。"
+				""
+				"末影箱上方的三种颜色代表着频道，可以使用不同的染料自定义修改上方的频道，两个相同的颜色的末影箱子代表着它们都是一样的频道。"
+				""
+				"你还可以制作手持版的末影袋子，手持末影袋子按住shift右键末影箱就能够与该末影箱子建立连接，所有的频道都与末影箱子一直，使用此袋子能够在任何地方任何时间都能够轻松地访问。"
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "4345FED5C76788A6"
+			tasks: [
+				{
+					id: "5408C3E44BBB429D"
+					type: "item"
+					item: "enderstorage:ender_chest"
+				}
+				{
+					id: "424E229DB25249A8"
+					type: "item"
+					item: "enderstorage:ender_pouch"
+				}
+			]
+			rewards: [
+				{
+					id: "40445565E00E3023"
+					type: "item"
+					item: "resourcefulbees:rgbee_honeycomb"
+					count: 4
+				}
+				{
+					id: "2AD840AF4AC90407"
+					type: "item"
+					item: "resourcefulbees:wax"
+					count: 4
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			description: ["末影板条箱的功能与末影箱类似，能够跨纬度使用，相同末影名称的末影板条箱之间共用存储空间，将末影板条箱与末影之眼一起放到铁砧里在上方修改名字就能够给予末影名称;每次打开末影板条箱都会消耗少量的灵气。"]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "46589062E091762E"
+			tasks: [{
+				id: "261512B6634D57B4"
+				type: "item"
+				item: "naturesaura:ender_crate"
+			}]
+			rewards: [{
+				id: "0B54FF42FF336AE0"
+				type: "item"
+				item: "minecraft:ender_eye"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.5d
+			description: ["属性过滤器允许设置白名单/黑名单、数据标签、属性等，并可以应用在许多的方块上。"]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "39A5BD63D3070AFE"
+			tasks: [{
+				id: "387BB2A005140790"
+				type: "item"
+				item: {
+					id: "create:attribute_filter"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "39E65FC08DF8415D"
+				type: "item"
+				item: {
+					id: "create:attribute_filter"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "溜槽"
+			icon: "create:smart_chute"
+			x: 5.5d
+			y: 5.5d
+			description: [
+				"溜槽是一种向下传输物品的简易工具，一般情况下只会从顶部的容器抽取物品再向下将物品传输到底部的容器中，对其侧面放置会在其斜上方添加一个分支；分叉位的溜槽体积会增大；当有两个竖直平面内斜向摆放且未连接溜槽时，手持溜槽右击下方的溜槽可以把它们连接起来；溜槽可以给智能溜槽添加分支，但反过来不可以"
+				""
+				"黄铜制作的智能溜槽能够一次移动更多数量的物品，并且可以设置过滤。"
+				""
+				"有关如何使用此物品的功能，请使用“思索”功能，方法是将鼠标悬停在背包内的物品或者JEI的物品上，然后按住思索键（默认按键：W）。"
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "5971196375D3CDF4"
+			tasks: [{
+				id: "0FCD37CE46EADCA8"
+				type: "item"
+				title: "任意溜槽"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:chute"
+								Count: 1b
+							}
+							{
+								id: "create:smart_chute"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "535E72E3B501F2AA"
+				type: "item"
+				item: "create:chute"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.0d
+			description: ["升级是升级整个路由器而不是单个模块。"]
+			dependencies: ["15E49A6B00BE744C"]
+			id: "7CD587747CC14268"
+			tasks: [{
+				id: "3FD6609BE4F80DAD"
+				type: "item"
+				item: "modularrouters:blank_upgrade"
+			}]
+			rewards: [{
+				id: "3E55636E26686CC0"
+				type: "item"
+				item: "modularrouters:blank_upgrade"
+				count: 2
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			description: ["拓展只在模块上应用，而不是路由器本身，以改变它们的工作方式。"]
+			dependencies: ["15E49A6B00BE744C"]
+			id: "7CA354074FCF8447"
+			tasks: [{
+				id: "175A67867F65B8C0"
+				type: "item"
+				item: "modularrouters:augment_core"
+			}]
+			rewards: [{
+				id: "35F7F3293209E5BA"
+				type: "item"
+				item: "modularrouters:augment_core"
+				count: 2
+			}]
+		}
+		{
+			title: "传送器"
+			icon: "industrialforegoing:item_transporter_type"
+			x: 3.5d
+			y: -1.5d
+			description: [
+				"工业先锋的传送器是一种小型的传输模块，可以在两个容器之间传输物品和液体；它们内置了一个过滤模块和调节模式，因此它们的内部可以存储一定数量的物品或者流体。"
+				""
+				"要想使用它们，你需要在背包里准备至少2个同种类的传送器，容器与容器之间空一格然后在容器中间放置两个传送器并右键其中一个传送器中间按钮设置为接收模式，右键按钮旁边的区域可以打开GUI设置过滤；在打开调节模式时，可以在GUI内的左侧过滤的物品中使用鼠标滚轮来修改物品的数量。"
+				""
+				"世界传送器则能够将前方的掉落物吸入容器中或者将容器中的掉落物以掉落物的形式输出到世界中。"
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "65ADBE44B41C4A63"
+			tasks: [{
+				id: "777033A441C9C51A"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:item_transporter_type"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:fluid_transporter_type"
+								Count: 1b
+							}
+							{
+								id: "industrialforegoing:world_transporter_type"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1EB099955410CAF5"
+				type: "item"
+				item: "industrialforegoing:world_transporter_type"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			description: ["在9x9的区域内收集掉落物，并内置了一个过滤器。"]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "14502C1A1BCB79E2"
+			tasks: [{
+				id: "7EA023686AFA0889"
+				type: "item"
+				item: "thermal:device_collector"
+			}]
+			rewards: [{
+				id: "62D934EA94DB12BB"
+				type: "item"
+				item: "thermal:item_filter_augment"
+			}]
+		}
+		{
+			icon: "immersiveengineering:logic_circuit"
+			x: -9.0d
+			y: -1.0d
+			description: ["逻辑电路板，在工程师电路台消耗背板（电路板），逻辑组件（真空管），焊料（铅线或铜线）并选择接线方式制作。制作完成后，将其放置在逻辑单元中使用。可在工程师电路台在右侧放入重新选择接线方式。使用方法见逻辑单元。"]
+			dependencies: ["24734CF49B87D810"]
+			id: "74AB9B268FB948B4"
+			tasks: [
+				{
+					id: "06378CC534E82DD9"
+					type: "item"
+					item: "immersiveengineering:circuit_table"
+				}
+				{
+					id: "116C2DBD2FDBE328"
+					type: "item"
+					item: "immersiveengineering:circuit_board"
+				}
+				{
+					id: "2D93AB7927DF1AAE"
+					type: "item"
+					title: "任意沉浸工程的金属线"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "immersiveengineering:circuits/solder"
+						}
+					}
+					count: 4L
+				}
+				{
+					id: "1459B7AF61937097"
+					type: "item"
+					item: "immersiveengineering:electron_tube"
+				}
+			]
+			rewards: [
+				{
+					id: "633A17D5AE1F551F"
+					type: "item"
+					item: "immersiveengineering:wire_lead"
+					count: 4
+				}
+				{
+					id: "0FD49B027DDA346E"
+					type: "item"
+					item: "immersiveengineering:electron_tube"
+					count: 4
+				}
+				{
+					id: "370012CA54D4BDCB"
+					type: "item"
+					item: "immersiveengineering:circuit_board"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 3.5d
+			description: [
+				"在收到红石信号后会发出一个具有一定数量的滴答声。"
+				""
+				"有关如何使用此物品的功能，请使用“思索”功能，方法是将鼠标悬停在背包内的物品或者JEI的物品上，然后按住思索键（默认按键：W）。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "26365967FDE026B6"
+			tasks: [{
+				id: "1E9609D8328D536F"
+				type: "item"
+				item: "create:adjustable_pulse_repeater"
+			}]
+			rewards: [{
+				id: "2E26D4A73E250301"
+				type: "item"
+				item: "create:adjustable_pulse_repeater"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 3.5d
+			description: [
+				"输入红石信号可以控制输出的信号强度，后面输入红石信号可以控制开启或者关闭。"
+				""
+				"有关如何使用此物品的功能，请使用“思索”功能，方法是将鼠标悬停在背包内的物品或者JEI的物品上，然后按住思索键（默认按键：W）。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "2013BF98F905223C"
+			tasks: [{
+				id: "39E71AF33C273C4C"
+				type: "item"
+				item: "create:powered_toggle_latch"
+			}]
+			rewards: [
+				{
+					id: "46DC8CD903DE448A"
+					type: "item"
+					item: "create:pulse_repeater"
+				}
+				{
+					id: "0EA944B40AA81DC1"
+					type: "item"
+					item: "create:adjustable_repeater"
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			description: [
+				"可以检测许多有关方块的物品，并且不需要接触到方块。"
+				""
+				"更多信息请查看“气动工艺”任务章节。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "0C54045202F9D1F4"
+			tasks: [{
+				id: "35841153FE4E2098"
+				type: "item"
+				item: "pneumaticcraft:universal_sensor"
+			}]
+			rewards: [{
+				id: "280ABEAFF8C46046"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: ["RF工具箱过滤器与XNet兼容，用于标签过滤(XNet中默认的标签选项有bug)；将过滤器插入UI顶部的4个槽中的一个，并使用右侧的“过滤器索引”按钮选择连接器使用的过滤器。"]
+			dependencies: ["559D7D60CDDE5596"]
+			id: "0597A437596EABC1"
+			tasks: [{
+				id: "3DFB959BAC0FAAFF"
+				type: "item"
+				item: {
+					id: "rftoolsbase:filter_module"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7E251F2D83DBC6E3"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			icon: {
+				id: "entangled:block"
+				Count: 1b
+				tag: { }
+			}
+			x: 6.5d
+			y: 2.0d
+			subtitle: "幻影的脸？"
+			description: [
+				"使用纠缠绑定器能够将纠缠方块与另外一个纠缠方块绑定到一起，纠缠方块能够被管道交互，最远能够在同一个维度的1000格之内连接。"
+				""
+				"手持纠缠绑定器shift右键一个纠缠方块然后再右键另外一个纠缠方块就能够绑定。"
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "3E093BB431EE7A98"
+			tasks: [
+				{
+					id: "3E4D5BD7F14FB003"
+					type: "item"
+					item: {
+						id: "entangled:block"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "691DB7953EE82E15"
+					type: "item"
+					item: {
+						id: "entangled:item"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "1CAE1F841E978999"
+				type: "command"
+				title: "法师快乐包"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			icon: "immersiveengineering:logic_unit"
+			x: -9.0d
+			y: -2.5d
+			subtitle: "绝对是这样"
+			description: [
+				"能将编辑好的逻辑电路板存入，可以被红石接口连接器附着，接受输入的红石信号（或是输入的红石信号状态发生变化），然后按顺序经过里面所有的逻辑电路板，有符合条件的电路板会执行相应的动作。一个逻辑单元可以放入十个逻辑电路板。"
+				""
+				"注意：逻辑单元自身接收的红石信号不会再从另一个接口接线器输出，自身输出的红石信号也不会作用于自己内部的逻辑电路板，而输出为寄存器的只会作用于单元内部的顺序为该寄存器之后的逻辑电路板（不影响之前的）。如果只有一个红石接口接线器附着在逻辑单元上，则他既作为输入端，又作为输出端，也具有中转功能的功能。所以建议设置两个接口接线器，一个作为输入端，一个作为输出端，防止频道信号的干扰。"
+			]
+			dependencies: ["74AB9B268FB948B4"]
+			id: "365595FB3098F534"
+			tasks: [
+				{
+					id: "15226021C1D06870"
+					type: "item"
+					item: "immersiveengineering:logic_unit"
+				}
+				{
+					id: "099717FDF38223BC"
+					type: "item"
+					item: "immersiveengineering:connector_bundled"
+				}
+			]
+			rewards: [
+				{
+					id: "4BA97A28F5BCA25A"
+					type: "item"
+					item: "immersiveengineering:connector_redstone"
+					count: 2
+				}
+				{
+					id: "35254DCB159DC63F"
+					type: "item"
+					item: "immersiveengineering:wirecoil_redstone"
+					count: 2
+				}
+			]
+		}
+		{
+			title: "逻辑编辑器"
+			icon: "integrateddynamics:portable_logic_programmer"
+			x: -9.0d
+			y: 4.5d
+			subtitle: "获取逻辑"
+			description: [
+				"但是，一旦您拥有了逻辑编辑器，乐趣就真正开始了！通过将变量卡设置为不同的值，或引用其他变量卡的运算符，例如来自各种读取器的输入，您可以创建深度嵌套式的逻辑树，并使用红石写入器作为最终输出。"
+				""
+				"所有设置的变量卡都需要存储在系统中的某个位置，因此您需要一个变量存储来处理比基本红石信号传输更复杂的任何事情。"
+				""
+				"注释器允许您在编辑时为变量卡重命名，这是强烈推荐的做法。"
+				""
+				"有关各种方块的更多信息，请查看阿卡什宝典里的本模组指导手册 --“论动态联合”"
+			]
+			dependencies: ["36C83AD9F9CE9970"]
+			id: "3E2016CF7DEAB4EE"
+			tasks: [
+				{
+					id: "6548685DA5ACC850"
+					type: "item"
+					title: "逻辑编辑器"
+					icon: "integrateddynamics:portable_logic_programmer"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "integrateddynamics:logic_programmer"
+									Count: 1b
+								}
+								{
+									id: "integrateddynamics:portable_logic_programmer"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "6E17A6DD5E71478B"
+					type: "item"
+					item: "integrateddynamics:variablestore"
+				}
+			]
+			rewards: [{
+				id: "1C4E18FCBA752A88"
+				type: "item"
+				item: "integrateddynamics:labeller"
+			}]
+		}
+		{
+			title: "限流和转运管道"
+			x: 6.5d
+			y: -2.5d
+			description: [
+				"限流管道在所有的管道中的优先级是最低的。"
+				""
+				"转运管道与常规的管道不一样，它能够允许被红石独立控制，而常规的运输管道只能设置开启或者关闭。"
+			]
+			dependencies: ["3FF1B8E5563D4ECF"]
+			id: "71431A0FE1CF8670"
+			tasks: [
+				{
+					id: "08E6D0DE581F0AFC"
+					type: "item"
+					item: "mekanism:restrictive_transporter"
+				}
+				{
+					id: "40BA31F7C22BD650"
+					type: "item"
+					item: "mekanism:diversion_transporter"
+				}
+			]
+			rewards: [{
+				id: "08BAF3870FEFB9EC"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			icon: "create:brass_funnel"
+			x: 2.5d
+			y: 2.0d
+			description: [
+				"机械动力模组的漏斗能够安装在容器的上方或者下方，可以通过扳手来修改垂直传输物品，其中黄铜漏斗能够过滤物品。"
+				""
+				"有关如何使用此物品的功能，请使用“思索”功能，方法是将鼠标悬停在背包内的物品或者JEI的物品上，然后按住思索键（默认按键：W）。"
+			]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "3B3CBB15D2401A28"
+			tasks: [{
+				id: "0385817687124825"
+				type: "item"
+				title: "漏斗"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:andesite_funnel"
+								Count: 1b
+							}
+							{
+								id: "create:brass_funnel"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "0192F87D3477C49F"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: ["直接将传输进花格箱内的物品以掉落物的形式投掷到下方。"]
+			dependencies: ["30AA6A8DF0B65273"]
+			id: "776E644ED0F02AF1"
+			tasks: [{
+				id: "295B17B130AD46DF"
+				type: "item"
+				item: "botania:open_crate"
+			}]
+			rewards: [{
+				id: "37F0D154487A4F08"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -7.5d
+			y: -2.5d
+			description: [
+				"作用类似于箱子容量检测器，与原版的比较器功能类似，也能够和普通的红石一样接收红石信号。"
+				""
+				"使用工程师螺丝刀来连接它们。"
+			]
+			dependencies: ["24734CF49B87D810"]
+			id: "19174CDDA6283934"
+			tasks: [{
+				id: "313678BE1EC5ABA8"
+				type: "item"
+				item: "immersiveengineering:connector_probe"
+			}]
+			rewards: [
+				{
+					id: "6C8F093A907A47AD"
+					type: "item"
+					item: "immersiveengineering:connector_redstone"
+					count: 2
+				}
+				{
+					id: "019D3BC4480CC945"
+					type: "item"
+					item: "immersiveengineering:wirecoil_redstone"
+					count: 2
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 4.5d
+			subtitle: "信号进入..."
+			description: [
+				"红石读取器允许ID系统读取外部红石信号，读取方块作为比较器，或生成脉冲作为红石时钟。"
+				""
+				"要设置连接到读取器的变量卡，只需将一张空白卡放入相应的插槽中，该卡将被分配使用该插槽提供数据。"
+			]
+			dependencies: ["556F3942AF7CFB8C"]
+			id: "3195632E0EE15137"
+			tasks: [{
+				id: "67ADE82CC1CDD6E0"
+				type: "item"
+				item: "integrateddynamics:part_redstone_reader"
+			}]
+			rewards: [{
+				id: "17AE67B6404F4B63"
+				type: "item"
+				item: "integrateddynamics:variable"
+				count: 2
+			}]
+		}
+		{
+			title: "调节拓展"
+			x: -3.5d
+			y: -4.0d
+			subtitle: "跟我走最长的一英里"
+			description: ["允许预先设置在容器中保留多少物品。低于设置数量就不会进行操作。"]
+			dependencies: ["7CA354074FCF8447"]
+			id: "0163571DC8F997F5"
+			tasks: [{
+				id: "143E9C1A894A8972"
+				type: "item"
+				item: "modularrouters:regulator_augment"
+			}]
+			rewards: [{
+				id: "621F32F72099BE12"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.0d
+			description: ["允许虚空模块收集附近的经验球而不是物品，经验球可以被转化为各种物品或流体；如果要将经验转化为流体，那么你必须在路由器的缓冲区中放置一个可以以mB为单位储存流体的物品，或者在路由器旁边放置一个流体容器"]
+			dependencies: ["7CA354074FCF8447"]
+			id: "77458390B359EB6C"
+			tasks: [{
+				id: "76BE11C2D660721D"
+				type: "item"
+				item: "modularrouters:xp_vacuum_augment"
+			}]
+			rewards: [{
+				id: "04C695D215824999"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			description: ["增加每tick处理物品的数量，最多可以放置6个。"]
+			dependencies: ["7CD587747CC14268"]
+			id: "3D7E621374741748"
+			tasks: [{
+				id: "7CABBEFEA29A5692"
+				type: "item"
+				item: "modularrouters:stack_upgrade"
+			}]
+			rewards: [{
+				id: "1BAB8612F63CCCC9"
+				type: "item"
+				item: "modularrouters:stack_upgrade"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.0d
+			description: [
+				"使路由器完全防爆，包括凋灵在内的爆炸。"
+				""
+				"你为什么想要一个能够困住凋灵的路由器？这取决于你！"
+			]
+			dependencies: ["7CD587747CC14268"]
+			id: "27F2EAA313795208"
+			tasks: [{
+				id: "61DD5DD42B8E1C8E"
+				type: "item"
+				item: "modularrouters:blast_upgrade"
+			}]
+			rewards: [{
+				id: "2DA82C3A16F3ACB1"
+				type: "item"
+				item: "modularrouters:blast_upgrade"
+			}]
+		}
+		{
+			title: "方块与NBT读取器"
+			icon: "integrateddynamics:part_block_reader"
+			x: -10.0d
+			y: 5.5d
+			subtitle: "显示你的秘密"
+			description: [
+				"方块读取器与NBT读取器是一个强大的组合；将方块读取器放置在任何具有NBT的方块上，例如：植物魔法的魔力池，并将变量卡连接到NBT读取器上。"
+				""
+				"你可以将“NBT数据标签”放入显示器中，你就能清楚的看到一堆关于方块的各种信息；借助编辑器并使用字符串，你能够手动将NBT插入到数据中查找你想要比较的标签，但NBT读取器使这一过程变得更简单。"
+				""
+				"只需要将提取器与读取器放置在同一个网络中，然后将NBT卡放在NBT读取器内左侧的“SRC NBT”插槽中，你将再次看到NBT标签，你可以点击感兴趣的标签将其选中，然后在右侧的“OUT”插槽中放置一张空的变量卡；以魔力池为例，点击“mana:*”标签，然后在右侧的“OUT”上放置一张空的变量卡，该变量卡就能够读取该魔力池中的魔力含量。"
+				""
+				"一旦将卡连接到需要的NBT标签后，你就能把NBT读取器在网络中移除了。"
+			]
+			dependencies: ["3E2016CF7DEAB4EE"]
+			id: "01DA715D5D271E92"
+			tasks: [
+				{
+					id: "0D75CAA1DE1284B2"
+					type: "item"
+					item: "integrateddynamics:part_block_reader"
+				}
+				{
+					id: "25838A87475AEEC9"
+					type: "item"
+					item: "integratednbt:nbt_extractor"
+				}
+			]
+			rewards: [{
+				id: "761880A207E10159"
+				type: "item"
+				item: "integrateddynamics:part_display_panel"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			description: [
+				"当指向一个方块时，红线比较器能够镜像该方块的比较器输出，因此你可以将比较器放置在红线比较器上而不是目标容器沙漠上，非常适合在一个狭窄的地方进行自动化。"
+				""
+				"还有其他的红线方块，请查看“植物魔法辞典”来查看更多关于红线相关的方块。"
+			]
+			dependencies: ["3468E652B4FE85FA"]
+			id: "642C66D035EC4141"
+			tasks: [{
+				id: "2A160C7D2F6863B6"
+				type: "item"
+				item: "botania:red_string_comparator"
+			}]
+			rewards: [{
+				id: "7571E7BDE443E313"
+				type: "item"
+				item: "minecraft:comparator"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			description: [
+				"抽取模块能够将物品从其他的容器中抽到路由器内部的物品槽中。"
+				""
+				"MK1和MK2的区别就是，MK1只能从相邻的容器中抽取而MK2能够从最远12格的容器中抽取，甚至能够如果使用范围拓展的话范围就会更远。"
+				""
+				"需要先手持抽取模块Mk2对容器按下潜行+右键来绑定容器，对非容器方块按下潜行+右键清除绑定。"
+			]
+			dependencies: ["21B266F6556271EB"]
+			id: "60A72B4FC2AFD9C3"
+			tasks: [{
+				id: "659E378856A13D06"
+				type: "item"
+				title: "抽取模块"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "modularrouters:puller_module_1"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+										Direction: "NONE"
+									}
+								}
+							}
+							{
+								id: "modularrouters:puller_module_2"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "2D7425203F0BBD59"
+				type: "item"
+				item: {
+					id: "modularrouters:puller_module_1"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			description: [
+				"发送模块能够将物品从路由器内部发送到其他的容器中。"
+				""
+				"与提取模块不同，即使是最低级的MK1也具有远程功能，只要没有方块阻挡，就能够与最远8格之外的容器交互；MK2则没有斜角格数限制；MK3则完全没有限制，即使在不同的维度也能够发送。"
+			]
+			dependencies: ["21B266F6556271EB"]
+			id: "029313754BAF820E"
+			tasks: [{
+				id: "5CFF2A9710804BFA"
+				type: "item"
+				title: "发送模块"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "modularrouters:sender_module_1"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+										Direction: "NONE"
+									}
+								}
+							}
+							{
+								id: "modularrouters:sender_module_2"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+									}
+								}
+							}
+							{
+								id: "modularrouters:sender_module_3"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B9A3A2F4383F914"
+				type: "item"
+				item: {
+					id: "modularrouters:sender_module_1"
+					Count: 1b
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+							Direction: "NONE"
+						}
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "modularrouters:energy_distributor_module"
+				Count: 1b
+				tag: {
+					modularrouters: {
+						ModuleFilter: { }
+						Direction: "NONE"
+					}
+				}
+			}
+			x: -0.5d
+			y: -3.0d
+			description: ["能量分配模块能使路由器以无线方式向附近的方块（最多8个）传输能量；它会从手持的物品中提取RF；若安装了能量升级，则会从路由器本身提取RF。"]
+			dependencies: ["15E49A6B00BE744C"]
+			id: "2AB330A73BD6447C"
+			tasks: [
+				{
+					id: "79300CFD6BA43948"
+					type: "item"
+					item: {
+						id: "modularrouters:energy_distributor_module"
+						Count: 1b
+						tag: {
+							modularrouters: {
+								ModuleFilter: { }
+								Direction: "NONE"
+							}
+						}
+					}
+				}
+				{
+					id: "36A2B364AA9213B8"
+					type: "item"
+					title: "任意兼容的能量存储"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "powah:battery_basic"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "powah:battery_hardened"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "powah:battery_blazing"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "powah:battery_niotic"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "powah:battery_spirited"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "powah:battery_nitro"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "thermal:flux_capacitor"
+									Count: 1b
+									tag: { }
+								}
+								{
+									id: "mekanism:energy_tablet"
+									Count: 1b
+								}
+								{
+									id: "mekanism:basic_energy_cube"
+									Count: 1b
+								}
+								{
+									id: "powah:energy_cell_basic"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "27AFD476C3E9CE35"
+				type: "command"
+				title: "法师快乐包"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			description: ["允许路由器存储能源，某些模块可以使用能能源而无需使用路由器的电池插槽，从而释放路由器去做别的事情。"]
+			dependencies: ["2AB330A73BD6447C"]
+			id: "5A7512AA919309E5"
+			tasks: [{
+				id: "0CF6F9BAA4502A0E"
+				type: "item"
+				item: "modularrouters:energy_upgrade"
+			}]
+			rewards: [{
+				id: "56004BEDB4624F96"
+				type: "command"
+				title: "法师快乐包"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			description: ["每个拓展会将模块的作用范围增加1方块，可以应用在抽取模块MK2、发送模块MK1和MK2、流体模块MK2之类的具有范围的模块上，"]
+			dependencies: ["7CA354074FCF8447"]
+			id: "5769B2F6C1C41BF9"
+			tasks: [{
+				id: "4E92C9FC29427BD1"
+				type: "item"
+				item: "modularrouters:range_up_augment"
+			}]
+			rewards: [{
+				id: "16F20BC236C77741"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			subtitle: "一定是风的缘故...."
+			description: ["使路由器看起来像另一个方块，以隐藏你的自动化设备，手持该升级，潜行+右键单击任意方块记录该方块外观，然后放入路由器即可。"]
+			dependencies: ["7CD587747CC14268"]
+			id: "58F3471ACCC0F86A"
+			tasks: [{
+				id: "035E21B5DBD9BD35"
+				type: "item"
+				item: "modularrouters:camouflage_upgrade"
+			}]
+			rewards: [{
+				id: "54186C7FFD7F0FE0"
+				type: "item"
+				item: "mekanism:cardboard_box"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.5d
+			description: [
+				"造桥模块MK1可以在接收到红石信号时将路由器内的方块放置一排到路由器面前，并在红石信号结束时收回；收回时，如果有方块替换了模块放置的方块，则会尝试使其变为掉落物，失败的场合，模块会暂时停止工作"
+				""
+				"MK2的造桥方式略有不同，它准循着模块设置的方块模式，并且在放置时会放置假方块，这些方块在被破坏时不会产生掉落物；因此可以用来制作一些更加华丽的门而不需要担心物品管理。"
+				""
+				"当同时使用多台造桥机时，同步升级可以精准控制时间，因此所有的路由器都能够互相伸展或者收缩。"
+			]
+			dependencies: ["21B266F6556271EB"]
+			id: "3CB129682BA3399A"
+			tasks: [{
+				id: "0F3A18E0B4440919"
+				type: "item"
+				title: "造桥模块"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "modularrouters:extruder_module_1"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+										Direction: "NONE"
+									}
+								}
+							}
+							{
+								id: "modularrouters:extruder_module_2"
+								Count: 1b
+								tag: {
+									modularrouters: {
+										ModuleFilter: { }
+										Direction: "NONE"
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "67EA54AB859657A6"
+				type: "command"
+				title: "农夫快乐包"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "更多过滤"
+			icon: "modularrouters:bulk_item_filter"
+			x: -0.5d
+			y: -10.0d
+			description: ["如果模块的过滤器空间不足，或许想要更复杂的过滤器，可以试试使用这其中之一；只需要简单的配置一下，然后放入过滤器插槽就能工作了。"]
+			dependencies: ["21B266F6556271EB"]
+			id: "795B13C31D41A45D"
+			tasks: [{
+				id: "5B47A042CE63665C"
+				type: "item"
+				title: "任意过滤器"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "modularrouters:bulk_item_filter"
+								Count: 1b
+							}
+							{
+								id: "modularrouters:inspection_filter"
+								Count: 1b
+							}
+							{
+								id: "modularrouters:mod_filter"
+								Count: 1b
+							}
+							{
+								id: "modularrouters:regex_filter"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "2E3F82B6A759073B"
+				type: "item"
+				item: "modularrouters:bulk_item_filter"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.0d
+			subtitle: "咔哧咔哧咔哧"
+			description: ["物流分类机有两个大小不同的面，其中较大的面为输入（抽入）面，较小的面为输出（弹出）面；物流整理机也能自动调整方向，连接附近的容器;能够根据设置对物品输入到指定的管道中，使用它将能够制作一条分类系统。"]
+			dependencies: ["3FF1B8E5563D4ECF"]
+			id: "0460B6B82842ADA8"
+			tasks: [{
+				id: "5BBC6277D3E82E07"
+				type: "item"
+				item: "mekanism:logistical_sorter"
+			}]
+			rewards: [{
+				id: "1FBF8F3349ACA9D8"
+				type: "item"
+				item: "trashcans:item_trash_can"
+			}]
+		}
+	]
+}

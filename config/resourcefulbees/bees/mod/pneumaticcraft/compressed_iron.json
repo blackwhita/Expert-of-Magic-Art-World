@@ -1,0 +1,30 @@
+{
+  "flower": "pneumaticcraft:compressed_stone",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 700,
+  "traits":["can_swim"],
+  "baseLayerTexture": "mod/pneumaticcraft/compressediron_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#969696",
+    "modelType": "ORE"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "pneumaticcraft:ingot_iron_compressed"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "pneumaticcraft:ingot_iron_compressed",
+    "feedAmount": 1
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

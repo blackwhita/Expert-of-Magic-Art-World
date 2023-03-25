@@ -1,0 +1,926 @@
+{
+	id: "0000000000000349"
+	group: "72A9465344128AF9"
+	order_index: 6
+	filename: "rftools_wip"
+	title: "RF工具箱"
+	icon: "rftoolsbase:machine_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "欢迎来到RF工具箱！"
+			x: 0.0d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "但是RF代表什么？"
+			description: [
+				"欢迎来到RF工具箱！在本章中，将会学会如何使用工具箱内的模组，它专注于提供不同类型的设备与功能，例如可以快速传送与挖矿等等！"
+				""
+				"任务将会引领你使用一些模组内关键的物品，但还有一部分需要你自己去寻找和发现。"
+				"我们还会介绍XNet，它是专门为传输物品而设计的，和工具箱一样都是绝佳的搭配！好吧，我们还在等什么，让我们开始吧！"
+			]
+			optional: true
+			id: "000000000000034A"
+			tasks: [{
+				id: "0EB362B38C59907A"
+				type: "item"
+				title: "RF工具箱或XNet开始物品"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "xnet:controller"
+								Count: 1b
+							}
+							{
+								id: "rftoolsbase:machine_frame"
+								Count: 1b
+							}
+							{
+								id: "rftoolsbase:machine_base"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C00"
+				type: "item"
+				title: "智能扳手"
+				item: "rftoolsbase:smartwrench"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			shape: "hexagon"
+			subtitle: "他们陷害了我！"
+			description: ["熟悉这个家伙，它将会成你制作每一个本模组机器的基础材料，就跟它的妹妹机器基座只能用于制作更小的机器一样，务必多制作一些吧！"]
+			dependencies: ["000000000000034A"]
+			size: 1.5d
+			id: "000000000000034D"
+			tasks: [{
+				id: "000000000000034E"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+			rewards: [{
+				id: "0000000000000C6A"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			shape: "hexagon"
+			subtitle: "一个又一个的基底"
+			description: ["熟悉这个物品，它将会成为你制作每个机器最基础的物品，就跟它的朋友机器框架一样用于制作更强大的机器，最好多准备一些！"]
+			dependencies: ["000000000000034A"]
+			size: 1.5d
+			id: "0000000000000380"
+			tasks: [{
+				id: "0000000000000381"
+				type: "item"
+				item: "rftoolsbase:machine_base"
+			}]
+			rewards: [{
+				id: "0000000000000C69"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "无线红石"
+			x: 0.0d
+			y: 4.5d
+			subtitle: "未来即现在！"
+			description: [
+				"你有没有想过更轻松传输红石信号而不需要铺设那些丑陋的红石线？好吧，只需要制作一个红石发信器和接收器就行了！"
+				""
+				"它与频道一起使用，这意味着只需要设置同一种频道，就能在任意地方任意地点输入或者输出红石信号，如果只是简单的放置到世界上而不去设置它那么它会自动连接到新的频道。"
+				""
+				"然后在其他的地方放置一个红石信号接收器就能使用了，这很酷吧？"
+			]
+			dependencies: ["0000000000000380"]
+			id: "0000000000000382"
+			tasks: [
+				{
+					id: "0000000000000383"
+					type: "item"
+					item: "rftoolsutility:redstone_transmitter"
+				}
+				{
+					id: "000000000000056E"
+					type: "item"
+					item: "rftoolsutility:redstone_receiver"
+				}
+			]
+			rewards: [{
+				id: "0000000000000C6C"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.5d
+			subtitle: "我更喜欢容器棋"
+			description: [
+				"物品检查器是一个非常独特的设备，顾名思义，它能够用来检测它面对容器中的特定物品，它甚至能够兼容标签！"
+				"它的用途可能并不是很多，但事实证明它在一些复杂的自动化中会非常有用。"
+			]
+			dependencies: ["0000000000000380"]
+			id: "0000000000000386"
+			tasks: [{
+				id: "0000000000000387"
+				type: "item"
+				item: "rftoolsutility:invchecker"
+			}]
+			rewards: [{
+				id: "0000000000000C6B"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			subtitle: "滴滴答答..."
+			description: ["这很简单，只是一个普普通通的红石计时器罢了，你可以手动放置并设置延迟，能在它的输入口（蓝色V）给它一个红石信号来重置它。"]
+			dependencies: ["0000000000000380"]
+			id: "0000000000000388"
+			tasks: [{
+				id: "0000000000000389"
+				type: "item"
+				item: "rftoolsutility:timer"
+			}]
+			rewards: [{
+				id: "0000000000000C68"
+				type: "command"
+				title: "农夫快乐包"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			subtitle: "就像那个说唱歌手一样！"
+			description: [
+				"逻辑是一种简单而有效的方法，可以为你所有红石需求创建一个自定义的逻辑门。"
+				""
+				"它需要三个输入，来自机器三个不同的侧面，带有蓝色箭头，并根据内部设置从橙色箭头一侧输出一个红石信号。"
+				"你可以设置任意组合，例如：两个输入面是关闭一个打开，并为它们设置所需要的输出。"
+			]
+			dependencies: ["0000000000000380"]
+			id: "000000000000038A"
+			tasks: [{
+				id: "000000000000038B"
+				type: "item"
+				item: "rftoolsutility:logic"
+			}]
+			rewards: [{
+				id: "0000000000000C6E"
+				type: "command"
+				title: "农夫快乐包"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			subtitle: "我以为我们都去数字化了！"
+			description: [
+				"四个方向分别为主输入端I，输出端O，条件输入端A和条件输入端B；对于条件输入端的信号强度A>B、A=B和A<B，三种情况，可以分别编辑输出的信号强度函数；输出端O的信号强度函数形式为：输入端I的信号强度×可编辑常数+可编辑常数。"
+				""
+				"你可以将模拟器看作为更高级的逻辑，它仍然只有三个输入。"
+			]
+			dependencies: ["000000000000038A"]
+			id: "000000000000038E"
+			tasks: [{
+				id: "000000000000038F"
+				type: "item"
+				item: "rftoolsutility:analog"
+			}]
+			rewards: [{
+				id: "0000000000000C6F"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			subtitle: "就像 1,1,2,3 一样简单..."
+			description: [
+				"音序器是另一种可用于创建自定义红石电路的小型设备。"
+				""
+				"这个有点高级，新手可能看起来非常迷惑，但实际上其实很简单；将你在GUI中看到的网络是作为时间序列，从左上角开始到右下角结束。"
+				""
+				"每个方块代表1tick，也就是0.05秒，例如：如果你要点亮前20格方块，则序列现在是1秒的开始信号然后在剩余时间段内关闭。"
+				""
+				"那还可以设置自定义序列的激活方式（默认只会激活一次，即音序器在第一次接收红石信号时会检查所有的模式并点击\"Once1\"让它们开始循环）"
+			]
+			dependencies: ["000000000000038E"]
+			id: "0000000000000390"
+			tasks: [{
+				id: "0000000000000391"
+				type: "item"
+				item: "rftoolsutility:sequencer"
+			}]
+			rewards: [{
+				id: "0000000000000C70"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			subtitle: "这个笑话已被审查..."
+			description: ["顾名思义，传感器可用于检测区域内的方块、物品、生物与其他的物品的状态，当满足条件时就会发出一个红石信号，非常的方便！"]
+			dependencies: ["0000000000000380"]
+			id: "0000000000000392"
+			tasks: [{
+				id: "0000000000000393"
+				type: "item"
+				item: "rftoolsutility:sensor"
+			}]
+			rewards: [{
+				id: "0000000000000C6D"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "传送"
+			icon: "rftoolsutility:matter_receiver"
+			x: 1.5d
+			y: 0.0d
+			subtitle: "*在你身后传送*"
+			description: [
+				"RF工具箱提供了一种快捷的传送方式，它可以非常方便地在世界各处旅行，或者只是简单的为了快速回家而已。"
+				""
+				"你只需要两个设备，传输器和接收器，一个是设置传送点一个是传送到设置的传送点的坐标上。"
+				""
+				"首先，你需要在需要设置坐标的地方放置一个接收器并给予能量，然后在其他的地方放置一个传输器和控制器。"
+				""
+				"控制器能查看世界上所有的公共接收器和你被列入白名单内的私人接收器，你可以使用命名来更容易查看到它们。"
+				""
+				"去控制器内选择需要传送的接收器，你会看到传输器亮起，然后踩上去！就能，传送！"
+			]
+			dependencies: ["000000000000034D"]
+			min_width: 300
+			id: "0000000000000394"
+			tasks: [
+				{
+					id: "0000000000000395"
+					type: "item"
+					item: "rftoolsutility:matter_transmitter"
+				}
+				{
+					id: "0000000000000396"
+					type: "item"
+					item: "rftoolsutility:matter_receiver"
+				}
+				{
+					id: "0000000000000C02"
+					type: "item"
+					item: "rftoolsutility:dialing_device"
+				}
+			]
+			rewards: [{
+				id: "0000000000000C67"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			shape: "diamond"
+			subtitle: "现在我在这里，现在我不在！"
+			description: [
+				"传送很酷，但是如果你可以传送到你的接收器而不必每次都放下一个传输器呢？介绍一下高级传送器！潜行右键单击您可以访问的任何接收器以将其保存到高级传送器中。"
+				"如果高级传送器有能量，只需要右键选择之后就能传送到指定位置！"
+				""
+				"普通的传送器只能保存1个接收器坐标，而高级的能最多保存8个，你可以在空中右键来将它们来回切换，试试看！"
+			]
+			dependencies: ["0000000000000394"]
+			optional: true
+			id: "0000000000000399"
+			tasks: [{
+				id: "000000000000039A"
+				type: "item"
+				item: {
+					id: "rftoolsutility:advanced_charged_porter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C71"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "维度碎片"
+			x: -1.5d
+			y: 1.5d
+			subtitle: "它来自另一个世界..."
+			description: ["维度碎片是RF工具箱最基础的资源，能在地底的矿石中被发现，也能使用一些稀有的材料去制作，你需要大量的该材料来作为该模组的入门，多去准备一些吧!"]
+			dependencies: ["000000000000034A"]
+			id: "000000000000039B"
+			tasks: [{
+				id: "000000000000039C"
+				type: "item"
+				item: "rftoolsbase:dimensionalshard"
+				count: 16L
+			}]
+			rewards: [{
+				id: "0000000000000C65"
+				type: "command"
+				title: "农夫快乐包"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "充满爱！"
+			description: [
+				"不知道你是否注意到有一些RF工具箱内的机器上会有一些橙色字体标注出来的“注能升级”。"
+				""
+				"将这些机器放入机器注能机种，并给予一些维度碎片和能量，就能为该机器进行注能，能解锁该机器上的注能升级插槽。"
+			]
+			dependencies: [
+				"000000000000039B"
+				"000000000000034D"
+			]
+			id: "000000000000039D"
+			tasks: [{
+				id: "000000000000039E"
+				type: "item"
+				item: "rftoolsbase:machine_infuser"
+			}]
+			rewards: [{
+				id: "0000000000000C7E"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "合成机"
+			x: 1.5d
+			y: -3.0d
+			subtitle: "比你做的更好"
+			description: [
+				"合成机是非常不错的机器，顾名思义它能够自动化制作一些东西。"
+				""
+				"它们的好处是能设置合成表，只需要设置好合成表并提供相应的材料，它们就能为你自动化制作物品。"
+				""
+				"它们有不同的等级，它们基本上都是一致的，只不过更高级的合成机能拥有更多的合成栏而已。"
+			]
+			dependencies: ["000000000000034D"]
+			id: "000000000000039F"
+			tasks: [{
+				id: "00000000000003A0"
+				type: "item"
+				title: "合成机"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "rftools:crafter"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000C76"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			subtitle: "无聊的砖块"
+			description: [
+				"顾名思义，建造机是一台能够为你制作建筑的机器，但是你可以会惊讶的发现它还有更多功能，使用塑型卡片能获得更多功能。"
+				""
+				"手持塑型卡然后潜行右键选择一个方块然后再选择另外一个方块选为范围。"
+				""
+				"然后对着空气右键能进一步的配置它的形状，大小等等数据。"
+				""
+				"全部设置完成后放入建造机就能开始工作！建造机能根据该塑型卡的属性在选定的区域内建筑或者挖掘，抽取液体等等。"
+				""
+				"正常情况下，你需要给予建造机能量与方块，建造机会将建造机下方的容器内用于建筑或者存放物品的容器。"
+				""
+				"温馨提示：点击建造机内的救生圈图标能激活预览模式，能查看当前区域的大小。"
+			]
+			dependencies: ["000000000000034D"]
+			min_width: 300
+			id: "000000000000055B"
+			tasks: [{
+				id: "000000000000055C"
+				type: "item"
+				item: "rftoolsbuilder:builder"
+			}]
+			rewards: [{
+				id: "0000000000000C75"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "满足你所有的挖掘需求"
+			description: [
+				"这是建造机的挖掘模式卡片，顾名思义它会挖掘区域内的方块并存放到建造机下方的容器之中。"
+				""
+				"采掘的塑型卡有许多变种，例如精准采集和时运。"
+				""
+				"清除卡会挖掘方块并替换成空气，而普通的采掘卡则会使用泥土来代替它们挖掘的方块，你也能设置塑型卡只挖掘某些方块。"
+			]
+			dependencies: ["000000000000055B"]
+			optional: true
+			id: "000000000000055D"
+			tasks: [{
+				id: "000000000000055E"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_quarry"
+			}]
+			rewards: [{
+				id: "0000000000000C7B"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "满足你的所有建筑需求"
+			description: ["这是建造机默认的采掘塑型卡，如果使用这个塑型卡，建造机就会读取下方的容器内的方块并将它们放置到指定区域内。"]
+			dependencies: ["000000000000055B"]
+			optional: true
+			id: "000000000000055F"
+			tasks: [{
+				id: "0000000000000560"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_def"
+			}]
+			rewards: [{
+				id: "0000000000000C7C"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "满足你的所有建筑需求"
+			description: ["泵塑型卡能在选定区域内抽取流体，因此需要在建造机的上方或者下方放置流体储罐，还有一种模式是在区域内放置流体。"]
+			dependencies: ["000000000000055B"]
+			optional: true
+			id: "0000000000000561"
+			tasks: [{
+				id: "0000000000000BFB"
+				type: "item"
+				item: "rftoolsbuilder:shape_card_pump"
+			}]
+			rewards: [{
+				id: "0000000000000C7D"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			subtitle: "模组和模块有什么用？"
+			description: [
+				"模块化存储器是一种高级的物品存储形式，类似于AE的ME驱动器，需要制作一个存储模块来使用。"
+				""
+				"然后接入能量，就能存储或者取出物品，该存储器最多能存储8个配方！它本身也能被拓展模块和过滤模块生效。"
+				""
+				"这些物品也能存在模块化存储器中，因此你也能轻松将它取出，然后将物品移动到其他的容器中。"
+			]
+			dependencies: ["000000000000034D"]
+			id: "0000000000000563"
+			tasks: [{
+				id: "0000000000000564"
+				type: "item"
+				item: "rftoolsstorage:modular_storage"
+			}]
+			rewards: [
+				{
+					id: "0000000000000BFF"
+					type: "item"
+					title: "一阶存储模块"
+					item: "rftoolsstorage:storage_module0"
+				}
+				{
+					id: "0000000000000C77"
+					type: "command"
+					title: "拾荒者快乐包"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "最大存储！"
+			x: -3.0d
+			y: -4.5d
+			shape: "diamond"
+			subtitle: "过多的物品！"
+			description: ["存储模块有多种等级，能够在单个模块中存储最多500组物品！很多吧？"]
+			dependencies: ["0000000000000563"]
+			optional: true
+			id: "0000000000000565"
+			tasks: [{
+				id: "0000000000000566"
+				type: "item"
+				item: "rftoolsstorage:storage_module3"
+			}]
+			rewards: [{
+				id: "0000000000000C79"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "RF工具箱控制"
+			icon: "rftoolscontrol:processor"
+			x: 1.5d
+			y: -1.5d
+			subtitle: "这是给所有书呆子的"
+			description: [
+				"RF工具箱控件是用于对高级任务序列进行编程的方块集合，这些设备对于自动化复杂设置非常有用。"
+				""
+				"由于只用文字解释非常深入和复杂，因此任务并不能很好地解释它，所以我们将链接指向一个做得好的youtube教程。"
+				""
+				"如果你有兴趣了解如何使用它，请前往这个网址查看教程： https://www.youtube.com/watch?v=18-R5L-CATg"
+			]
+			dependencies: ["000000000000034D"]
+			id: "0000000000000567"
+			tasks: [
+				{
+					id: "0000000000000568"
+					type: "item"
+					item: "rftoolscontrol:processor"
+				}
+				{
+					id: "000000000000056B"
+					type: "item"
+					item: "rftoolscontrol:programmer"
+				}
+				{
+					id: "000000000000056C"
+					type: "item"
+					item: "rftoolscontrol:workbench"
+				}
+				{
+					id: "000000000000056D"
+					type: "item"
+					item: "rftoolscontrol:program_card"
+				}
+			]
+			rewards: [{
+				id: "0000000000000C72"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "XNet"
+			x: 1.5d
+			y: 1.5d
+			shape: "hexagon"
+			subtitle: "但是X代表什么？"
+			description: [
+				"XNet是rf工具箱中专门为传输物品、流体、能量的自动化而设计的一系列机器。"
+				""
+				"要开始使用XNet，需要为每个连接机器的线缆配置一个连接器并且在网络中放置一个控制器，控制器能控制网络内每个机器的连接情况。"
+				""
+				""
+				"这需要一些时间来适应，但对于更复杂的自动化，XNet将永远是你最好的朋友。"
+			]
+			dependencies: ["000000000000034A"]
+			size: 1.5d
+			min_width: 300
+			id: "0000000000000571"
+			tasks: [{
+				id: "0000000000000572"
+				type: "item"
+				item: "xnet:controller"
+			}]
+			rewards: [
+				{
+					id: "0000000000000C03"
+					type: "item"
+					title: "蓝色网络线缆"
+					item: "xnet:netcable_blue"
+					count: 32
+				}
+				{
+					id: "0000000000000C04"
+					type: "item"
+					title: "蓝色连接器"
+					item: "xnet:connector_blue"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "连接升级工具"
+			x: 3.0d
+			y: 1.5d
+			shape: "diamond"
+			subtitle: "甚至更花里胡哨！"
+			description: ["连接升级工具可以为您提供额外的功能，例如更快的速度或访问机器的任何一侧。"]
+			dependencies: ["0000000000000571"]
+			id: "0000000000000578"
+			tasks: [{
+				id: "0000000000000579"
+				type: "item"
+				item: "xnet:connector_upgrade"
+			}]
+			rewards: [{
+				id: "0000000000000C66"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			subtitle: "您的箱子没有隐私！"
+			description: [
+				"存储检测器是一种更高级地访问物品与容器的机器，它能读取以自身为中心的20格方块半径内的所有容器，并且能够燧石将它们放入或者取出。"
+				""
+				"假设你有一面箱子墙，存储检测器就能轻松地访问它们，它甚至能够被用于模块化存储！"
+			]
+			dependencies: ["0000000000000563"]
+			id: "0000000000000BF4"
+			tasks: [{
+				id: "0000000000000BF5"
+				type: "item"
+				item: "rftoolsstorage:storage_scanner"
+			}]
+			rewards: [{
+				id: "0000000000000C78"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "能量单元"
+			x: -1.5d
+			y: -1.5d
+			subtitle: "细胞的厨房"
+			description: [
+				"能量单元是一种用于储存能量的多方块结构，只要让它们连接到一起，它们能够储存的能量也会越多，即使是不同等级的能量单元也是能一起组成的多方块结构的。"
+				""
+				"手持智能扳手右键多方块结构能设置输入与输出端，蓝色为输入橙色为输出，然后就能向能量单元内输入或者输出能量了。"
+			]
+			dependencies: ["000000000000034D"]
+			id: "0000000000000BF6"
+			tasks: [{
+				id: "0000000000000BF7"
+				type: "item"
+				item: "rftoolspower:cell1"
+			}]
+			rewards: [{
+				id: "0000000000000C73"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "维度能量单元"
+			icon: "rftoolspower:dimensionalcell"
+			x: -3.0d
+			y: -1.5d
+			subtitle: "有卡更好！"
+			description: [
+				"维度能量单元和能量单元相比，它们用途是一模一样的但维度能量单元能跨纬度传输能量。"
+				""
+				"你能在维度能量单元内放置维度标记卡来将它们连接到同一个频道，在能量单元左上角处内放置维度标记卡设置一个频道。"
+				""
+				"然后你就能看到维度标记卡从“未链接”变成“链接：x”，其中x是一个数字，用于显示与标记当前的频道。"
+				""
+				"然后在其他的能量单元内的Link右侧的槽中放入空的维度标记卡就能将该维度卡设置为与左上角的频道一致。"
+				""
+				"现在你能四处走动，在任意的世界上都能放置该维度能量单元，只需要将两个维度能量单元设置为同一个频道就能传输能量，右侧能设置该维度能量单元为输入还是输出端。"
+			]
+			dependencies: ["000000000000034D"]
+			dependency_requirement: "one_completed"
+			min_width: 300
+			id: "0000000000000BF8"
+			tasks: [
+				{
+					id: "0000000000000BF9"
+					type: "item"
+					title: "维度能量单元"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "rftools:dimensionalcell"
+						}
+					}
+				}
+				{
+					id: "0000000000000BFA"
+					type: "item"
+					item: "rftoolspower:powercell_card"
+				}
+			]
+			rewards: [{
+				id: "0000000000000C74"
+				type: "command"
+				title: "稀有RF工具箱战利品箱"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -4.5d
+			y: -3.0d
+			shape: "diamond"
+			subtitle: "绝对不是iPad"
+			description: [
+				"平板电脑可用于远程控制不同的本模组内的机机器，这取决于你在平板电脑放置的模块。"
+				""
+				"例如：右键点击获取该任务提供的存储模块放入到存储检测器中，只要存储检测器所在的区块被加载你就能从任何地方访问它们！"
+			]
+			dependencies: ["0000000000000BF4"]
+			optional: true
+			id: "0000000000000BFC"
+			tasks: [{
+				id: "0000000000000BFD"
+				type: "item"
+				item: "rftoolsbase:tablet"
+			}]
+			rewards: [
+				{
+					id: "0000000000000BFE"
+					type: "item"
+					title: "存储控制模块"
+					item: {
+						id: "rftoolsstorage:storage_control_module"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0000000000000C7A"
+					type: "command"
+					title: "稀有RF工具箱战利品箱"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Xnet教程网址"
+			icon: "xnet:controller"
+			x: 3.0d
+			y: 3.0d
+			shape: "diamond"
+			subtitle: "点击我！"
+			description: [
+				"要访问XNet教程的网址，请点击此任务奖励生成的聊天消息。"
+				""
+				"不幸的是，可重复的任务尚未实现，因此该命令只会运行一次，因此请务必将链接保存在某处！"
+			]
+			dependencies: ["0000000000000571"]
+			optional: true
+			id: "0000000000000C14"
+			tasks: [{
+				id: "0000000000000C15"
+				type: "checkmark"
+				title: "Xnet教程网址"
+			}]
+			rewards: [{
+				id: "0000000000000C16"
+				type: "command"
+				title: "XNet Tutorial Link"
+				icon: "pneumaticcraft:tag_filter"
+				command: "/tellraw @p {\"text\":\"XNet教程链接\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://youtu.be/ksaJgiipaOg\"}}"
+				player_command: false
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			shape: "diamond"
+			subtitle: "点击我！"
+			description: [
+				"要想访问“RF工具箱控制”中的教程连接，请点击此按钮，会在聊天栏生成一个网址。"
+				""
+				"不幸的是，可重复的任务尚未实现，因此该命令只会运行一次，因此请务必将链接保存在某处！"
+			]
+			dependencies: ["0000000000000567"]
+			optional: true
+			id: "0000000000000C1A"
+			tasks: [{
+				id: "0000000000000C1B"
+				type: "checkmark"
+				title: "RF工具箱控制教程网址"
+				icon: "rftoolscontrol:advanced_network_card"
+			}]
+			rewards: [{
+				id: "0000000000000C1C"
+				type: "command"
+				title: "RFTools Control Tutorial Link"
+				icon: "pneumaticcraft:tag_filter"
+				command: "/tellraw @p {\"text\":\"RF工具|控制教程链接\",\"bold\":true,\"color\":\"dark_green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.youtube.com/watch?v=18-R5L-CATg&t=814s\"}}"
+				player_command: false
+			}]
+		}
+	]
+}
