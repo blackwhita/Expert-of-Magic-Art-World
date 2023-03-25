@@ -1,0 +1,32 @@
+{
+  "flower": "thermal:rubber_block",
+  "baseLayerTexture":"mod/industrialforegoing/rubber_bee",
+  "hasHoneycomb": true,
+  "traits":["can_swim"],
+  "maxTimeInHive": 700,
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#ECEBD6"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "thermal:rubber",
+    "mainOutputWeight": 0.5,
+    "secondaryOutput": "industrialforegoing:tinydryrubber",
+    "secondaryOutputWeight": 0.5
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "tag:forge:rubber",
+    "feedAmount": 1
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "flower": "all",
+  "baseLayerTexture":"block/dust_bee",
+  "hasHoneycomb": true,
+  "traits":["can_swim"],
+  "maxTimeInHive": 600,
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#DACFA3"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "ftbsluice:dust"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "ftbsluice:dust",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

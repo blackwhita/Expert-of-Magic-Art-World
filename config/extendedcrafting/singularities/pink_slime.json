@@ -1,0 +1,10 @@
+{
+    "name": "Pink Slime",
+    "colors": [
+      "DA70D6",
+      "DA70D6"
+    ],
+    "ingredient": {
+      "tag": "forge:ingots/pink_slime"
+    }
+  }

@@ -1,0 +1,10 @@
+{
+    "name": "Ivory Psimetal",
+    "colors": [
+      "F5F5F5",
+      "F5F5F5"
+    ],
+    "ingredient": {
+      "tag": "forge:ingots/ivory_psimetal"
+    }
+  }

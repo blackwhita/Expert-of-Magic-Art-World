@@ -1,0 +1,262 @@
+{
+	id: "0000000000000B66"
+	group: "34B7FB260B6AEB81"
+	order_index: 3
+	filename: "expert__tier_1_wip"
+	title: "科技-朋克时代"
+	icon: "create:large_cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "感觉不如铁"
+			x: 2.0d
+			y: 0.5d
+			shape: "gear"
+			description: ["它似乎是被烧炼出来的"]
+			id: "485544B776F7D5A2"
+			tasks: [{
+				id: "3CDBF9AE86C1D56B"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: "小齿轮大齿轮？"
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["485544B776F7D5A2"]
+			id: "384C3DF0C8DC666A"
+			tasks: [
+				{
+					id: "40E11F49D6C0754D"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "27381300FADF53F9"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+				{
+					id: "7149F6FFB6E0F9DE"
+					type: "item"
+					item: "create:shaft"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			dependencies: ["384C3DF0C8DC666A"]
+			id: "38769F7E9A24D968"
+			tasks: [{
+				id: "39664F82F0E01582"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			dependencies: ["384C3DF0C8DC666A"]
+			id: "363E575F41EEDB4E"
+			tasks: [{
+				id: "08E2FA2DFB24C8D2"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.5d
+			description: ["你可能需要用过滤去制作它"]
+			dependencies: ["363E575F41EEDB4E"]
+			id: "1AB41A7C355B9F92"
+			tasks: [{
+				id: "3F40FAF3CE8B487D"
+				type: "item"
+				item: "ftbsluice:diamond_mesh"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.5d
+			dependencies: ["363E575F41EEDB4E"]
+			id: "4D4AD7A3EBA3E1DB"
+			tasks: [{
+				id: "5BBDF2D8C969395F"
+				type: "item"
+				item: "minecraft:soul_sand"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			description: ["好看？审美的问题"]
+			dependencies: ["38769F7E9A24D968"]
+			id: "5DB7470DC780500F"
+			tasks: [{
+				id: "1AE8FB10E37FE57F"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.5d
+			description: ["前期必备三件套"]
+			dependencies: ["5DB7470DC780500F"]
+			id: "568BBA79073A1385"
+			tasks: [
+				{
+					id: "419A057BE6410D84"
+					type: "item"
+					item: "create:refined_radiance"
+				}
+				{
+					id: "265598EFBCD58EAA"
+					type: "item"
+					item: "create:shadow_steel"
+				}
+				{
+					id: "6EDB4920D7ECC643"
+					type: "item"
+					item: "createaddition:overcharged_alloy"
+				}
+			]
+		}
+		{
+			title: "极致的体验"
+			x: -1.0d
+			y: 7.0d
+			dependencies: ["568BBA79073A1385"]
+			id: "32B19E4AF20A03CC"
+			tasks: [{
+				id: "54007AE2DC4856C9"
+				type: "item"
+				item: "createaddition:overcharged_casing"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			dependencies: ["3BFA2A55C674A768"]
+			id: "40928437617B27FB"
+			tasks: [{
+				id: "7F80E7CC7BB1C7C9"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+		}
+		{
+			title: "压力压力"
+			x: 1.0d
+			y: 5.5d
+			description: [
+				"也许它中间是空的"
+				"尝试动力产压力？"
+			]
+			dependencies: ["40928437617B27FB"]
+			id: "32CA60F3A7F957BD"
+			tasks: [{
+				id: "25AAB9B6BECC9D8F"
+				type: "item"
+				item: "pneumaticcraft:pressure_chamber_wall"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 7.0d
+			dependencies: ["32CA60F3A7F957BD"]
+			id: "610843F3AC1A9490"
+			tasks: [{
+				id: "64CA3375C4D80549"
+				type: "item"
+				item: "pneumaticcraft:compressed_stone"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			dependencies: ["485544B776F7D5A2"]
+			id: "3BFA2A55C674A768"
+			tasks: [{
+				id: "6A79E3C6EF9DB0DD"
+				type: "item"
+				item: "pneumaticcraft:reinforced_stone"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 7.0d
+			dependencies: ["32CA60F3A7F957BD"]
+			id: "4FF126247ECD3BE7"
+			tasks: [{
+				id: "13A7D1F0359510EC"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 8.5d
+			dependencies: [
+				"4FF126247ECD3BE7"
+				"610843F3AC1A9490"
+			]
+			id: "63F3738DC3C6EDCB"
+			tasks: [{
+				id: "04C142A3D6F30187"
+				type: "questsadditions:structure"
+				title: "mk1"
+				icon: "masterfulmachinery:assembly_machine_mk1_controller"
+				name: "mk1"
+				hasCustomPicture: false
+				layer: true
+				ignoreState: false
+				rightclick: false
+			}]
+		}
+		{
+			x: -1.0d
+			y: 8.5d
+			dependencies: ["32B19E4AF20A03CC"]
+			id: "386B0F81131482D0"
+			tasks: [{
+				id: "4AA5D92A07F1548F"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+			rewards: [{
+				id: "4DE2B6112FC2C3B5"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+				count: 32
+			}]
+		}
+		{
+			x: -2.5d
+			y: 5.5d
+			shape: "gear"
+			description: ["他似乎可以用来制作蜜蜂的某种东西"]
+			dependencies: ["568BBA79073A1385"]
+			id: "43025429055A2970"
+			tasks: [{
+				id: "66AE798AA7301083"
+				type: "questsadditions:structure"
+				title: "heterochromatic_compound"
+				icon: "masterfulmachinery:heterochromatic_compound_controller"
+				name: "heterochromatic_compound"
+				hasCustomPicture: false
+				layer: true
+				ignoreState: false
+				rightclick: false
+			}]
+		}
+	]
+}

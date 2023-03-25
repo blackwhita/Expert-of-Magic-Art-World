@@ -1,0 +1,30 @@
+{
+  "flower": "all",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 700,
+  "traits":["can_swim"],
+  "baseLayerTexture": "mineral/copper_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#D86A28",
+    "modelType": "ORE"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "emendatusenigmatica:copper_ingot"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "emendatusenigmatica:copper_ingot",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

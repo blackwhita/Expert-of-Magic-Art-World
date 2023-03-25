@@ -1,0 +1,27 @@
+{
+  "flower": "ALL",
+  "maxTimeInHive": 600,
+  "hasHoneycomb": true,
+  "traits":["can_swim"],
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#ffffff",
+    "isRainbowBee": true,
+    "isGlowing": true
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": false
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

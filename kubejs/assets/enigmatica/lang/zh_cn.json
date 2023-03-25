@@ -1,0 +1,12 @@
+{
+    "item.kubejs.common_lootbox": "普通战利品箱",
+    "item.kubejs.rare_lootbox": "稀有战利品箱",
+    "item.kubejs.epic_lootbox": "史诗战利品箱",
+    "item.kubejs.legendary_lootbox": "传奇战利品箱",
+    "item.kubejs.miners_delight": "矿工快乐包",
+    "item.kubejs.sorcerers_delight": "法师快乐包",
+    "item.kubejs.farmers_delight": "农夫快乐包",
+    "item.kubejs.blacksmiths_delight": "铁匠快乐包",
+    "item.kubejs.scavengers_delight": "拾荒者快乐包",
+    "item.kubejs.alchemists_delight": "炼金术师快乐包"
+}

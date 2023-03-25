@@ -1,0 +1,40 @@
+{
+    "controllerId": "assembly_machine_mk2",
+    "name": "Assembly_machine_mk2",
+    "textureOverride": "minecraft:block/black_concrete",
+    "ports": [
+      {
+        "type": "masterfulmachinery:items",
+        "name": "Item",
+        "id": "item",
+        "data": {
+          "rows": 6,
+          "columns": 6
+        }
+      },
+      {
+        "type": "masterfulmachinery:fluids",
+        "name": "Fluid",
+        "id": "fluid",
+        "data": {
+          "capacity": 1000000
+        }
+      },
+      {
+        "type": "masterfulmachinery:energy",
+        "name": "Energy",
+        "id": "energy",
+        "data": {
+          "capacity": 100000000
+        }
+      },
+      {
+        "type": "masterfulmachinery:astral_starlight",
+        "name": "Starlight",
+        "id": "starlight",
+        "data": {
+          "capacity": 100000
+        }
+      }
+    ]
+  }

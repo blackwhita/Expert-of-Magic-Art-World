@@ -1,0 +1,10 @@
+{
+    "block.ctiers.centrifuge_controller_tier_3":"离心机控制器等级:3",
+    "block.ctiers.centrifuge_casing_tier_3":"离心机外壳等级:3",
+    "block.ctiers.centrifuge_controller_tier_4":"离心机控制器,等级:4",
+    "block.ctiers.centrifuge_casing_tier_4":"离心机外壳等级:4",
+    "block.ctiers.centrifuge_controller_tier_5":"离心机控制器等级:5",
+    "block.ctiers.centrifuge_casing_tier_5":"离心机外壳等级:5",
+    "block.ctiers.centrifuge_controller_tier_creative":"创造离心机控制器",
+    "block.ctiers.centrifuge_casing_tier_creative":"创造离心机外壳"
+}

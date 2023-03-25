@@ -1,0 +1,35 @@
+{
+  "flower": "all",
+  "hasHoneycomb": true,
+  "traits":["can_swim"],
+  "maxTimeInHive": 700,
+  "sizeModifier": 0.75,
+  "baseLayerTexture": "block/ice_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#92b9fe",
+    "primaryColor": "#92b9fe",
+    "secondaryColor": "#303030",
+    "modelType": "GELATINOUS"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:ice"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "water",
+    "parent2": "snowball",
+    "feedItem": "minecraft:blue_ice",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

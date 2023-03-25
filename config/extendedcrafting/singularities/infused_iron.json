@@ -1,0 +1,10 @@
+{
+    "name": "Infused Iron",
+    "colors": [
+      "00FF00",
+      "00FF00"
+    ],
+    "ingredient": {
+      "tag": "forge:ingots/infused_iron"
+    }
+  }

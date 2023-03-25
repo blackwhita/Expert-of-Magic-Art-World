@@ -1,0 +1,17 @@
+{
+    "modId": "eidolon",
+    "group": {
+        "name": "Eidolon Eggs",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "eidolon:lesser_soul_gem",
+            "count": 8
+        },
+        "defaultCategory": "farmingforblockheads:other"
+    },
+    "customEntries": [
+        { "output": { "item": "eidolon:spawn_necromancer" } },
+        { "output": { "item": "eidolon:spawn_wraith" } },
+        { "output": { "item": "eidolon:spawn_zombie_brute" } }
+    ]
+}
