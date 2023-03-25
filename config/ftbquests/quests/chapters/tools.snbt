@@ -1,0 +1,259 @@
+{
+	id: "0000000000000093"
+	group: "74B3CF67FCEAB20F"
+	order_index: 0
+	filename: "tools"
+	title: "工具与装备"
+	icon: {
+		id: "minecraft:netherite_pickaxe"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "工具与装备"
+			x: -8.0d
+			y: -5.5d
+			shape: "gear"
+			description: [
+				"许多模组添加了各种非常有用的工具，这些工具很容易被忽略。这个任务并不会把全部内容写出来，但是会标出一些比较有用的内容。"
+				""
+				"注意：大多都工具与装备都有标签，所以你很轻松就能在JEI中查询得到。搜索一下内容可以获取更多信息："
+				""
+				"❶  $armor     在JEI筛选全部装备标签"
+				"❷  $armor/helm    在JEI筛选头盔标签"
+				"❸  $armor/chest    在JEI中筛选盔甲标签"
+				"❹  $armor/leggings    在JEI中筛选护腿标签"
+				"❺  $armor/boots    在JEI中筛选靴子标签"
+				""
+				"❶  $tools   在JEI中筛选全部工具标签"
+				"❷  $tools/pickaxe    在JEI中筛选镐子标签"
+				"❸  $tools/shovel   在JEI中筛选铲子标签"
+				"❹  $tools/axe   在JEI中筛选斧头标签"
+				"❺  $tools/hoe  在JEI中筛选锄头标签"
+				"❻  $tools/multi-tool   在JEI中筛选多功能工具标签"
+			]
+			id: "000000000000045C"
+			tasks: [{
+				id: "000000000000045D"
+				type: "checkmark"
+				icon: {
+					id: "minecraft:netherite_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "0000000000000CA4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			x: -11.0d
+			y: -6.5d
+			subtitle: "只想和你一起度过...."
+			description: [
+				"把一分一秒储存起来，然后将时间花在喜欢的事情上。"
+				""
+				"shift右键机器可以消耗存储的时间短暂的加速机器。"
+			]
+			id: "7AE1180EFAF22376"
+			tasks: [{
+				id: "4D29649F3F51D7D3"
+				type: "item"
+				item: {
+					id: "tiab:timeinabottle"
+					Count: 1b
+					tag: {
+						timeData: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "4FDD99B9F9F65B1D"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "巫术兵工厂"
+			x: -12.0d
+			y: -5.5d
+			description: ["强大的工具，可以在使用时施放法术，任何有理想的魔法师都必须拥有。"]
+			id: "4A1C227E044B02D6"
+			tasks: [
+				{
+					id: "0733FFA5BAB24544"
+					type: "item"
+					item: "ars_nouveau:spell_bow"
+				}
+				{
+					id: "25A8965A5E3C4458"
+					type: "item"
+					item: {
+						id: "ars_nouveau:enchanters_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4CDEBD46316A28AF"
+					type: "item"
+					item: "ars_nouveau:wand"
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: -6.5d
+			shape: "gear"
+			description: [
+				"总是在工作时寻找各种合适的工具吗？还在纠结这个工具能不能拆机器吗？"
+				""
+				"变形工具介绍：它始终都能够根据情况来选择合适的工具，只要手持并且指向一个机器，它就能自动选择合适的工具并且切换出来。"
+				""
+				"还在用特定的扳手来旋转那些复杂的楼梯？shift键+鼠标滚轮能够从变形工具中切换，也可以通过shift键+丢弃键将该工具从变形工具中丢弃出来，只需要将它们重新合成一次就能恢复原状了。"
+				""
+				"一定要在JEI查看变形工具的合成表，只需要几个简单的齿轮就能够直接合成出一些工具。"
+			]
+			id: "7EDFBD3AEAC8B587"
+			tasks: [{
+				id: "0D382E19423F7F14"
+				type: "item"
+				item: "morphtool:tool"
+			}]
+			rewards: [{
+				id: "2826CA3ECD3974D4"
+				type: "command"
+				title: "拾荒者快乐包"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: -10.0d
+			y: -5.5d
+			id: "4FD521C3876515BD"
+			tasks: [{
+				id: "6DADB4B7779C77DC"
+				type: "item"
+				item: {
+					id: "mekanism:meka_tool"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "16000000"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -11.0d
+			y: -4.5d
+			description: ["值得拥有"]
+			id: "6974408493A54881"
+			tasks: [{
+				id: "0CCCA30225C84B10"
+				type: "item"
+				item: {
+					id: "mekanismtools:netherite_paxel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -9.0d
+			y: -4.5d
+			description: ["真*全能工具"]
+			id: "3F65DD71550B1966"
+			tasks: [{
+				id: "6A4C7D10329103E1"
+				type: "item"
+				item: "ars_nouveau:novice_spell_book"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -3.5d
+			id: "75B1856BD393FDBE"
+			tasks: [
+				{
+					id: "5661513CF217BBC4"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_helmet"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "329C1A56611FA399"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_bodyarmor"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "2F00B442729B8A3A"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_pants"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "10A1588827F9D11B"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_boots"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -8.0d
+			subtitle: "     ?"
+			id: "6723E8284EC39457"
+			tasks: [{
+				id: "169E03E8F53F5571"
+				type: "item"
+				item: "astralsorcery:illuminator"
+			}]
+		}
+	]
+}

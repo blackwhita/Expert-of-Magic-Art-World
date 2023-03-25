@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Minecraft-Mod-Language-Modpack-1-16">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/resourcepacks/Minecraft-Mod-Language-Modpack-1-16.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

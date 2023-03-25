@@ -1,0 +1,127 @@
+    {
+      "type": "masterfulmachinery:machine_structure",
+      "id": "assembly_machine_mk2_1",
+      "controllerId": "assembly_machine_mk2",
+      "name": "MK2",
+      "layout": [
+        [
+          "))))))))))))",
+          ")**********)",
+          ")**********)",
+          ")**********)",
+          ")))))C+)))))"
+        ],
+        [
+          "),,,,,,,,,,)",
+          "-          .",
+          "* / 010  / *",
+          "-          .",
+          ")2222222222)"
+        ],
+        [
+          "),,,,,,,,,,)",
+          "*          *",
+          "-0/ 030  /0.",
+          "*          *",
+          ")2222222222)"
+        ],
+        [
+          "),,,,,,,,,,)",
+          "*          *",
+          "* /004000/ *",
+          "*          *",
+          ")2222222222)"
+        ],
+        [
+          ")***555****)",
+          "*   000    *",
+          "* 6 040  6 *",
+          "*          *",
+          ")2222222222)"
+        ],
+        [
+          ")7777777777)",
+          "*          *",
+          "* 8  4   8 *",
+          "*          *",
+          ")2222222222)"
+        ],
+        [
+          ")7777777777)",
+          "*          *",
+          "* 8  4   8 *",
+          "*          *",
+          ")2222222222)"
+        ],
+        [
+          ")7777777777)",
+          "*          *",
+          "* 80040008 *",
+          "*          *",
+          ")2222222222)"
+        ],
+        [
+          "))))))))))))",
+          ")9999999999)",
+          ")9:999999:9)",
+          ")9999999999)",
+          "))))))))))))"
+        ]
+      ],
+      "legend": {
+        ")": {
+          "block": "bloodmagic:largebloodstonebrick"
+        },
+        "*": {
+          "block": "kubejs:blockcasing_plain"
+        },
+        "+": {
+          "block": "masterfulmachinery:assembly_machine_mk2_energy_port_energy_input"
+        },
+        ",": {
+          "block": "createaddition:overcharged_casing"
+        },
+        "-": {
+          "block": "masterfulmachinery:assembly_machine_mk2_item_port_items_output"
+        },
+        ".": {
+          "block": "masterfulmachinery:assembly_machine_mk2_item_port_items_input"
+        },
+        "/": {
+          "block": "create:fluid_tank"
+        },
+        "0": {
+          "block": "create:fluid_pipe"
+        },
+        "1": {
+          "block": "astralsorcery:altar_radiance"
+        },
+        "2": {
+          "block": "mekanism:structural_glass"
+        },
+        "3": {
+          "block": "bloodmagic:altar"
+        },
+        "4": {
+          "block": "create:chute"
+        },
+        "5": {
+          "block": "masterfulmachinery:assembly_machine_mk2_fluid_port_fluids_input"
+        },
+        "6": {
+          "block": "astralsorcery:tree_beacon"
+        },
+        "7": {
+          "block": "astralsorcery:starmetal"
+        },
+        "8": {
+          "block": "thermal:enderium_glass"
+        },
+        "9": {
+          "block": "astralsorcery:marble_raw"
+        },
+        ":": {
+          "block": "masterfulmachinery:assembly_machine_mk2_starlight_port_astral_starlight_input"
+        }
+      }
+    }

@@ -1,0 +1,31 @@
+{
+  "flower": "astralsorcery:starmetal",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 700,
+  "traits":["can_swim"],
+  "baseLayerTexture": "mod/astralsorcery/astral_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "isEnchanted": true,
+    "honeycombColor": "#01136B"
+  },
+  "MutationData": {
+    "hasMutation": false
+},
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "astralsorcery:aquamarine",
+    "secondaryOutput": "astralsorcery:starmetal_ingot"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "astralsorcery:starmetal_ingot",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "flower": "all",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 800,
+  "traits":["can_swim"],
+  "baseLayerTexture": "mod/mekanism/refglowstone_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#EDC631",
+    "modelType": "ORE"
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "mekanism:ingot_refined_glowstone"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "mekanism:ingot_refined_glowstone",
+    "feedAmount": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

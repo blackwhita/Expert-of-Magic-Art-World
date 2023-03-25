@@ -1,0 +1,636 @@
+To refresh this file, delete it and run /reload command again! Last updated: Jan 29, 2023 4:33:29 PM
+
+#forge:molten/lapis
+- emendatusenigmatica:molten_lapis
+
+#forge:molten/uranium
+- emendatusenigmatica:molten_uranium
+
+#forge:molten/invar
+- emendatusenigmatica:molten_invar
+
+#forge:molten/diamond
+- emendatusenigmatica:molten_diamond
+
+#forge:molten/coal
+- emendatusenigmatica:molten_coal
+
+#forge:molten/sapphire
+- emendatusenigmatica:molten_sapphire
+
+#minecraft:water
+- minecraft:water
+- minecraft:flowing_water
+- create:flowing_honey
+- create:honey
+- create:flowing_chocolate
+- create:chocolate
+- createaddition:flowing_seed_oil
+- createaddition:seed_oil
+
+#forge:biodiesel
+- pneumaticcraft:biodiesel
+- immersiveengineering:biodiesel
+
+#forge:milk
+- minecraft:milk?
+- minecraft:flowing_milk?
+
+#forge:uranium_hexafluoride
+- mekanism:uranium_hexafluoride
+- mekanism:flowing_uranium_hexafluoride
+
+#forge:pink_slime
+- industrialforegoing:pink_slime
+- industrialforegoing:pink_slime_fluid
+
+#forge:sulfur_dioxide
+- mekanism:sulfur_dioxide
+- mekanism:flowing_sulfur_dioxide
+
+#forge:hydrogen
+- mekanism:hydrogen
+- mekanism:flowing_hydrogen
+
+#forge:superheated_sodium
+- mekanism:superheated_sodium
+- mekanism:flowing_superheated_sodium
+
+#forge:molten_copper
+- emendatusenigmatica:molten_copper
+
+#forge:molten/fluorite
+- emendatusenigmatica:molten_fluorite
+
+#forge:molten/iesnium
+- emendatusenigmatica:molten_iesnium
+
+#forge:molten_dragon_enderium
+- thermal_extra:dragon_enderium
+
+#forge:steam
+- steampowered:steam
+- steampowered:steam_flowing
+- mekanism:steam
+- mekanism:flowing_steam
+
+#forge:molten/potassium_nitrate
+- emendatusenigmatica:molten_potassium_nitrate
+
+#forge:molten_bronze
+- emendatusenigmatica:molten_bronze
+
+#forge:molten/apatite
+- emendatusenigmatica:molten_apatite
+
+#forge:glowstone
+- thermal:glowstone
+
+#forge:molten_silver
+- emendatusenigmatica:molten_silver
+
+#forge:molten/iron
+- emendatusenigmatica:molten_iron
+
+#forge:drill_fuel
+- #forge:diesel
+- #forge:diesel_sulfur
+- #forge:biodiesel
+
+#forge:molten_fluix
+- emendatusenigmatica:molten_fluix
+
+#pneumaticcraft:plastic
+- pneumaticcraft:plastic
+
+#forge:molten_polarium
+- thermal_extra:polarium
+
+#forge:molten/charged_certus_quartz
+- emendatusenigmatica:molten_charged_certus_quartz
+
+#forge:molten_utherium
+- emendatusenigmatica:molten_utherium
+
+#forge:molten_lapis
+- emendatusenigmatica:molten_lapis
+
+#forge:sludge
+- industrialforegoing:sludge
+- industrialforegoing:sludge_fluid
+
+#forge:molten_certus_quartz
+- emendatusenigmatica:molten_certus_quartz
+
+#forge:molten_cinnabar
+- emendatusenigmatica:molten_cinnabar
+
+#forge:molten/lead
+- emendatusenigmatica:molten_lead
+
+#forge:molten_iridium
+- emendatusenigmatica:molten_iridium
+
+#forge:molten/gold
+- emendatusenigmatica:molten_gold
+
+#forge:crude_oil
+- pneumaticcraft:oil
+- immersivepetroleum:oil
+- thermal:crude_oil
+
+#forge:molten_ruby
+- emendatusenigmatica:molten_ruby
+
+#forge:molten_enderium
+- emendatusenigmatica:molten_enderium
+
+#forge:redstone
+- thermal:redstone
+
+#forge:molten_peridot
+- emendatusenigmatica:molten_peridot
+
+#forge:herbicide
+- immersiveengineering:herbicide
+
+#forge:tritium
+- mekanismgenerators:tritium
+- mekanismgenerators:flowing_tritium
+
+#forge:molten_steel
+- emendatusenigmatica:molten_steel
+
+#forge:molten_aluminum
+- emendatusenigmatica:molten_aluminum
+
+#minecraft:lava
+- minecraft:lava
+- minecraft:flowing_lava
+- mekanismmatter:universal_matter_fluid
+- mekanismmatter:universal_matter_fluid_flowing
+- mekanismmatter:liquid_naquadah
+- mekanismmatter:liquid_naquadah_flowing
+
+#forge:ethene
+- mekanism:ethene
+- mekanism:flowing_ethene
+
+#forge:ethanol
+- pneumaticcraft:ethanol
+- immersiveengineering:ethanol
+
+#forge:uranium_oxide
+- mekanism:uranium_oxide
+- mekanism:flowing_uranium_oxide
+
+#forge:molten/dimensional
+- emendatusenigmatica:molten_dimensional
+
+#forge:molten/aluminum
+- emendatusenigmatica:molten_aluminum
+
+#forge:molten_regalium
+- emendatusenigmatica:molten_regalium
+
+#forge:molten_iron
+- emendatusenigmatica:molten_iron
+
+#forge:sodium
+- mekanism:sodium
+- mekanism:flowing_sodium
+
+#forge:molten_sulfur
+- emendatusenigmatica:molten_sulfur
+
+#forge:concrete
+- immersiveengineering:concrete
+
+#forge:sulfur_trioxide
+- mekanism:sulfur_trioxide
+- mekanism:flowing_sulfur_trioxide
+
+#forge:sulfuric_acid
+- mekanism:sulfuric_acid
+- mekanism:flowing_sulfuric_acid
+
+#forge:molten_thallasium
+- emendatusenigmatica:molten_thallasium
+
+#forge:molten_nickel
+- emendatusenigmatica:molten_nickel
+
+#forge:molten/bronze
+- emendatusenigmatica:molten_bronze
+
+#forge:ender
+- thermal:ender
+
+#forge:molten/cinnabar
+- emendatusenigmatica:molten_cinnabar
+
+#forge:hydrogen_chloride
+- mekanism:hydrogen_chloride
+- mekanism:flowing_hydrogen_chloride
+
+#forge:molten_osmium
+- emendatusenigmatica:molten_osmium
+
+#forge:molten_uranium
+- emendatusenigmatica:molten_uranium
+
+#forge:molten_cast_iron
+- emendatusenigmatica:molten_cast_iron
+
+#forge:deuterium
+- mekanismgenerators:deuterium
+- mekanismgenerators:flowing_deuterium
+
+#forge:molten/enderium
+- emendatusenigmatica:molten_enderium
+
+#pneumaticcraft:yeast_culture
+- pneumaticcraft:yeast_culture
+
+#forge:molten/peridot
+- emendatusenigmatica:molten_peridot
+
+#forge:hydrofluoric_acid
+- mekanism:hydrofluoric_acid
+- mekanism:flowing_hydrofluoric_acid
+
+#forge:molten/silver
+- emendatusenigmatica:molten_silver
+
+#forge:molten_nectium
+- thermal_extra:nectium
+
+#forge:latex
+- industrialforegoing:latex
+- industrialforegoing:latex_fluid
+- thermal:latex
+
+#forge:molten_dimensional
+- emendatusenigmatica:molten_dimensional
+
+#forge:molten/copper
+- emendatusenigmatica:molten_copper
+
+#forge:napalm
+- immersivepetroleum:napalm
+
+#forge:molten_drownium
+- thermal_extra:drownium
+
+#forge:molten/zinc
+- emendatusenigmatica:molten_zinc
+
+#forge:oxygen
+- mekanism:oxygen
+- mekanism:flowing_oxygen
+
+#forge:diesel_sulfur
+- immersivepetroleum:diesel_sulfur
+
+#forge:molten_iesnium
+- emendatusenigmatica:molten_iesnium
+
+#forge:molten_cobalt
+- emendatusenigmatica:molten_cobalt
+
+#forge:molten_dragon_bronze
+- thermal_extra:dragon_bronze
+
+#forge:molten_emerald
+- emendatusenigmatica:molten_emerald
+
+#forge:molten_coal
+- emendatusenigmatica:molten_coal
+
+#forge:molten/arcane
+- emendatusenigmatica:molten_arcane
+
+#forge:molten_tin
+- emendatusenigmatica:molten_tin
+
+#forge:molten_fluorite
+- emendatusenigmatica:molten_fluorite
+
+#forge:molten/thallasium
+- emendatusenigmatica:molten_thallasium
+
+#forge:molten_constantan
+- emendatusenigmatica:molten_constantan
+
+#forge:molten_potassium_nitrate
+- emendatusenigmatica:molten_potassium_nitrate
+
+#forge:molten_quartz
+- emendatusenigmatica:molten_quartz
+
+#forge:fusion_fuel
+- mekanismgenerators:fusion_fuel
+- mekanismgenerators:flowing_fusion_fuel
+
+#forge:sewage
+- industrialforegoing:sewage
+- industrialforegoing:sewage_fluid
+
+#forge:molten/lumium
+- emendatusenigmatica:molten_lumium
+
+#forge:molten/cobalt
+- emendatusenigmatica:molten_cobalt
+
+#forge:molten_brass
+- emendatusenigmatica:molten_brass
+
+#forge:molten/certus_quartz
+- emendatusenigmatica:molten_certus_quartz
+
+#forge:molten_ancient_debris
+- emendatusenigmatica:molten_ancient_debris
+
+#forge:molten_vukaium
+- thermal_extra:vukaium
+
+#forge:molten/ancient_debris
+- emendatusenigmatica:molten_ancient_debris
+
+#forge:molten/steel
+- emendatusenigmatica:molten_steel
+
+#forge:experience
+- industrialforegoing:essence
+- industrialforegoing:essence_fluid
+- pneumaticcraft:memory_essence
+- sophisticatedbackpacks:xp_still
+- cofh_core:experience
+
+#forge:molten/osmium
+- emendatusenigmatica:molten_osmium
+
+#forge:lithium
+- mekanism:lithium
+- mekanism:flowing_lithium
+
+#forge:diesel
+- pneumaticcraft:diesel
+- immersivepetroleum:diesel
+- immersivepetroleum:diesel_sulfur
+
+#forge:molten_diamond
+- emendatusenigmatica:molten_diamond
+
+#forge:molten/regalium
+- emendatusenigmatica:molten_regalium
+
+#forge:molten/nebu
+- emendatusenigmatica:molten_nebu
+
+#forge:molten/iridium
+- emendatusenigmatica:molten_iridium
+
+#forge:molten/utherium
+- emendatusenigmatica:molten_utherium
+
+#resourcefulbees:resourceful_honey
+- resourcefulbees:honey
+- resourcefulbees:catnip_honey
+- resourcefulbees:honey_flowing
+- resourcefulbees:catnip_honey_flowing
+- resourcefulbees:starry_honey?
+- resourcefulbees:starry_honey_flowing?
+- resourcefulbees:starry_honey
+- resourcefulbees:rainbow_honey_flowing
+- resourcefulbees:rainbow_honey
+- resourcefulbees:starry_honey_flowing
+
+#forge:molten_lumium
+- emendatusenigmatica:molten_lumium
+
+#forge:molten_gold
+- emendatusenigmatica:molten_gold
+
+#pneumaticcraft:etching_acid
+- pneumaticcraft:etching_acid
+
+#forge:molten_arcane
+- emendatusenigmatica:molten_arcane
+
+#forge:kerosene
+- pneumaticcraft:kerosene
+
+#forge:bioethanol
+- mekanismgenerators:bioethanol
+- mekanismgenerators:flowing_bioethanol
+
+#forge:molten_lead
+- emendatusenigmatica:molten_lead
+
+#forge:creosote
+- thermal:creosote
+- immersiveengineering:creosote
+
+#forge:molten/quartz
+- emendatusenigmatica:molten_quartz
+
+#forge:heavy_water
+- mekanism:heavy_water
+- mekanism:flowing_heavy_water
+
+#forge:lpg
+- pneumaticcraft:lpg
+
+#forge:molten/electrum
+- emendatusenigmatica:molten_electrum
+
+#forge:lubricant
+- pneumaticcraft:lubricant
+- immersivepetroleum:lubricant
+
+#forge:molten/constantan
+- emendatusenigmatica:molten_constantan
+
+#forge:molten/redstone
+- emendatusenigmatica:molten_redstone
+
+#forge:molten_cloggrum
+- emendatusenigmatica:molten_cloggrum
+
+#forge:biofuel
+- industrialforegoing:biofuel
+- industrialforegoing:biofuel_fluid
+
+#forge:molten_zauvium
+- thermal_extra:zauvium
+
+#forge:plantoil
+- pneumaticcraft:vegetable_oil
+- immersiveengineering:plantoil
+- createaddition:flowing_seed_oil
+- createaddition:seed_oil
+
+#forge:molten_apatite
+- emendatusenigmatica:molten_apatite
+
+#forge:molten_bitumen
+- emendatusenigmatica:molten_bitumen
+
+#forge:molten/brass
+- emendatusenigmatica:molten_brass
+
+#forge:meat
+- industrialforegoing:meat
+- industrialforegoing:meat_fluid
+
+#forge:chocolate
+- create:flowing_chocolate
+- create:chocolate
+
+#forge:chlorine
+- mekanism:chlorine
+- mekanism:flowing_chlorine
+
+#forge:molten_nebu
+- emendatusenigmatica:molten_nebu
+
+#forge:molten/bitumen
+- emendatusenigmatica:molten_bitumen
+
+#forge:molten/ruby
+- emendatusenigmatica:molten_ruby
+
+#forge:molten_signalum
+- emendatusenigmatica:molten_signalum
+
+#forge:molten_nebulium
+- thermal_extra:nebulium
+
+#forge:molten/nickel
+- emendatusenigmatica:molten_nickel
+
+#forge:molten_froststeel
+- emendatusenigmatica:molten_froststeel
+
+#forge:molten_charged_certus_quartz
+- emendatusenigmatica:molten_charged_certus_quartz
+
+#forge:potion
+- cofh_core:potion
+- immersiveengineering:potion
+
+#immersivepetroleum:burnable_in_flarestack
+- #forge:lubricant
+- #forge:diesel
+- #forge:diesel_sulfur
+- #forge:gasoline
+- #forge:plantoil
+- #forge:creosote
+- #forge:ethanol
+
+#forge:molten/signalum
+- emendatusenigmatica:molten_signalum
+
+#forge:gasoline
+- pneumaticcraft:gasoline
+- immersivepetroleum:gasoline
+
+#forge:molten_electrum
+- emendatusenigmatica:molten_electrum
+
+#forge:molten/emerald
+- emendatusenigmatica:molten_emerald
+
+#forge:life
+- bloodmagic:life_essence_fluid
+- bloodmagic:life_essence_fluid_flowing
+
+#forge:tea
+- create:flowing_tea
+- create:tea
+
+#forge:molten/cloggrum
+- emendatusenigmatica:molten_cloggrum
+
+#forge:molten_invar
+- emendatusenigmatica:molten_invar
+
+#forge:molten/fluix
+- emendatusenigmatica:molten_fluix
+
+#forge:molten_redstone
+- emendatusenigmatica:molten_redstone
+
+#forge:molten_sapphire
+- emendatusenigmatica:molten_sapphire
+
+#forge:molten/froststeel
+- emendatusenigmatica:molten_froststeel
+
+#forge:brine
+- mekanism:brine
+- mekanism:flowing_brine
+
+#forge:molten_zinc
+- emendatusenigmatica:molten_zinc
+
+#forge:molten/tin
+- emendatusenigmatica:molten_tin
+
+#forge:molten/sulfur
+- emendatusenigmatica:molten_sulfur
+
+#forge:honey
+- cofh_core:honey
+- resourcefulbees:honey
+- create:flowing_honey
+- create:honey
+
+#create:no_infinite_draining
+- astralsorcery:liquid_starlight
+- mekanismgenerators:bioethanol
+- mekanismgenerators:flowing_bioethanol
+- mekanismgenerators:deuterium
+- mekanismgenerators:flowing_deuterium
+- mekanismgenerators:fusion_fuel
+- mekanismgenerators:flowing_fusion_fuel
+- mekanismgenerators:tritium
+- mekanismgenerators:flowing_tritium
+- mekanism:hydrogen
+- mekanism:flowing_hydrogen
+- mekanism:oxygen
+- mekanism:flowing_oxygen
+- mekanism:chlorine
+- mekanism:flowing_chlorine
+- mekanism:sulfur_dioxide
+- mekanism:flowing_sulfur_dioxide
+- mekanism:sulfur_trioxide
+- mekanism:flowing_sulfur_trioxide
+- mekanism:sulfuric_acid
+- mekanism:flowing_sulfuric_acid
+- mekanism:hydrogen_chloride
+- mekanism:flowing_hydrogen_chloride
+- mekanism:hydrofluoric_acid
+- mekanism:flowing_hydrofluoric_acid
+- mekanism:uranium_oxide
+- mekanism:flowing_uranium_oxide
+- mekanism:uranium_hexafluoride
+- mekanism:flowing_uranium_hexafluoride
+- mekanism:ethene
+- mekanism:flowing_ethene
+- mekanism:sodium
+- mekanism:flowing_sodium
+- mekanism:superheated_sodium
+- mekanism:flowing_superheated_sodium
+- mekanism:brine
+- mekanism:flowing_brine
+- mekanism:lithium
+- mekanism:flowing_lithium
+- mekanism:steam
+- mekanism:flowing_steam
+- mekanism:heavy_water
+- mekanism:flowing_heavy_water
+
+#forge:molten/cast_iron
+- emendatusenigmatica:molten_cast_iron

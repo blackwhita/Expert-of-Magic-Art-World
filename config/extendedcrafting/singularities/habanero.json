@@ -1,0 +1,10 @@
+{
+    "name": "Habanero",
+    "colors": [
+      "FF8C00",
+      "FF8C00"
+    ],
+    "ingredient": {
+      "tag": "forge:vegetables/habanero"
+    }
+  }

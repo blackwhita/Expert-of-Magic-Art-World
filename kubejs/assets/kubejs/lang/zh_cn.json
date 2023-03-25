@@ -1,0 +1,39 @@
+{
+    "item.kubejs.high_steel_ingot":"§6高级钢锭",
+    "item.kubejs.broken_advanced_pcb":"破损的高级电路板",
+    "item.kubejs.creative_catalyst":"§6创造催化剂",
+    "item.kubejs.ultimate_rune":"§6无限符文",
+    "item.kubejs.omniscient_lens":"§6五彩透镜",
+    "item.kubejs.novaextended-ark_circuit-layer0":"§6特种电路板",
+    "item.kubejs.novaextended-extremecircuit-layer0":"§6维度电路板",
+    "item.kubejs.perfect_dna":"§6完美DNA",
+    "item.kubejs.magic_dna":"魔法DNA",
+    "item.kubejs.industrial_dna":"工业DNA",
+    "item.kubejs.bee_dna":"DNA",
+    
+    "item.avaritia.scraper":"§6DNA剥离器",
+    "item.avaritia.akashic_record":"§6阿卡西记录",
+    "item.avaritia.ultimate_stew":"§6超级煲",
+    "item.avaritia.cosmic_meatballs":"§6寰宇肉丸",
+
+    "item.kubejs.molten_black_iron_bucket":"熔融黑铁桶",
+
+    "block.kubejs.blockcasing_plain":"结构方块",
+    "block.kubejs.overlay_circuitry":"结构电路",
+    "block.kubejs.overlay_controller":"结构控制器",
+    "block.kubejs.overlay_firebox":"结构燃料室",
+    "block.kubejs.overlay_gearbox":"结构齿轮箱",
+    "block.kubejs.overlay_energyinputhatch":"能量输入室",
+    "block.kubejs.overlay_energyoutputhatch":"能量输出室",
+    "block.kubejs.overlay_fluidinputhatch":"流体输入室",
+    "block.kubejs.overlay_fluidoutputhatch":"流体输出室",
+    "block.kubejs.overlay_inputbus":"物品输入室",
+    "block.kubejs.overlay_outputbus":"物品输出室",
+    "block.kubejs.overlay_vent":"结构通风室",
+    "block.kubejs.overlay_mana_input":"魔力输入室",
+    "block.kubejs.overlay_mana_output":"魔力输出室",
+
+    "fluid.kubejs.molten_black_iron":"熔融黑铁",
+
+    "entity.farmingforblockheads.merchant":"奸商"
+}

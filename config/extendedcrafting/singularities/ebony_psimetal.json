@@ -1,0 +1,10 @@
+{
+    "name": "Ebony Psimetal",
+    "colors": [
+      "000000",
+      "000000"
+    ],
+    "ingredient": {
+      "tag": "forge:ingots/ebony_psimetal"
+    }
+  }
