@@ -82,10 +82,10 @@ onEvent('recipes', (event) => {
                 { item: 'mekanism:pellet_polonium' },
                 { item: 'mekanism:pellet_polonium' },
                 { item: 'mekanism:pellet_polonium' },
-                { item: 'psi:psimetal_exosuit_boots' },
-                { item: 'mythicbotany:alfsteel_boots' }
+                Item.of('psi:psimetal_exosuit_boots').ignoreNBT(),
+                Item.of('mythicbotany:alfsteel_boots').ignoreNBT()
             ],
-            catalyst: { item: 'pneumaticcraft:pneumatic_boots' },
+            catalyst: Item.of('pneumaticcraft:pneumatic_boots').ignoreNBT(),
             powerCost: 1000000,
             powerRate: 100000,
             result: { item: 'mekanism:mekasuit_boots' },
@@ -105,10 +105,10 @@ onEvent('recipes', (event) => {
                 { item: 'mekanism:pellet_polonium' },
                 { item: 'mekanism:pellet_polonium' },
                 { item: 'mekanism:pellet_polonium' },
-                { item: 'psi:psimetal_exosuit_leggings' },
-                { item: 'mythicbotany:alfsteel_leggings' }
+                Item.of('psi:psimetal_exosuit_leggings').ignoreNBT(),
+                Item.of('mythicbotany:alfsteel_leggings').ignoreNBT()
             ],
-            catalyst: { item: 'pneumaticcraft:pneumatic_leggings' },
+            catalyst: Item.of('pneumaticcraft:pneumatic_leggings').ignoreNBT(),
             powerCost: 1000000,
             powerRate: 100000,
             result: { item: 'mekanism:mekasuit_pants' },
@@ -128,10 +128,10 @@ onEvent('recipes', (event) => {
                 { item: 'mekanism:pellet_polonium' },
                 { item: 'mekanism:pellet_polonium' },
                 { item: 'mekanism:pellet_polonium' },
-                { item: 'psi:psimetal_exosuit_chestplate' },
-                { item: 'mythicbotany:alfsteel_chestplate' }
+                Item.of('psi:psimetal_exosuit_chestplate').ignoreNBT(),
+                Item.of('mythicbotany:alfsteel_chestplate').ignoreNBT()
             ],
-            catalyst: { item: 'pneumaticcraft:pneumatic_chestplate' },
+            catalyst: Item.of('pneumaticcraft:pneumatic_chestplate').ignoreNBT(),
             powerCost: 1000000,
             powerRate: 100000,
             result: { item: 'mekanism:mekasuit_bodyarmor' },
@@ -151,10 +151,10 @@ onEvent('recipes', (event) => {
                 { item: 'mekanism:pellet_polonium' },
                 { item: 'mekanism:pellet_polonium' },
                 { item: 'mekanism:pellet_polonium' },
-                { item: 'psi:psimetal_exosuit_helmet' },
-                { item: 'mythicbotany:alfsteel_helmet' }
+                Item.of('psi:psimetal_exosuit_helmet').ignoreNBT(),
+                Item.of('mythicbotany:alfsteel_helmet').ignoreNBT()
             ],
-            catalyst: { item: 'pneumaticcraft:pneumatic_helmet' },
+            catalyst: Item.of('pneumaticcraft:pneumatic_helmet').ignoreNBT(),
             powerCost: 1000000,
             powerRate: 100000,
             result: { item: 'mekanism:mekasuit_helmet' },
