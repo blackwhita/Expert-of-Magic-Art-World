@@ -1,5 +1,5 @@
 {
-  "flower": "thermal:rubber_block",
+  "flower": "all",
   "baseLayerTexture":"mod/industrialforegoing/rubber_bee",
   "hasHoneycomb": true,
   "traits":["can_swim"],
